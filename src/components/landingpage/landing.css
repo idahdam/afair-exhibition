@@ -1,0 +1,64 @@
+.background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #2f3a56;
+}
+
+.topleftIcon {
+  position: absolute;
+  top: 0;
+  width: 400px;
+}
+
+.bottomrightIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+
+.bottomleftIcon {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+}
+
+.bgContainerText {
+  position: absolute;
+  /* background-color: aqua; */
+  padding-top: 5%;
+  max-width: 1800px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 3%;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.textFooter {
+  padding-top: 10%;
+}
+
+.footerText {
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.footerImages {
+  vertical-align: middle;
+  margin-bottom: 0.7em;
+}
