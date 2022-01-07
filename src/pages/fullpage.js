@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import Welcome from "./welcome";
+import Welcome from "../components/welcome and register/welcome";
 class fullPage extends Component {
   state = {
     redirect: false,
@@ -16,7 +16,7 @@ class fullPage extends Component {
 
   render() {
     return this.state.redirect ? (
-      <Redirect to="/Welcome" />
+      <Redirect to="/register" />
     ) : (
       <>
         <Welcome />

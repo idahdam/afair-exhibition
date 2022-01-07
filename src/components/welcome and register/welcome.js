@@ -1,5 +1,5 @@
 import React from 'react'
-import iconLogo from ".././assets/images/iconLogo.svg";
+import iconLogo from "../../assets/images/iconLogo.svg";
 import "./intro.css";
 
 const welcome = () => {

@@ -1,9 +1,9 @@
 import React from "react";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
-import iconArrow from ".././assets/images/iconArrow.svg";
-import iconLogo from ".././assets/images/iconLogo.svg";
+// import iconArrow from ".././assets/images/iconArrow.svg";
+// import iconLogo from ".././assets/images/iconLogo.svg";
 import "./intro.css";
-const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
+const { changeHorizontalSlide } = Fullpage;
 
 const fullPageOptions = {
   // for mouse/wheel events
@@ -76,11 +76,11 @@ class FullpageReact extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { active } = this.state;
+    // const { active } = this.state;
 
-    const currentActive = active.Fullpage;
+    // const currentActive = active.Fullpage;
     // const prevSlide = changeFullpageSlide.bind(null, currentActive - 1);
-    const nextSlide = changeFullpageSlide.bind(null, currentActive + 1);
+    // const nextSlide = changeFullpageSlide.bind(null, currentActive + 1);
     // const goToTop = changeFullpageSlide.bind(null, 0);
 
     const horizontalSliderName = horizontalSliderProps.name;
@@ -99,83 +99,24 @@ class FullpageReact extends React.Component {
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
-        <span onClick={prevHorizontalSlide}>{/* <button>PREV</button> */}</span>
+        <span onClick={prevHorizontalSlide}><button>PREV</button></span>
         <span
           style={{ position: "absolute", right: "0px" }}
           onClick={nextHorizontalSlide}
         >
-          {/* <button>Next</button> */}
+          <button>Next</button>
         </span>
       </div>
     );
 
-    const Welcome = () => {
-      return (
-        <>
-          <div className="background2">
-            <div className="bgContainer2">
-              <div className="bgContainerText2">
-                <div>
-                  <img src={iconLogo} className="logoImages2" alt="icon Logo" />
-                </div>
-                <p className="title">
-                  <span style={{ fontSize: "30px" }}>AFAIR 2022</span>
-                  <br />
-                  INTO THE WAYOUT FUTURE
-                  <br />
-                  <span style={{ fontSize: "20px" }}>VIRTUAL EXHIBITION</span>
-                </p>
-                <h2 className="title" style={{ fontSize: "20px" }}>
-                  Loading
-                </h2>
-                <div className="topNavStyle">
-                  <span onClick={nextSlide}>
-                    <img src={iconArrow} className="arrow2" alt="icon arrpw" />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      );
-    };
-
-    const StatementPage = () => {
-      return (
-        <>
-          <div className="background2">
-            <div className="bgContainer2">
-              <div className="bgWrapper2">
-                <div className="textContainer2">
-                  <p className="subtitle2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc lacinia, urna nec rhoncus malesuada, enim augue luctus
-                    nulla, quis molestie velit leo sit amet tellus. Cras eu
-                    laoreet metus, sed porta nisi.
-                  </p>
-                </div>
-                <div className="subtext2" style={{ fontSize: "20px" }}>
-                  <span className="textBoxdeco2">I </span>{" "}
-                  <span className="textBoxdeco">Nama Orang</span>{" "}
-                  <span className="textBoxdeco">Namaorang@gmail.com</span>
-                  <span className="textBoxdeco2">
-                    AM READY TO EXPLORE INTO THE WAYOUT FUTURE.
-                  </span>
-                  <span onClick={nextHorizontalSlide} className="iconRight2">
-                    <img src={iconArrow} className="arrow" alt="icon Logo" />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      );
-    };
 
     const horizontalSlides = [
       <Slide>
-        <StatementPage />
+        <p>Horizontal </p>
       </Slide>,
+      <Slide>
+      <p>Horizontal </p>
+    </Slide>,
       <Slide style={{ backgroundColor: "yellow" }}>
         <p>Horizontal 2</p>
       </Slide>,
@@ -192,9 +133,6 @@ class FullpageReact extends React.Component {
     );
 
     const verticalSlides = [
-      <Slide>
-        <Welcome />
-      </Slide>,
       horizontalSlider,
     ];
     fullPageOptions.slides = verticalSlides;
