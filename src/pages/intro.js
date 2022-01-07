@@ -22,7 +22,6 @@ const fullPageOptions = {
   activeSlide: 0,
 };
 
-
 const horizontalNavStyle = {
   position: "absolute",
   width: "100%",
@@ -79,9 +78,9 @@ class FullpageReact extends React.Component {
     const { active } = this.state;
 
     const currentActive = active.Fullpage;
-    const prevSlide = changeFullpageSlide.bind(null, currentActive - 1);
+    // const prevSlide = changeFullpageSlide.bind(null, currentActive - 1);
     const nextSlide = changeFullpageSlide.bind(null, currentActive + 1);
-    const goToTop = changeFullpageSlide.bind(null, 0);
+    // const goToTop = changeFullpageSlide.bind(null, 0);
 
     const horizontalSliderName = horizontalSliderProps.name;
     const horizontalActive = this.state.active[horizontalSliderName];
