@@ -1,8 +1,5 @@
 import React from "react";
 import "./landing.css";
-import iconImg1 from "../.././assets/images/iconMascot1.svg";
-import iconImg2 from "../.././assets/images/iconMascot2.svg";
-import iconImg3 from "../.././assets/images/iconMascot3.svg";
 import iconLogo from "../.././assets/images/iconLogo.svg";
 import iconInsta from "../.././assets/images/iconInsta.svg";
 import { useSpring, animated } from "react-spring";
