@@ -22,6 +22,7 @@ const fullPageOptions = {
   activeSlide: 0,
 };
 
+
 const horizontalNavStyle = {
   position: "absolute",
   width: "100%",
