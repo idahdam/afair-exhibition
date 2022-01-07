@@ -7,7 +7,7 @@ class fullPage extends Component {
   };
 
   componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 100000000000000);
+    this.id = setTimeout(() => this.setState({ redirect: true }), 5000);
   }
 
   componentWillUnmount() {
