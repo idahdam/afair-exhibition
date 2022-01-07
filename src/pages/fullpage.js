@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import Landing from "../components/landingpage/landing";
+import Welcome from "./welcome";
 class fullPage extends Component {
   state = {
     redirect: false,
@@ -19,7 +19,7 @@ class fullPage extends Component {
       <Redirect to="/Welcome" />
     ) : (
       <>
-        <Landing />
+        <Welcome />
       </>
     );
   }

@@ -13,7 +13,12 @@
   background-image: url("../.././assets/images/iconMascot1.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  animation: fadeLeftAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+
 .card43 {
   position: absolute;
   z-index: 2;
@@ -24,6 +29,9 @@
   background-size: cover;
   bottom: 0;
   margin-bottom: 70px;
+  animation: fadeInIconAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   
 }
 .card44 {
@@ -38,6 +46,9 @@
   right: 0;
   margin-bottom: 80px;
   margin-right: 7px;
+  animation: fadeInIconAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .bgContainerText {
@@ -51,6 +62,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fadeInTextAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .subtitle {
@@ -91,4 +105,36 @@
   left: 50%;
   transform: translate(-50%, -50%);
   
+}
+
+@keyframes fadeLeftAnimation {
+  from {
+    transform: translate(-15%, 0);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInIconAnimation {
+  from {
+    transform: translate(0, 15%);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTextAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
