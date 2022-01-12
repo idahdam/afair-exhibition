@@ -1,5 +1,6 @@
 import React from "react";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
+import ScrollText from "../components/autoScrollPage/scroll"
 // import iconArrow from ".././assets/images/iconArrow.svg";
 // import iconLogo from ".././assets/images/iconLogo.svg";
 import "./intro.css";
@@ -112,7 +113,7 @@ class FullpageReact extends React.Component {
 
     const horizontalSlides = [
       <Slide>
-        <p>Horizontal </p>
+        <ScrollText/> 
       </Slide>,
       <Slide>
       <p>Horizontal </p>
