@@ -2,16 +2,17 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 .bgContainerText2 {
   position: absolute;
   /* background-color: aqua; */
   padding-top: 5%;
-  max-width: 1800px;
+  max-width: 1600px;
   width: 100%;
-  color: #000000;
+  color: white;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -48,11 +49,12 @@
   font-size: 20px;
   font-weight: 300;
   margin-top: 10%;
+  width: 100%;
   /* background-color: #E5E5E5; */
 }
 
 .subtitle2 {
-  font-size: 48px;
+  font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -63,8 +65,19 @@
   line-height: 60px;
 }
 
-.logoImages2 {
-  filter: invert(1);
+
+.middleText{
+  position: relative;
+}
+
+.dudukImg{
+  position: absolute;
+  transform: translate(575%, 21%);
+}
+
+.pelukImg{
+  position: absolute;
+  transform: translate(-1230%, 140%);
 }
 
 .textBoxdeco {
