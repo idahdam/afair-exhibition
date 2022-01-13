@@ -2,7 +2,7 @@ import "./App.css";
 import Intro from "./pages/intro";
 import Fullpage from "./pages/fullpage";
 import Landing from "./components/landingpage/landing";
-import Register from "./components/welcome and register/register";
+import Register from "./components/introComp/register";
 import Scrollpage from "./components/autoScrollPage/scroll";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

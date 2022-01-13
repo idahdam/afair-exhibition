@@ -1,6 +1,7 @@
 import React from "react";
 import iconArrow from "../../assets/images/iconArrow.svg";
 import { NavLink as Link } from "react-router-dom";
+import "./welcome.css";
 const register = () => {
   return (
     <>
@@ -35,15 +36,18 @@ const register = () => {
                 </Link>
               </span>
             </div>
-            <br/>
+            <br />
             <div className="subtext2" style={{ fontSize: "12px" }}>
-            AFAIR 2022 is collecting the data for audience overview purpose only.
-            <br/>
-            Your identity will not be published on any kind of platform.
-            <br/>
-            <br/>
-            <span>
-            <input type="checkbox"/><label> I agree</label></span>
+              AFAIR 2022 is collecting the data for audience overview purpose
+              only.
+              <br />
+              Your identity will not be published on any kind of platform.
+              <br />
+              <br />
+              <span>
+                <input type="checkbox" />
+                <label> I agree</label>
+              </span>
             </div>
           </div>
         </div>

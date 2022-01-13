@@ -21,7 +21,6 @@
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  
 }
 @keyframes fadeInAnimation {
   from {
@@ -59,25 +58,26 @@
   font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: "SFProDisplay Regular";
 }
 
 .title2 {
   font-size: 48px;
   font-weight: 300;
   line-height: 60px;
+  font-family: "SFProDisplay Regular";
 }
 
-
-.middleText{
+.middleText {
   position: relative;
 }
 
-.dudukImg{
+.dudukImg {
   position: absolute;
   transform: translate(575%, 21%);
 }
 
-.pelukImg{
+.pelukImg {
   position: absolute;
   transform: translate(-1230%, 140%);
 }

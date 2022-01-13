@@ -1,9 +1,11 @@
 import React from "react";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
-import ScrollText from "../components/autoScrollPage/scroll"
+// import ScrollText from "../components/autoScrollPage/scroll"
+import Transisi from "../components/introComp/transisi";
+import MainPage from "../components/mainPage/main1";
 // import iconArrow from ".././assets/images/iconArrow.svg";
 // import iconLogo from ".././assets/images/iconLogo.svg";
-import "./intro.css";
+// import "./intro.css";
 const { changeHorizontalSlide } = Fullpage;
 
 const fullPageOptions = {
@@ -22,7 +24,6 @@ const fullPageOptions = {
   // optional, set the initial vertical slide
   activeSlide: 0,
 };
-
 
 const horizontalNavStyle = {
   position: "absolute",
@@ -100,7 +101,9 @@ class FullpageReact extends React.Component {
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
-        <span onClick={prevHorizontalSlide}><button>PREV</button></span>
+        <span onClick={prevHorizontalSlide}>
+          <button>PREV</button>
+        </span>
         <span
           style={{ position: "absolute", right: "0px" }}
           onClick={nextHorizontalSlide}
@@ -110,14 +113,14 @@ class FullpageReact extends React.Component {
       </div>
     );
 
-
     const horizontalSlides = [
       <Slide>
-        <ScrollText/> 
+        <MainPage />
       </Slide>,
       <Slide>
-      <p>Horizontal </p>
-    </Slide>,
+        <Transisi />
+      </Slide>,
+
       <Slide style={{ backgroundColor: "yellow" }}>
         <p>Horizontal 2</p>
       </Slide>,
@@ -133,9 +136,7 @@ class FullpageReact extends React.Component {
       </HorizontalSlider>
     );
 
-    const verticalSlides = [
-      horizontalSlider,
-    ];
+    const verticalSlides = [horizontalSlider];
     fullPageOptions.slides = verticalSlides;
 
     return (
