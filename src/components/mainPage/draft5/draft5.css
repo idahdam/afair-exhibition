@@ -16,6 +16,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.footer {
+  position: absolute;
+  width: 1450px;
+  bottom: 0;
+  margin-bottom: 50px;
+  padding: 0 50px;
+}
+.footerLeft {
+  float: left;
+}
+
+.footerRight {
+  float: Right;
+}
+
 .infotext {
   position: absolute;
   opacity: 0;
@@ -29,6 +45,25 @@
   left: 75px;
   transition: opacity 0.1s ease-in;
   z-index: 2;
+}
+
+.infotext2 {
+  position: absolute;
+  opacity: 0;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  top: -170px;
+  left: 80px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+  text-align: left;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
 }
 .pos5a {
   position: absolute;
@@ -82,4 +117,26 @@
 
 .pos5d:hover + .infotext {
   opacity: 1;
+}
+.infoStyle:hover {
+  transform: scale(1.5);
+}
+
+.infoStyle:hover + .infotext2 {
+  opacity: 1;
+}
+.iconFloat {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+.icoStyle {
+  float: left;
+  width: 20px;
+  margin-left: 10px;
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
 }

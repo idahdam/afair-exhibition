@@ -1,0 +1,99 @@
+.draft4Container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.footer{
+  position: relative;
+  width: 1550px;
+  bottom: 0;
+}
+
+.draft4BackImage {
+  position: absolute;
+  background-image: url(../../../assets/images/mainPage/mainPagebg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1550px;
+  height: 785px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos5 {
+  position: absolute;
+  width: 199px;
+  transform: translate(401%, 129%);
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+.infotext {
+  position: absolute;
+  opacity: 0;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  top: 0px;
+  left: 75px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+}
+
+.pos6 {
+  position: absolute;
+  width: 227px;
+  transform: translate(316%, 25%);
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+.pos7 {
+  position: absolute;
+  width: 430px;
+  transform: translate(249%, 520%);
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.pos8 {
+  position: absolute;
+  width: 170px;
+  transform: translate(145.5%, 38%);
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.pos6:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+.pos7:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+.pos8:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+.pos5:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+
+.pos5:hover + .infotext {
+  opacity: 1;
+}
+
+.pos6:hover + .infotext {
+  opacity: 1;
+}
+
+.pos7:hover + .infotext {
+  opacity: 1;
+}
+
+.pos8:hover + .infotext {
+  opacity: 1;
+}
