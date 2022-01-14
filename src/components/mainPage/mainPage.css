@@ -26,23 +26,40 @@
   z-index: 1;
 }
 
-.pos5text {
-    position: absolute;
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    transform: translate(401%, 129%);
-    z-index: 2;
-  }
+.infotext {
+  position: absolute;
+  opacity: 0;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  top: 0px;
+  left: 75px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+}
 
 .pos6 {
   position: absolute;
   width: 227px;
   transform: translate(316%, 25%);
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+.pos7 {
+  position: absolute;
+  width: 430px;
+  transform: translate(249%, 520%);
+  opacity: 0.4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.pos8 {
+  position: absolute;
+  width: 170px;
+  transform: translate(145.5%, 38%);
   opacity: 0.4;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 }
@@ -60,21 +77,18 @@
   filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
 }
 
-.pos5:hover .pos5text {
-    visibility: visible;
-  }
-.pos7 {
-  position: absolute;
-  width: 430px;
-  transform: translate(249%, 520%);
-  opacity: 0.4;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+.pos5:hover + .infotext {
+  opacity: 1;
 }
 
-.pos8 {
-  position: absolute;
-  width: 170px;
-  transform: translate(145.5%, 38%);
-  opacity: 0.4;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+.pos6:hover + .infotext {
+  opacity: 1;
+}
+
+.pos7:hover + .infotext {
+  opacity: 1;
+}
+
+.pos8:hover + .infotext {
+  opacity: 1;
 }
