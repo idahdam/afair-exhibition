@@ -1,0 +1,85 @@
+.draft5Container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.draft5BackImage {
+  position: absolute;
+  background-image: url(../../../assets/images/mainPage/5bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1550px;
+  height: 785px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.infotext {
+  position: absolute;
+  opacity: 0;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  top: 0px;
+  left: 75px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+}
+.pos5a {
+  position: absolute;
+  width: 257px;
+  transform: translate(420%, 57%);
+
+  z-index: 1;
+}
+
+.pos5b {
+  position: absolute;
+  width: 275px;
+  transform: translate(283%, 60%);
+}
+.pos5c {
+  position: absolute;
+  width: 240px;
+  transform: translate(540%, 67%);
+}
+
+.pos5d {
+  position: absolute;
+  width: 435px;
+  transform: translate(22%, 46%);
+}
+
+.pos5b:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+.pos5c:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+.pos5d:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+.pos5a:hover {
+  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.4));
+}
+
+.pos5a:hover + .infotext {
+  opacity: 1;
+}
+
+.pos5b:hover + .infotext {
+  opacity: 1;
+}
+
+.pos5c:hover + .infotext {
+  opacity: 1;
+}
+
+.pos5d:hover + .infotext {
+  opacity: 1;
+}
