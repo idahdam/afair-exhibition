@@ -4,6 +4,8 @@ import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 import Transisi from "../components/introComp/transisi";
 import Draft4 from "../components/mainPage/draft4/draft4";
 import Draft5 from "../components/mainPage/draft5/draft5";
+import Draft6 from "../components/mainPage/draft6/draft6";
+import Draft7 from "../components/mainPage/draft7/draft7";
 // import iconArrow from ".././assets/images/iconArrow.svg";
 // import iconLogo from ".././assets/images/iconLogo.svg";
 // import "./intro.css";
@@ -115,6 +117,12 @@ class FullpageReact extends React.Component {
     );
 
     const horizontalSlides = [
+      <Slide>
+        <Draft7 />
+      </Slide>,
+      <Slide>
+        <Draft6 />
+      </Slide>,
       <Slide>
         <Draft5 />
       </Slide>,
