@@ -2,6 +2,7 @@ import React from "react";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 // import ScrollText from "../components/autoScrollPage/scroll"
 import Transisi from "../components/introComp/transisi";
+import PopUp from "../components/popUP/popUp";
 import Draft4 from "../components/mainPage/draft4/draft4";
 import Draft5 from "../components/mainPage/draft5/draft5";
 import Draft6 from "../components/mainPage/draft6/draft6";
@@ -117,6 +118,9 @@ class FullpageReact extends React.Component {
     );
 
     const horizontalSlides = [
+      <Slide>
+        <PopUp />
+      </Slide>,
       <Slide>
         <Draft7 />
       </Slide>,

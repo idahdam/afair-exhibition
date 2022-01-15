@@ -1,10 +1,12 @@
 import React from "react";
 import "./draft4.css";
+import { Hover } from "../hoverfunc.js";
 import img5 from "../../../assets/images/mainPage/image5.svg";
 import img6 from "../../../assets/images/mainPage/image6.svg";
 import img7 from "../../../assets/images/mainPage/image7.svg";
 import img8 from "../../../assets/images/mainPage/image8.svg";
 const draft4 = () => {
+  Hover();
   return (
     <>
       <div className="draft4Container">

@@ -1,0 +1,52 @@
+.popUpBg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-family: "SFProDisplay Regular";
+}
+
+.popUpContainer {
+  position: absolute;
+  background-color: aqua;
+  width: 100%;
+  max-width: 1336px;
+  color: black;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.popUpWrapper {
+    background-color: pink;
+    width: 90%;
+    color: black;
+    text-align: center;
+
+  }
+
+.popUpLeft{
+    float: left;
+    width: 60%;
+    background-color: green;
+}
+.popUpRight{
+    float: left;
+    width: 40%;
+    background-color: yellow;
+}
+
+
+.popUpContainerMid {
+  float: left;
+  width: 80%;
+  background-color: red;
+}
+.popUpContainerSide {
+  float: left;
+  width: 5%;
+  background-color: blue;
+}
