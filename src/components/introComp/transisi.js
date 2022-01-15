@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import "./welcome.css";
-export const transisi = () => {
+
+const Transisi = () => {
+  const history = useHistory();
+  useEffect(() => {
+    let interval = null;
+    // if (redirect) {
+    //   setRedirect(false);
+    interval = setInterval(() => {
+      // Redirect to another page
+      history.push("/welcome");
+    }, 3000);
+    // }
+    return () => (interval ? clearInterval(interval) : null);
+  }, []);
   return (
     <>
       <div className="background2">
@@ -25,4 +39,5 @@ export const transisi = () => {
     </>
   );
 };
-export default transisi;
+
+export default Transisi;

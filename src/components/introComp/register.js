@@ -31,7 +31,7 @@ const register = () => {
                 AM READY TO EXPLORE INTO THE WAYOUT FUTURE.
               </span>
               <span className="iconRight2">
-                <Link to="/welcome">
+                <Link to="/video">
                   <img src={iconArrow} className="arrow" alt="icon Logo" />
                 </Link>
               </span>
