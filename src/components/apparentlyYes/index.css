@@ -1,0 +1,13 @@
+.scrollingText {
+  width: "100%";
+  height: "100%";
+  text-align: "left";
+}
+
+.animation {
+  position: "relative";
+  width: "100%";
+  height: 500;
+  overflow: "auto";
+  font-size: "6em";
+}
