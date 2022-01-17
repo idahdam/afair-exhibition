@@ -3,6 +3,7 @@ import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 // import ScrollText from "../components/autoScrollPage/scroll"
 import Transisi from "../components/introComp/transisi";
 import PopUp from "../components/popUP/popUp";
+// import Transisi from "../components/introComp/Transisi";
 import Draft4 from "../components/mainPage/draft4/draft4";
 import Draft5 from "../components/mainPage/draft5/draft5";
 import Draft6 from "../components/mainPage/draft6/draft6";
@@ -121,28 +122,28 @@ class FullpageReact extends React.Component {
       <Slide>
         <PopUp />
       </Slide>,
-      // <Slide>
-      //   <Draft7 />
-      // </Slide>,
-      // <Slide>
-      //   <Draft6 />
-      // </Slide>,
-      // <Slide>
-      //   <Draft5 />
-      // </Slide>,
-      // <Slide>
-      //   <Draft4 />
-      // </Slide>,
       <Slide>
-        <Transisi />
+        <Draft7 />
       </Slide>,
+      <Slide>
+        <Draft6 />
+      </Slide>,
+      <Slide>
+        <Draft5 />
+      </Slide>,
+      <Slide>
+        <Draft4 />
+      </Slide>,
+      // <Slide>
+      //   <Transisi />
+      // </Slide>,
 
-      <Slide style={{ backgroundColor: "yellow" }}>
-        <p>Horizontal 2</p>
-      </Slide>,
-      <Slide style={{ backgroundColor: "green" }}>
-        <p>Horizontal 3</p>
-      </Slide>,
+      // <Slide style={{ backgroundColor: "yellow" }}>
+      //   <p>Horizontal 2</p>
+      // </Slide>,
+      // <Slide style={{ backgroundColor: "green" }}>
+      //   <p>Horizontal 3</p>
+      // </Slide>,
     ];
     horizontalSliderProps.slides = horizontalSlides;
 
