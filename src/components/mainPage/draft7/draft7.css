@@ -7,29 +7,14 @@
 
 .draft7BackImage {
   position: absolute;
-  background-image: url(../../../assets/images/mainPage/7bg.svg);
+  background-image: url(../../../assets/images/mainPage/draft7.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1550px;
-  height: 785px;
+  width: 1920px;
+  height: 1080px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.footer {
-  position: absolute;
-  width: 1450px;
-  bottom: 0;
-  margin-bottom: 50px;
-  padding: 0 50px;
-}
-.footerLeft {
-  float: left;
-}
-
-.footerRight {
-  float: Right;
 }
 
 .infotext {
@@ -47,61 +32,41 @@
   z-index: 2;
 }
 
-.infotext2 {
-  position: absolute;
-  opacity: 0;
-  width: 500px;
-  background-color: white;
-  color: black;
-  text-align: center;
-  border-radius: 10px;
-  padding: 5px 15px;
-  top: -170px;
-  left: 80px;
-  transition: opacity 0.1s ease-in;
-  z-index: 2;
-  text-align: left;
-  border: 3px;
-  border-color: black;
-  border-style: solid;
-}
 .pos7a {
   position: absolute;
-  width: 650px;
-  transform: translate(138.2%, 70%);
-
+  left: 510px;
+  top: 206px;
 }
 
 .pos7b {
   position: absolute;
-  width: 500px;
-  transform: translate(10%, 47%);
+  left: 1560px;
+  top: 479px;
 }
 
 .pos7c {
   position: absolute;
-  width: 330px;
-  transform: translate(282%, 109.5%);
-
+  left: 999px;
+  top: 500px;
 }
 
 .pos7d {
   position: absolute;
-  width: 450px;
-  transform: translate(130%, 258%);
+  left: 934px;
+  top: 853px;
 }
 
 .pos7b:hover {
-  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.9));
+  transform: scale(1.5);
 }
 .pos7a:hover {
-  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.9));
+  transform: scale(1.5);
 }
 .pos7c:hover {
-  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.9));
+  transform: scale(1.5);
 }
 .pos7d:hover {
-  filter: drop-shadow(0px 4px 4px rgba(168, 208, 218, 0.9));
+  transform: scale(1.5);
 }
 
 .pos7a:hover + .infotext {
@@ -122,13 +87,42 @@
   transform: scale(1.5);
 }
 
-.infoStyle:hover + .infotext2 {
-  opacity: 1;
+.footer {
+  position: absolute;
+  width: 1860px;
+  bottom: 0;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+.footerLeft {
+  float: left;
+}
+
+.footerRight {
+  float: Right;
 }
 .iconFloat {
   float: left;
   margin-top: 6px;
   margin-left: 10px;
+}
+.infotext2 {
+  position: absolute;
+  opacity: 0;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  top: -170px;
+  left: 80px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+  text-align: left;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
 }
 
 .icoStyle {
@@ -139,4 +133,55 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+}
+
+.infoStyle:hover {
+  transform: scale(1.5);
+}
+
+.infoStyle:hover + .infotext2 {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1600px) {
+  .draft7BackImage {
+    width: 1366px;
+    height: 700px;
+  }
+
+  .pos7a {
+    position: absolute;
+    width: 15px;
+    left: 340px;
+    top: 138px;
+  }
+  
+  .pos7b {
+    position: absolute;
+    width: 15px;
+    left: 1080px;
+    top: 279px;
+  }
+  
+  .pos7c {
+    position: absolute;
+    width: 15px;
+    left: 699px;
+    top: 340px;
+  }
+  
+  .pos7d {
+    width: 15px;
+    position: absolute;
+    left: 634px;
+    top: 558px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 1306px;
+    bottom: 0;
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
 }

@@ -2,6 +2,7 @@
 export function Hover(){
 window.onmousemove = function (e) {
   if (
+    e.target.classList.contains("pos4") ||
     e.target.classList.contains("pos5") ||
     e.target.classList.contains("pos6") ||
     e.target.classList.contains("pos7") ||
@@ -15,7 +16,11 @@ window.onmousemove = function (e) {
     e.target.classList.contains("pos7a") ||
     e.target.classList.contains("pos7b") ||
     e.target.classList.contains("pos7c") ||
-    e.target.classList.contains("pos7d")
+    e.target.classList.contains("pos7d") ||
+    e.target.classList.contains("pos8a") ||
+    e.target.classList.contains("pos8b") ||
+    e.target.classList.contains("pos8c") ||
+    e.target.classList.contains("pos8d")
   ) {
     //	Content of dot which is hovered
     var $target = e.target.nextElementSibling;

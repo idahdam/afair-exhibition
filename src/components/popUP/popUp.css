@@ -7,7 +7,7 @@
   font-family: "SFProDisplay Regular";
 }
 
-.popUpContainer {
+.popUpContainerWrapper {
   position: absolute;
   background-color: aqua;
   width: 100%;
@@ -17,36 +17,53 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
+.popUpContainer {
+  position: relative;
 }
 
 .popUpWrapper {
-    background-color: pink;
-    width: 90%;
-    color: black;
-    text-align: center;
-
-  }
-
-.popUpLeft{
-    float: left;
-    width: 60%;
-    background-color: green;
-}
-.popUpRight{
-    float: left;
-    width: 40%;
-    background-color: yellow;
+  position: absolute;
+  /* background-color: pink; */
+  width: 100%;
+  color: black;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.popUpLeft {
+  float: left;
+  width: 60%;
+  border-radius: 25px;
+
+}
+.popUpRight {
+  float: left;
+  width: 40%;
+
+}
 
 .popUpContainerMid {
   float: left;
   width: 80%;
-  background-color: red;
+  background-color: white;
+  box-shadow: -14.2222px -14.2222px 35.5556px rgba(0, 0, 0, 0.08),
+    14.2222px 14.2222px 35.5556px rgba(0, 0, 0, 0.08);
+
+  border-radius: 25px;
 }
 .popUpContainerSide {
   float: left;
-  width: 5%;
-  background-color: blue;
+  width: 10%;
+}
+
+.mainImgStyle{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+display: cover;
+/* border-radius: 25px; */
 }

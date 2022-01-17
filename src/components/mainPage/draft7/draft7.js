@@ -1,10 +1,7 @@
 import React from "react";
 import "./draft7.css";
 import { Hover } from "../hoverfunc.js"
-import a7 from "../../../assets/images/mainPage/7a.svg";
-import b7 from "../../../assets/images/mainPage/7b.svg";
-import c7 from "../../../assets/images/mainPage/7c.svg";
-import d7 from "../../../assets/images/mainPage/7d.svg";
+import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 const draft7 = () => {
@@ -13,14 +10,13 @@ const draft7 = () => {
     <>
       <div className="draft7Container">
         <div className="draft7BackImage">
-          <img src={b7} alt="7b" className="pos7b" />
+          <img src={pinIcon} alt="7b" className="pos7b" />
           <span class="infotext">Among Our Peers</span>
-
-          <img src={d7} alt="7d" className="pos7d" />
+          <img src={pinIcon} alt="7d" className="pos7d" />
           <span class="infotext">To Fulfill</span>
-          <img src={a7} alt="7a" className="pos7a" />
+          <img src={pinIcon} alt="7a" className="pos7a" />
           <span class="infotext">Others Around</span>
-          <img src={c7} alt="7c" className="pos7c" />
+          <img src={pinIcon} alt="7c" className="pos7c" />
           <span class="infotext">Better Version of Us</span>
           <div className="footer">
             <div className="footerLeft">
@@ -35,9 +31,9 @@ const draft7 = () => {
                 </p>
               </div>
             </div>
-            <div className="footerRight" style={{color:"white"}}>
+            <div className="footerRight">
               <span className="iconFloat">To The Exit</span>
-              <img src={arrow} alt="arrow" className="icoStyle" style={{filter: "brightness(0) invert(1)"}} />
+              <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
           </div>
         </div>

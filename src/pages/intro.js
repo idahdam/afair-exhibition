@@ -121,18 +121,18 @@ class FullpageReact extends React.Component {
       <Slide>
         <PopUp />
       </Slide>,
-      <Slide>
-        <Draft7 />
-      </Slide>,
-      <Slide>
-        <Draft6 />
-      </Slide>,
-      <Slide>
-        <Draft5 />
-      </Slide>,
-      <Slide>
-        <Draft4 />
-      </Slide>,
+      // <Slide>
+      //   <Draft7 />
+      // </Slide>,
+      // <Slide>
+      //   <Draft6 />
+      // </Slide>,
+      // <Slide>
+      //   <Draft5 />
+      // </Slide>,
+      // <Slide>
+      //   <Draft4 />
+      // </Slide>,
       <Slide>
         <Transisi />
       </Slide>,
