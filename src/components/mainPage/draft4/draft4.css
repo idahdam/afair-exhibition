@@ -96,7 +96,7 @@
 .pos8:hover + .infotext {
   opacity: 1;
 }
-.content{
+.content {
   position: absolute;
 }
 .footer {
@@ -117,6 +117,9 @@
   float: left;
   margin-top: 6px;
   margin-left: 10px;
+}
+.exitButton {
+  cursor: pointer;
 }
 .infotext2 {
   position: absolute;
@@ -156,7 +159,6 @@
 }
 
 @media only screen and (max-width: 1600px) {
-  
   .draft4BackImage {
     width: 1366px;
     height: 700px;
@@ -167,14 +169,14 @@
     left: 914px;
     top: 112px;
   }
-  
+
   .pos5 {
     position: absolute;
     width: 15px;
     left: 542px;
-    top:281px;
+    top: 281px;
   }
-  
+
   .pos6 {
     position: absolute;
     width: 15px;
@@ -187,7 +189,7 @@
     left: 1286px;
     top: 445px;
   }
-  
+
   .pos8 {
     position: absolute;
     width: 15px;

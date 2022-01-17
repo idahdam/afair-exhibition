@@ -16,7 +16,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.exitButton {
+  cursor: pointer;
+}
 .infotext {
   position: absolute;
   opacity: 0;
@@ -53,7 +55,7 @@
 .pos8d {
   position: absolute;
   left: 1424px;
-top: 341px;
+  top: 341px;
 }
 
 .pos8b:hover {
@@ -144,42 +146,38 @@ top: 341px;
 }
 
 @media only screen and (max-width: 1600px) {
-  
   .draft8BackImage {
     width: 1366px;
     height: 700px;
   }
 
-  
   .pos8a {
     position: absolute;
     width: 15px;
     left: 878px;
     top: 402px;
   }
-  
+
   .pos8b {
     position: absolute;
     width: 15px;
     left: 1150px;
     top: 445px;
   }
-  
+
   .pos8c {
     position: absolute;
     width: 15px;
     left: 382px;
     top: 386px;
   }
-  
+
   .pos8d {
     width: 15px;
     position: absolute;
     left: 1033px;
-  top: 198px;
+    top: 198px;
   }
-  
-
 
   .footer {
     position: absolute;

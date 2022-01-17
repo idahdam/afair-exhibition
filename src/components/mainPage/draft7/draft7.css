@@ -16,7 +16,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.exitButton {
+  cursor: pointer;
+}
 .infotext {
   position: absolute;
   opacity: 0;
@@ -155,21 +157,21 @@
     left: 340px;
     top: 138px;
   }
-  
+
   .pos7b {
     position: absolute;
     width: 15px;
     left: 1080px;
     top: 279px;
   }
-  
+
   .pos7c {
     position: absolute;
     width: 15px;
     left: 699px;
     top: 340px;
   }
-  
+
   .pos7d {
     width: 15px;
     position: absolute;

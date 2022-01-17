@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
-const draft4 = () => {
+const Draft4 = () => {
   const history = useHistory();
   Hover();
   return (
@@ -38,15 +38,13 @@ const draft4 = () => {
                 </p>
               </div>
             </div>
-            <div className="footerRight">
-              <span
-                className="iconFloat"
-                onClick={() => {
-                  history.push("/exit");
-                }}
-              >
-                To The Exit
-              </span>
+            <div
+              className="footerRight exitButton"
+              onClick={() => {
+                history.push("/exit");
+              }}
+            >
+              <span className="iconFloat">To The Exit</span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
           </div>
@@ -56,4 +54,4 @@ const draft4 = () => {
   );
 };
 
-export default draft4;
+export default Draft4;

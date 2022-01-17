@@ -1,18 +1,20 @@
 import React from "react";
 import "./draft6.css";
-import { Hover } from "../hoverfunc.js"
+import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
-const draft6 = () => {
+import { useHistory } from "react-router-dom";
+const Draft6 = () => {
+  const history = useHistory();
   Hover();
   return (
     <>
       <div className="draft6Container">
         <div className="draft6BackImage">
-          <img src={pinIcon } alt="6a" className="pos6a" />
+          <img src={pinIcon} alt="6a" className="pos6a" />
           <span class="infotext">Our body</span>
-          <img src={pinIcon } alt="6b" className="pos6b" />
+          <img src={pinIcon} alt="6b" className="pos6b" />
           <span class="infotext">In Action</span>
           <div className="footer">
             <div className="footerLeft">
@@ -27,7 +29,12 @@ const draft6 = () => {
                 </p>
               </div>
             </div>
-            <div className="footerRight">
+            <div
+              className="footerRight exitButton"
+              onClick={() => {
+                history.push("/exit");
+              }}
+            >
               <span className="iconFloat">To The Exit</span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
@@ -38,5 +45,4 @@ const draft6 = () => {
   );
 };
 
-export default draft6;
-
+export default Draft6;

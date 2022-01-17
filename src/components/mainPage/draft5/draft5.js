@@ -1,22 +1,24 @@
 import React from "react";
 import "./draft5.css";
 import { Hover } from "../hoverfunc.js";
+import { useHistory } from "react-router-dom";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
-const draft5 = () => {
+const Draft5 = () => {
+  const history = useHistory();
   Hover();
   return (
     <>
       <div className="draft5Container">
         <div className="draft5BackImage">
-          <img src={pinIcon } alt="5a" className="pos5a"/>
+          <img src={pinIcon} alt="5a" className="pos5a" />
           <span class="infotext">this section 5a</span>
-          <img src={pinIcon } alt="5b" className="pos5b" />
+          <img src={pinIcon} alt="5b" className="pos5b" />
           <span class="infotext">this section 5b</span>
-          <img src={pinIcon } alt="5c" className="pos5c" />
+          <img src={pinIcon} alt="5c" className="pos5c" />
           <span class="infotext">this section 5c</span>
-          <img src={pinIcon } alt="5d" className="pos5d" />
+          <img src={pinIcon} alt="5d" className="pos5d" />
           <span class="infotext">this section 5d</span>
           <div className="footer">
             <div className="footerLeft">
@@ -31,7 +33,12 @@ const draft5 = () => {
                 </p>
               </div>
             </div>
-            <div className="footerRight">
+            <div
+              className="footerRight exitButton"
+              onClick={() => {
+                history.push("/exit");
+              }}
+            >
               <span className="iconFloat">To The Exit</span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
@@ -42,4 +49,4 @@ const draft5 = () => {
   );
 };
 
-export default draft5;
+export default Draft5;

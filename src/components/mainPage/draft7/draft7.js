@@ -1,10 +1,12 @@
 import React from "react";
 import "./draft7.css";
-import { Hover } from "../hoverfunc.js"
+import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
-const draft7 = () => {
+import { useHistory } from "react-router-dom";
+const Draft7 = () => {
+  const history = useHistory();
   Hover();
   return (
     <>
@@ -31,7 +33,12 @@ const draft7 = () => {
                 </p>
               </div>
             </div>
-            <div className="footerRight">
+            <div
+              className="footerRight exitButton"
+              onClick={() => {
+                history.push("/exit");
+              }}
+            >
               <span className="iconFloat">To The Exit</span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
@@ -42,6 +49,4 @@ const draft7 = () => {
   );
 };
 
-export default draft7;
-
-
+export default Draft7;
