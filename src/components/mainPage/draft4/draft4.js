@@ -1,10 +1,12 @@
 import React from "react";
 import "./draft4.css";
 import { Hover } from "../hoverfunc.js";
+import { useHistory } from "react-router-dom";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 const draft4 = () => {
+  const history = useHistory();
   Hover();
   return (
     <>
@@ -37,7 +39,14 @@ const draft4 = () => {
               </div>
             </div>
             <div className="footerRight">
-              <span className="iconFloat">To The Exit</span>
+              <span
+                className="iconFloat"
+                onClick={() => {
+                  history.push("/exit");
+                }}
+              >
+                To The Exit
+              </span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
           </div>
