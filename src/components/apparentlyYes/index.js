@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { useSpring, animated, config } from "react-spring";
 import "./index.css";
 
 const ApparentlyYes = () => {
   const [flip, set] = useState(false);
+  const history = useHistory();
 
   const words = [
     "MAYBE THERE ARE THINGS THAT YOU",
     "OVERLOOK ESPECIALLY SINCE THE",
     "PANDEMIC EMERGED. THOSE",
     "ACTIVITIES THAT REQUIRE PHYSICAL",
-    "NTERACTIONS ARE NOW LIMITED BY",
-    "EGULATIONS TO PREVENT THE",
+    "INTERACTIONS ARE NOW LIMITED BY",
+    "REGULATIONS TO PREVENT THE",
     "TRANSMISSION FURTHER. NEEDS",
     "THAT CAN BE FULFILLED BY GOING TO",
     "A CERTAIN PLACE, CAN NOW BE",
@@ -28,8 +30,11 @@ const ApparentlyYes = () => {
     reverse: flip,
     delay: 500,
     // config: config.molasses,
-    config: { duration: 50000 },
+    config: { duration: 5000 },
     // onRest: () => set(!flip),
+    onRest: () => {
+      history.push("/transition");
+    },
   });
 
   return (

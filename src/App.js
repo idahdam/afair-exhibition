@@ -1,6 +1,6 @@
 import "./App.css";
 import Intro from "./pages/intro";
-import MainPage  from "./components/mainPage/draft4/draft4";
+import MainPage from "./components/mainPage/draft4/draft4";
 import Fullpage from "./pages/fullpage";
 import Landing from "./components/landingpage/landing";
 import Register from "./components/introComp/register";
@@ -21,8 +21,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Fullpage} />
-          <Route exact path="/welcome" component={Intro} />
-          <Route exact path="/main" component={MainPage} />
+          {/* <Route exact path="/welcome" component={Intro} /> */}
+          {/* <Route exact path="/main" component={MainPage} /> */}
           <Route exact path="/build" component={Landing} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/video" component={Video} />
@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/scroll" component={Scrollpage} />
           <Route exact path="/apparently-yes" component={ApparentlyYes} />
           <Route exact path="/index" component={AllItems} />
-          <Route exact path="/into-the-wayout-future" component={AllItems} />
+          <Route exact path="/into-the-wayout-future" component={MainPage} />
           <Route
             exact
             path="/into-the-wayout-future/compact-living"
