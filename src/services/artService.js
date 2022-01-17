@@ -7,5 +7,5 @@ const getArt = async () => {
 };
 
 export const artService = {
-  getAboutUs,
+  getArt,
 };

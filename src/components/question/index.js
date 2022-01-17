@@ -1,8 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import background from "../../assets/images/image3.png";
 import "./index.css";
 
 const Question = () => {
+  const history = useHistory();
   return (
     <div className="container">
       <img src={background} alt="Yes" className="image" />
@@ -10,10 +12,20 @@ const Question = () => {
         <div>Have you noticed any changes in your life recently?</div>
         <br />
         <div class="row">
-          <div class="column" onClick={() => {}}>
+          <div
+            class="column"
+            onClick={() => {
+              history.push("/apparently-yes");
+            }}
+          >
             Apparently, yes
           </div>
-          <div class="column" onClick={() => {}}>
+          <div
+            class="column"
+            onClick={() => {
+              history.push("/transition");
+            }}
+          >
             No, not really
           </div>
         </div>
