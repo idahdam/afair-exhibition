@@ -17,6 +17,9 @@
     "react-router-dom": "5",
     "react-scripts": "5.0.0",
     "react-spring": "^9.4.1",
+    "react-spring-3d-carousel": "^1.2.1",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
