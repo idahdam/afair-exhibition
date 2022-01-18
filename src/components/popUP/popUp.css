@@ -36,19 +36,20 @@
 
 .popUpLeft {
   float: left;
-  width: 60%;
+  width: 55%;
   border-radius: 25px;
 
 }
 .popUpRight {
   float: left;
-  width: 40%;
+  width: 45%;
 
 }
 
 .popUpContainerMid {
   float: left;
   width: 80%;
+  height: 20%p;
   background-color: white;
   box-shadow: -14.2222px -14.2222px 35.5556px rgba(0, 0, 0, 0.08),
     14.2222px 14.2222px 35.5556px rgba(0, 0, 0, 0.08);
@@ -64,6 +65,22 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-display: cover;
-/* border-radius: 25px; */
+  display: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.popUpTextContainer{
+  width: 410px;
+  padding: 5%;
+  height: 400px;
+  text-align: left;
+  overflow: auto;
+}
+
+.popUpTextContent{
+  margin-top: 5%;
+}
+.ContentImg{
+  width: 100%;
 }

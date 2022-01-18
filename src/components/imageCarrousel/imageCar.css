@@ -25,11 +25,15 @@
   width: 80%;
 }
 
-img{
-    object-fit: cover;
+img {
+  object-fit: cover;
 }
 .imageContent {
   border-radius: 26.6667px;
+}
+
+.imageContent:hover {
+  transform: scale(1.1);
 }
 .imgCarContainer {
   position: relative;
@@ -38,7 +42,7 @@ img{
 }
 .imgCarText {
   position: absolute;
-  color:white;
+  color: white;
   bottom: 5%;
   left: 5%;
   text-align: left;
@@ -47,96 +51,96 @@ img{
     transform: translate(-50%, -50%); */
 }
 
-.imgCarTitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 60px;
+.imgCarTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 60px;
 }
 
-.imgCarSubTitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 60px;
+.imgCarSubTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 60px;
 }
 
-.buttonImgCar{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    margin-top: 150%;
+.buttonImgCar {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-top: 150%;
 }
 
-.buttonImgCar:hover{
-    transform: scale(1.5);
+.buttonImgCar:hover {
+  transform: scale(1.5);
 }
 
-.iconArrowLeft{
-    transform: scaleX(-1);
+.iconArrowLeft {
+  transform: scaleX(-1);
 }
 
 .footerCar {
-    position: absolute;
-    max-width: 1600px;
-    bottom: 0;
-    width: 100%;
-  }
-  .footerCarLeft {
-    float: left;
-    padding-left: 70px;
-  }
-  
-  .footerCarRight {
-    float: Right;
-    padding-right: 70px;
-  }
-  .iconCarFloat {
-    float: left;
-    margin-top: 6px;
-    margin-left: 10px;
-    color: black;
-  }
-  .exitCarButton {
-    cursor: pointer;
-  }
-  .infoCarText {
-    position: absolute;
-    opacity: 0;
-    width: 500px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px 15px;
-    top: -170px;
-    left: 80px;
-    transition: opacity 0.1s ease-in;
-    z-index: 2;
-    text-align: left;
-    border: 3px;
-    border-color: black;
-    border-style: solid;
-  }
-  
-  .icoCarStyle {
-    float: left;
-    width: 20px;
-    margin-left: 10px;
-    font-family: "SFProDisplay";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-  }
-  
-  .infoCarStyle:hover {
-    transform: scale(1.5);
-  }
-  
-  .infoCarStyle:hover + .infoCarText {
-    opacity: 1;
-  }
+  position: absolute;
+  max-width: 1600px;
+  bottom: 0;
+  width: 100%;
+}
+.footerCarLeft {
+  float: left;
+  padding-left: 70px;
+}
+
+.footerCarRight {
+  float: Right;
+  padding-right: 70px;
+}
+.iconCarFloat {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+  color: black;
+}
+.exitCarButton {
+  cursor: pointer;
+}
+.infoCarText {
+  position: absolute;
+  opacity: 0;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  top: -170px;
+  left: 80px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+  text-align: left;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+.icoCarStyle {
+  float: left;
+  width: 20px;
+  margin-left: 10px;
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.infoCarStyle:hover {
+  transform: scale(1.5);
+}
+
+.infoCarStyle:hover + .infoCarText {
+  opacity: 1;
+}
