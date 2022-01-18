@@ -3,7 +3,15 @@ import Carousel from "react-spring-3d-carousel";
 import "./imageCar.css";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-
+import test1img from "../../assets/images/test/1.png";
+import test2img from "../../assets/images/test/2.png";
+import test3img from "../../assets/images/test/3.png";
+import test4img from "../../assets/images/test/4.png";
+import test5img from "../../assets/images/test/5.png";
+import test6img from "../../assets/images/test/6.png";
+import test7img from "../../assets/images/test/7.png";
+import arrow from "../../assets/images/mainPage/arrowDark.svg";
+import info from "../../assets/images/mainPage/iconInfo.svg";
 export default class Example extends Component {
   state = {
     goToSlide: 0,
@@ -15,59 +23,99 @@ export default class Example extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/800/801/?random" alt="1" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test1img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Xiao ting</span>
+            <br />
+            <span className="imgCarSubTitle">Kep1er</span>
+          </div>
+        </div>
+      ),
     },
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/800/802/?random" alt="2" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test2img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Xiao ting</span>
+            <br />
+            <span className="imgCarSubTitle">Kep1er</span>
+          </div>
+        </div>
+      ),
     },
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/600/803/?random" alt="3" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test3img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Jinsoul</span>
+            <br />
+            <span className="imgCarSubTitle">Loona</span>
+          </div>
+        </div>
+      ),
     },
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/800/500/?random" alt="4" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test4img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Ryujin</span>
+            <br />
+            <span className="imgCarSubTitle">Itzy</span>
+          </div>
+        </div>
+      ),
     },
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/800/804/?random" alt="5" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test5img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Sana</span>
+            <br />
+            <span className="imgCarSubTitle">Twice</span>
+          </div>
+        </div>
+      ),
     },
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/500/800/?random" alt="6" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test6img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Saerom</span>
+            <br />
+            <span className="imgCarSubTitle">Fromis_9</span>
+          </div>
+        </div>
+      ),
     },
     {
       key: uuidv4(),
-      content: <img src="https://picsum.photos/800/600/?random" alt="7" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/805/800/?random" alt="8" />,
+      content: (
+        <div className="imgCarContainer">
+          <img src={test7img} alt="1" className="imageContent" />
+          <div className="imgCarText">
+            <span className="imgCarTitle">Karina</span>
+            <br />
+            <span className="imgCarSubTitle">Aespa</span>
+          </div>
+        </div>
+      ),
     },
   ];
 
   render() {
     return (
-      //   <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
-
-      //     <div
-      //       style={{
-      //         margin: "0 auto",
-      //         marginTop: "2rem",
-      //         width: "50%",
-      //         display: "flex",
-      //         justifyContent: "space-around",
-      //       }}
-      //     >
-      //       <div>
-
-      //         &nbsp; &nbsp; &nbsp; &nbsp;
-
-      //       </div>
-      //     </div>
-      //   </div>
-
       <div className="carrouselBackground">
         <div className="carrouselContainer">
           <div className="carrouselSide">
@@ -76,18 +124,19 @@ export default class Example extends Component {
               onClick={() => {
                 this.setState({ goToSlide: this.state.goToSlide - 1 });
               }}
+              className="buttonImgCar"
             >
-              Left Arrow
+              <img src={arrow} alt="arrow" className="iconArrowLeft" />
             </button>
           </div>
           <div className="carrouselMid">
-          <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
-            <Carousel
-              slides={this.slides}
-              goToSlide={this.state.goToSlide}
-              offsetRadius={this.state.offsetRadius}
-              animationConfig={this.state.config}
-            />
+            <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
+              <Carousel
+                slides={this.slides}
+                goToSlide={this.state.goToSlide}
+                offsetRadius={this.state.offsetRadius}
+                animationConfig={this.state.config}
+              />
             </div>
           </div>
           <div className="carrouselSide">
@@ -96,9 +145,26 @@ export default class Example extends Component {
               onClick={() => {
                 this.setState({ goToSlide: this.state.goToSlide + 1 });
               }}
+              className="buttonImgCar"
             >
-              Right Arrow
+              <img src={arrow} alt="arrow" className="iconArrowRight" />
             </button>
+          </div>{" "}
+          <div className="footerCar">
+            <div className="footerCarLeft">
+              <img src={info} alt="info" className="infoCarStyle" />
+              <div class="infoCarText">
+                <p>Into The Wayout Future</p>
+                <p>
+                  Unseen changes that is only felt by ourselves. They often
+                  relate to each and every individual's emotions
+                </p>
+              </div>
+            </div>
+            <div className="footerCarRight">
+              <span className="iconCarFloat">To The Exit</span>
+              <img src={arrow} alt="arrow" className="icoCarStyle" />
+            </div>
           </div>
         </div>
       </div>
