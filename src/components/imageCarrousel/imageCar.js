@@ -12,6 +12,7 @@ import test6img from "../../assets/images/test/6.png";
 import test7img from "../../assets/images/test/7.png";
 import arrow from "../../assets/images/mainPage/arrowDark.svg";
 import info from "../../assets/images/mainPage/iconInfo.svg";
+import topLogo from "../../assets/images/iconLogo_black.svg";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
@@ -171,53 +172,79 @@ function ImgCar() {
 
   return (
     <div className="carrouselBackground">
-      <div className="carrouselContainer">
-        <div className="carrouselSide">
-          {" "}
-          <button
-            onClick={() => {
-              setState({ goToSlide: state.goToSlide - 1 });
-            }}
-            className="buttonImgCar"
-          >
-            <img src={arrow} alt="arrow" className="iconArrowLeft" />
-          </button>
-        </div>
-        <div className="carrouselMid">
-          <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
-            <Carousel
-              slides={slides}
-              goToSlide={state.goToSlide}
-              offsetRadius={10}
-              animationConfig={state.config}
-            />
-          </div>
-        </div>
-        <div className="carrouselSide">
-          {" "}
-          <button
-            onClick={() => {
-              setState({ goToSlide: state.goToSlide + 1 });
-            }}
-            className="buttonImgCar"
-          >
-            <img src={arrow} alt="arrow" className="iconArrowRight" />
-          </button>
-        </div>{" "}
-        <div className="footerCar">
-          <div className="footerCarLeft">
-            <img src={info} alt="info" className="infoCarStyle" />
-            <div class="infoCarText">
-              <p>Into The Wayout Future</p>
-              <p>
-                Unseen changes that is only felt by ourselves. They often relate
-                to each and every individual's emotions
-              </p>
+      <div className="carrouselFullContainer">
+        <div className="topBar">
+          <div className="topBarWrapper">
+            <div className="topBarLeft">
+              <div className="topBarLeftWrapper">
+                <img src={topLogo} alt="arrow" className="iconArrowRight" />
+              </div>
+              <div className="topBarLeftWrapper">
+                <div className="topBarLeftWrapper2">
+                  <div className="topBarLeftTextWrapper">AFFAIR 2022</div>
+                </div>
+              </div>
+            </div>
+            <div className="topBarRight">
+
+              <div className="topBarLeftWrapper2">
+                <div className="topBarRightTextWrapper">index</div>
+              </div>
             </div>
           </div>
-          <div className="footerRight exitButton">
-            <span className="iconFloat">To The Exit</span>
-            <img src={arrow} alt="arrow" className="icoStyle" />
+        </div>
+
+        <div className="carrouselContainer">
+          <div className="carrouselSide">
+            {" "}
+            <button
+              onClick={() => {
+                setState({ goToSlide: state.goToSlide - 1 });
+              }}
+              className="buttonImgCar"
+            >
+              <img src={arrow} alt="arrow" className="iconArrowLeft" />
+            </button>
+          </div>
+          <div className="carrouselMid">
+            <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
+              <Carousel
+                slides={slides}
+                goToSlide={state.goToSlide}
+                offsetRadius={10}
+                animationConfig={state.config}
+              />
+            </div>
+          </div>
+          <div className="carrouselSide">
+            {" "}
+            <button
+              onClick={() => {
+                setState({ goToSlide: state.goToSlide + 1 });
+              }}
+              className="buttonImgCar"
+            >
+              <img src={arrow} alt="arrow" className="iconArrowRight" />
+            </button>
+          </div>{" "}
+        </div>
+
+        <div className="footerCar">
+          <div className="footerCarWrapper">
+            <div className="footerCarLeft">
+              <img src={info} alt="info" className="infoCarStyle" />
+              <div class="infoCarText">
+                <p>Into The Wayout Future</p>
+                <p>
+                  Unseen changes that is only felt by ourselves. They often
+                  relate to each and every individual's emotions
+                </p>
+              </div>
+            </div>
+            <div className="footerCarRight">
+              <span className="iconFloat">To The Exit</span>
+              <img src={arrow} alt="arrow" className="icoStyle" />
+            </div>
           </div>
         </div>
       </div>

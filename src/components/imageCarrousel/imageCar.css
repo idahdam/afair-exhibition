@@ -1,3 +1,51 @@
+.topBar{
+  background-color: #F7F2EC;
+  width: 100%;
+  position: sticky;
+  position: relative;
+  height: 60px;
+}
+
+.topBarWrapper{
+  width: 1500px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topBarLeftWrapper{
+  float: left;
+}
+
+.topBarLeft2Wrapper{
+  position: relative;
+}
+
+.topBarLeftTextWrapper{
+  position: absolute;
+  top:50%;
+  transform: translate(10px, -50%);
+}
+
+.topBarRightTextWrapper{
+  position: absolute;
+  top:50%;
+  transform: translate(-20px, -50%);
+}
+
+.topBarLeft{
+  float: left;
+  margin-left: 2%;
+}
+
+.topBarRight{
+  float: right;
+  margin-right:2%;
+}
+
+
+
 .carrouselBackground {
   position: relative;
   width: 100%;
@@ -29,6 +77,11 @@ img {
 }
 .imageContent {
   border-radius: 26.6667px;
+}
+
+.carrouselFullContainer{
+  width: 100%;
+  height: 100%;
 }
 
 .imageContent:hover {
@@ -84,20 +137,30 @@ img {
   transform: scaleX(-1);
 }
 
-.footerCar {
-  position: absolute;
-  max-width: 1600px;
-  bottom: 0;
+.footerCar{
   width: 100%;
-}
-.footerCarLeft {
-  float: left;
-  padding-left: 70px;
+  position: absolute;
+  height: 60px;
+  bottom: 0;
+  /* transform: translate(0%,750%); */
 }
 
-.footerCarRight {
-  float: Right;
-  padding-right: 70px;
+.footerCarWrapper{
+  width: 1500px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%); ;
+}
+
+.footerCarLeft{
+  float: left;
+  margin-left: 2%;
+}
+
+.footerCarRight{
+  float: right;
+  margin-right: 2%;
 }
 .iconCarFloat {
   float: left;
