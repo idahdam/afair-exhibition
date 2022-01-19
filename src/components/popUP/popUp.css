@@ -2,21 +2,18 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
   color: black;
   font-family: "SFProDisplay Regular";
 }
 
 .popUpContainerWrapper {
   position: absolute;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 1336px;
   max-width: 1336px;
   color: black;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .popUpContainer {
@@ -26,61 +23,91 @@
 .popUpWrapper {
   position: absolute;
   /* background-color: pink; */
-  width: 100%;
+  width: 1060px;
   color: black;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 10%;
+
 }
 
 .popUpLeft {
   float: left;
+  direction: rtl;
+  height: 400px;
   width: 55%;
   border-radius: 25px;
-
 }
 .popUpRight {
   float: left;
+  height: 450px;
+  direction: ltr;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 45%;
-
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
+@keyframes reducetime1 {
+  0% {
+    width: 0;
+    transition: linear 0.8s ease;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes reducetime2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 410px;
+  }
+}
 .popUpContainerMid {
   float: left;
-  width: 80%;
-  height: 20%p;
-  background-color: white;
+  width: 100%;
+  height: 20%;
+  background-color: transparent;
   box-shadow: -14.2222px -14.2222px 35.5556px rgba(0, 0, 0, 0.08),
     14.2222px 14.2222px 35.5556px rgba(0, 0, 0, 0.08);
-
+  background-color: white;
   border-radius: 25px;
+  animation-name: reducetime1;
+  animation-duration: 1s;
+  transition: linear 0.5s ease;
+  left: 50%; /*Add this*/
+  transform: translate(-50%, 0); /*Add this*/
 }
 .popUpContainerSide {
   float: left;
   width: 10%;
 }
 
-.mainImgStyle{
+.mainImgStyle {
   width: 100%;
-  height: 100%;
+  height: 470px;
   object-fit: cover;
   display: cover;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
 
-.popUpTextContainer{
+.popUpTextContainer {
   width: 410px;
   padding: 5%;
   height: 400px;
   text-align: left;
   overflow: auto;
+  animation-name: reducetime2;
+  animation-duration: 1s;
 }
 
-.popUpTextContent{
+.popUpTextContent {
   margin-top: 5%;
 }
-.ContentImg{
+.ContentImg {
   width: 100%;
 }
