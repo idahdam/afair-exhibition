@@ -214,15 +214,15 @@ function ImgCar(props) {
       <div className="carrouselFullContainer">
         <div className="topBar">
           <div className="topBarWrapper">
-            <div className="topBarLeft">
+            <div
+              className="topBarLeft"
+              onClick={() => history.push("/into_the_wayout_future")}
+            >
               <div className="topBarLeftWrapper">
                 <img src={topLogo} alt="arrow" className="iconArrowRight" />
               </div>
               <div className="topBarLeftWrapper">
-                <div
-                  className="topBarLeftWrapper2"
-                  onClick={() => history.push("/into_the_wayout_future")}
-                >
+                <div className="topBarLeftWrapper2">
                   <div className="topBarLeftTextWrapper">AFAIR 2022</div>
                 </div>
               </div>
