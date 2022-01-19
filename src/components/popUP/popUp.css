@@ -105,6 +105,14 @@
   animation-duration: 1s;
 }
 
+.popUpTextTitleH{
+  font-size: 55px;
+}
+
+.popUpTextTitle{
+  font-size: 27px;
+}
+
 .popUpTextContent {
   margin-top: 5%;
 }

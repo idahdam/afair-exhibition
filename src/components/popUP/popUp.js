@@ -18,7 +18,9 @@ const popUp = () => {
               <div className="popUpRight">
                 <div className="popUpTextContainer">
                   <div className="popUpTextTitle">
+                    <span className="popUpTextTitleH">
                     The Lip
+                    </span>
                     <br />
                     Salman Bob
                   </div>
