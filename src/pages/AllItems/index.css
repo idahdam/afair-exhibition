@@ -5,6 +5,11 @@
   font-family: "SFProDisplay Regular"
 }
 
+option{
+  background-color: white;
+  border-radius: 0px;
+  padding-top: 5px;
+}
 .indexWrapper {
   position: absolute;
   width: 100%;
@@ -75,7 +80,7 @@
 .item_image {
   border-radius: 20px;
   object-fit: cover;
-  width: 400px;
+  width: 300px;
   border: 10px green solid transparent;
   height: 250px;
   justify-content: start;
