@@ -1,25 +1,15 @@
 import React from "react";
-
+import "./index.css";
+import Good1 from "./goodBye1";
+import Good2 from "./goodBye2";
+import Good3 from "./goodBye3";
 const GoodBye = () => {
   return (
-    <div className="background2">
-      <div className="bgContainer2">
-        <div className="bgContainerText2" style={{ maxWidth: "50%" }}>
-          <p className="title">
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: "300",
-                lineHeight: "29px",
-              }}
-            >
-              Thank you for your visiting AFAIR 2022 Virtual Exhibition. May our
-              future awaits brightly ahead.
-            </span>
-          </p>
-        </div>
-      </div>
-    </div>
+    <>
+      <Good1 />
+      <Good2 />
+      <Good3 />
+    </>
   );
 };
 
