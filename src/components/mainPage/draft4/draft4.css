@@ -1,3 +1,48 @@
+.topBarMain{
+  background-color: #F7F2EC;
+  width: 100%;
+  position: sticky;
+  height: 60px;
+}
+
+.topBarWrapperMain{
+  width: 1800px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topBarLeftWrapperMain{
+  float: left;
+}
+
+.topBarLeft2WrapperMain{
+  position: relative;
+}
+
+.topBarLeftTextWrapperMain{
+  position: absolute;
+  top:50%;
+  transform: translate(10px, -50%);
+}
+
+.topBarRightTextWrapperMain{
+  position: absolute;
+  top:50%;
+  transform: translate(-20px, -50%);
+}
+
+.topBarLeftMain{
+  float: left;
+  margin-left: 2%;
+}
+
+.topBarRightMain{
+  float: right;
+  margin-right:2%;
+}
+
 .draft4Container {
   background-color: white;
   width: 100%;
@@ -183,6 +228,10 @@
     width: 1366px;
     height: 700px;
   }
+  .topBarWrapperMain{
+    width: 1300px;
+  }
+
   .pos4 {
     position: absolute;
     width: 15px;
@@ -201,7 +250,7 @@
     position: absolute;
     width: 15px;
     left: 199px;
-    top: 463px;
+    top: 423px;
   }
   .pos7 {
     position: absolute;
@@ -213,7 +262,7 @@
   .pos8 {
     position: absolute;
     width: 15px;
-    left: 566px;
+    left: 686px;
     top: 629px;
   }
   .footer {

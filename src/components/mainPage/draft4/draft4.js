@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
+import topLogo from "../../../assets/images/iconLogo_black.svg";
 import { NavLink as Link } from "react-router-dom";
 const Draft4 = () => {
   const history = useHistory();
@@ -13,6 +14,27 @@ const Draft4 = () => {
     <>
       <div className="draft4Container">
         <div className="draft4BackImage">
+
+        <div className="topBarMain">
+          <div className="topBarWrapperMain">
+            <div className="topBarLeftMain">
+              <div className="topBarLeftWrapperMain">
+                <img src={topLogo} alt="arrow" className="iconArrowRight" />
+              </div>
+              <div className="topBarLeftWrapperMain">
+                <div className="topBarLeftWrapper2"Main>
+                  <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                </div>
+              </div>
+            </div>
+            <div className="topBarRightMain">
+              <div className="topBarLeftWrapper2Main">
+                <div className="topBarRightTextWrapperMain">index</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
           <img src={pinIcon} alt="img5" className="pos4" />
           <div
             className="infotext"

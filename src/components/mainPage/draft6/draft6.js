@@ -5,6 +5,7 @@ import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import { useHistory } from "react-router-dom";
+import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft6 = () => {
   const history = useHistory();
   Hover();
@@ -12,6 +13,25 @@ const Draft6 = () => {
     <>
       <div className="draft6Container">
         <div className="draft6BackImage">
+          <div className="topBarMain">
+            <div className="topBarWrapperMain">
+              <div className="topBarLeftMain">
+                <div className="topBarLeftWrapperMain">
+                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                </div>
+                <div className="topBarLeftWrapperMain">
+                  <div className="topBarLeftWrapper2" Main>
+                    <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                  </div>
+                </div>
+              </div>
+              <div className="topBarRightMain">
+                <div className="topBarLeftWrapper2Main">
+                  <div className="topBarRightTextWrapperMain">index</div>
+                </div>
+              </div>
+            </div>
+          </div>
           <img src={pinIcon} alt="6a" className="pos6a" />
           <span class="infotext">Our body</span>
           <img src={pinIcon} alt="6b" className="pos6b" />
