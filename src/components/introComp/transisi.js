@@ -7,7 +7,7 @@ const Transisi = () => {
   useEffect(() => {
     let interval = null;
     interval = setInterval(() => {
-      history.push("/into-the-wayout-future");
+      history.push("/into_the_wayout_future");
     }, 3000);
     // }
     return () => (interval ? clearInterval(interval) : null);

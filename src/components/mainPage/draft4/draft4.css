@@ -1,46 +1,46 @@
-.topBarMain{
-  background-color: #F7F2EC;
+.topBarMain {
+  background-color: #f7f2ec;
   width: 100%;
   position: sticky;
   height: 60px;
 }
 
-.topBarWrapperMain{
+.topBarWrapperMain {
   width: 1800px;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.topBarLeftWrapperMain{
+.topBarLeftWrapperMain {
   float: left;
 }
 
-.topBarLeft2WrapperMain{
+.topBarLeft2WrapperMain {
   position: relative;
 }
 
-.topBarLeftTextWrapperMain{
+.topBarLeftTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(10px, -50%);
 }
 
-.topBarRightTextWrapperMain{
+.topBarRightTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(-20px, -50%);
 }
 
-.topBarLeftMain{
+.topBarLeftMain {
   float: left;
   margin-left: 2%;
 }
 
-.topBarRightMain{
+.topBarRightMain {
   float: right;
-  margin-right:2%;
+  margin-right: 2%;
 }
 
 .draft4Container {
@@ -60,6 +60,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.infotext {
+  font-family: "SFProDisplay Regular";
 }
 
 .infotext4 {
@@ -228,7 +232,7 @@
     width: 1366px;
     height: 700px;
   }
-  .topBarWrapperMain{
+  .topBarWrapperMain {
     width: 1300px;
   }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "react-spring-3d-carousel";
 import "./imageCar.css";
 import { v4 as uuidv4 } from "uuid";
@@ -18,6 +18,8 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { makeStyles } from "@material-ui/core/styles";
 import PopUp from "../popUP/popUp";
+import { Link, useHistory, useParams } from "react-router-dom";
+import { artService } from "../../services/artService";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -34,8 +36,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ImgCar(props) {
+  const { params } = useParams();
+  const history = useHistory();
   const classes = useStyles();
+  const [modalData, setModalData] = useState({});
   const [open, setOpen] = React.useState(false);
+  const [data, setData] = useState([]);
 
   const handleOpen = () => {
     setOpen(true);
@@ -51,6 +57,39 @@ function ImgCar(props) {
     config: config.gentle,
   });
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await artService.getArtWithParams(params);
+      console.log(response);
+      setData(response.data.data);
+    };
+
+    fetchData();
+  }, []);
+
+  let sliders = data.map((item, index) => ({
+    key: uuidv4(),
+    content: (
+      <div className="imgCarContainer">
+        <img
+          src={item.attributes.art.data.attributes.url}
+          alt="1"
+          className="imageContent"
+        />
+        <div className="imgCarText">
+          <span className="imgCarTitle">{item.attributes.title}</span>
+          <br />
+          <span className="imgCarSubTitle">{item.attributes.author}</span>
+        </div>
+      </div>
+    ),
+    onClick: () => {
+      setState({ goToSlide: index });
+      setModalData(item);
+      setOpen(true);
+    },
+  }));
+  console.log(sliders);
   let slides = [
     {
       key: uuidv4(),
@@ -62,7 +101,7 @@ function ImgCar(props) {
             className="imageContent"
             onClick={handleOpen}
           />
-          <Modal
+          {/* <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
             className={classes.modal}
@@ -79,7 +118,7 @@ function ImgCar(props) {
                 <PopUp />
               </div>
             </Fade>
-          </Modal>
+          </Modal> */}
           <div className="imgCarText">
             <span className="imgCarTitle">Xiao ting</span>
             <br />
@@ -180,14 +219,20 @@ function ImgCar(props) {
                 <img src={topLogo} alt="arrow" className="iconArrowRight" />
               </div>
               <div className="topBarLeftWrapper">
-                <div className="topBarLeftWrapper2">
-                  <div className="topBarLeftTextWrapper">AFFAIR 2022</div>
+                <div
+                  className="topBarLeftWrapper2"
+                  onClick={() => history.push("/into_the_wayout_future")}
+                >
+                  <div className="topBarLeftTextWrapper">AFAIR 2022</div>
                 </div>
               </div>
             </div>
             <div className="topBarRight">
-              <div className="topBarLeftWrapper2">
-                <div className="topBarRightTextWrapper">index</div>
+              <div
+                className="topBarLeftWrapper2"
+                onClick={() => history.push("/index")}
+              >
+                <div className="topBarRightTextWrapper">Index</div>
               </div>
             </div>
           </div>
@@ -208,7 +253,7 @@ function ImgCar(props) {
           <div className="carrouselMid">
             <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
               <Carousel
-                slides={slides}
+                slides={sliders}
                 goToSlide={state.goToSlide}
                 offsetRadius={10}
                 animationConfig={state.config}
@@ -227,7 +272,28 @@ function ImgCar(props) {
             </button>
           </div>{" "}
         </div>
-
+        {Object.keys(modalData).length !== 0 ? (
+          <>
+            <Modal
+              aria-labelledby="transition-modal-title"
+              aria-describedby="transition-modal-description"
+              className={classes.modal}
+              open={open}
+              onClose={handleClose}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}
+            >
+              <Fade in={open}>
+                <div className={classes.transparent}>
+                  <PopUp props={modalData} />
+                </div>
+              </Fade>
+            </Modal>
+          </>
+        ) : null}
         <div className="footerCar">
           <div className="footerCarWrapper">
             <div className="footerCarLeft">
@@ -240,7 +306,12 @@ function ImgCar(props) {
                 </p>
               </div>
             </div>
-            <div className="footerCarRight">
+            <div
+              className="footerCarRight"
+              onClick={() => {
+                history.push("/exit");
+              }}
+            >
               <span className="iconFloat">To The Exit</span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>

@@ -2,9 +2,9 @@ import "./App.css";
 // import Intro from "./pages/intro";
 import MainPage from "./components/mainPage/draft4/draft4";
 import Draft5 from "./components/mainPage/draft5/draft5";
-import Draft6  from "./components/mainPage/draft6/draft6";
-import Draft7  from "./components/mainPage/draft7/draft7";
-import Draft8  from "./components/mainPage/draft8/draft8";
+import Draft6 from "./components/mainPage/draft6/draft6";
+import Draft7 from "./components/mainPage/draft7/draft7";
+import Draft8 from "./components/mainPage/draft8/draft8";
 import Fullpage from "./pages/fullpage";
 import Landing from "./components/landingpage/landing";
 import Register from "./components/introComp/register";
@@ -38,24 +38,20 @@ function App() {
           <Route exact path="/imgBuild" component={ImgBuild} />
           <Route exact path="/apparently-yes" component={ApparentlyYes} />
           <Route exact path="/index" component={AllItems} />
-          <Route exact path="/into-the-wayout-future" component={MainPage} />
-          <Route exact path="/draft5" component={Draft5} />
-          <Route exact path="/draft6" component={Draft6} />
-          <Route exact path="/draft7" component={Draft7} />
-          <Route exact path="/draft8" component={Draft8} />
+          <Route exact path="/into_the_wayout_future" component={MainPage} />
           <Route
             exact
-            path="/into-the-wayout-future/compact-living"
-            component={AllItems}
+            path="/into_the_wayout_future/:params"
+            component={ImgBuild}
           />
-          <Route exact path="/understanding-us" component={AllItems} />
-          <Route exact path="/understanding-us/:params" component={AllItems} />
-          <Route exact path="/bodily-presence" component={AllItems} />
-          <Route exact path="/bodily-presence/:params" component={AllItems} />
-          <Route exact path="/everyone-as-well" component={AllItems} />
-          <Route exact path="/everyone-as-well/:params" component={AllItems} />
-          <Route exact path="/in-where-we-exist" component={AllItems} />
-          <Route exact path="/in-where-we-exist/:params" component={AllItems} />
+          <Route exact path="/understanding_us" component={Draft5} />
+          <Route exact path="/understanding_us/:params" component={ImgBuild} />
+          <Route exact path="/bodily_presence" component={Draft6} />
+          <Route exact path="/bodily_presence/:params" component={ImgBuild} />
+          <Route exact path="/everyone_as_well" component={Draft7} />
+          <Route exact path="/everyone_as_well/:params" component={ImgBuild} />
+          <Route exact path="/in_where_we_exist" component={Draft8} />
+          <Route exact path="/in_where_we_exist/:params" component={ImgBuild} />
           <Route exact path="/exit" component={Exit} />
           <Route
             exact

@@ -6,7 +6,7 @@ import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
-import { NavLink as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Draft4 = () => {
   const history = useHistory();
   Hover();
@@ -14,36 +14,37 @@ const Draft4 = () => {
     <>
       <div className="draft4Container">
         <div className="draft4BackImage">
-
-        <div className="topBarMain">
-          <div className="topBarWrapperMain">
-            <div className="topBarLeftMain">
-              <div className="topBarLeftWrapperMain">
-                <img src={topLogo} alt="arrow" className="iconArrowRight" />
+          <div className="topBarMain">
+            <div className="topBarWrapperMain">
+              <div className="topBarLeftMain">
+                <div className="topBarLeftWrapperMain">
+                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                </div>
+                <div className="topBarLeftWrapperMain">
+                  <div className="topBarLeftWrapper2" Main>
+                    <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                  </div>
+                </div>
               </div>
-              <div className="topBarLeftWrapperMain">
-                <div className="topBarLeftWrapper2"Main>
-                  <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+              <div className="topBarRightMain">
+                <div className="topBarLeftWrapper2Main">
+                  <div className="topBarRightTextWrapperMain">index</div>
                 </div>
               </div>
             </div>
-            <div className="topBarRightMain">
-              <div className="topBarLeftWrapper2Main">
-                <div className="topBarRightTextWrapperMain">index</div>
-              </div>
+          </div>
+
+          <Link to="/into_the_wayout_future/compact_living">
+            <img src={pinIcon} alt="img5" className="pos4" />
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Compact Living</div>
+              <div className="infoContent">How we live in the future</div>
             </div>
-          </div>
-        </div>
-        
-          <img src={pinIcon} alt="img5" className="pos4" />
-          <div
-            className="infotext"
-            style={{ transform: "translate(-110%, 10%)" }}
-          >
-            <div className="infoTitle">Compact Living</div>
-            <div className="infoContent">How we live in the future</div>
-          </div>
-          <Link to="/draft5">
+          </Link>
+          <Link to="/understanding_us">
             <img src={pinIcon} alt="img5" className="pos5" />
             <div className="infotext">
               <div className="infoTitle">Understanding Us</div>
@@ -53,7 +54,7 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/draft6">
+          <Link to="/bodily_presence">
             <img src={pinIcon} alt="img5" className="pos6" />
             <div className="infotext">
               <div className="infoTitle">Bodily Presence</div>
@@ -63,7 +64,7 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/draft7">
+          <Link to="/everyone_as_well">
             <img src={pinIcon} alt="img5" className="pos7" />
             <div
               className="infotext"
@@ -76,7 +77,7 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/draft8">
+          <Link to="/in_where_we_exist">
             <img src={pinIcon} alt="img5" className="pos8" />
             <div className="infotext">
               <div className="infoTitle">In Where We Exist</div>
