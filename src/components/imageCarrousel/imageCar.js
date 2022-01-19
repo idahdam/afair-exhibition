@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ImgCar() {
+function ImgCar(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -186,7 +186,6 @@ function ImgCar() {
               </div>
             </div>
             <div className="topBarRight">
-
               <div className="topBarLeftWrapper2">
                 <div className="topBarRightTextWrapper">index</div>
               </div>
