@@ -45,7 +45,7 @@ function ImgCar() {
   };
   const [state, setState] = useState({
     goToSlide: 0,
-    offsetRadius: 2,
+    offsetRadius: 10,
     showNavigation: true,
     config: config.gentle,
   });
@@ -188,7 +188,7 @@ function ImgCar() {
             <Carousel
               slides={slides}
               goToSlide={state.goToSlide}
-              offsetRadius={state.offsetRadius}
+              offsetRadius={10}
               animationConfig={state.config}
             />
           </div>

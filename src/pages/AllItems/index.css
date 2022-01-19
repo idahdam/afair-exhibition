@@ -1,14 +1,52 @@
 .container {
   margin: 1rem 1rem;
   color: black;
+  position: relative;
+  font-family: "SFProDisplay Regular"
+}
+
+.indexWrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 1500px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .page-title {
   font-size: 3rem;
+  float: left;
 }
 
+.page-title-div{
+  margin-left: auto;
+  float: left;
+  margin: 2rem 0;
+}
 .dropdown-div {
   margin-left: auto;
+  float: right;
+  margin: 2rem 0;
+  margin-left: 10px;
+}
+
+.Dropdownstyle {
+  background-color: #e5e5e5;
+  width: 313.29px;
+  height: 42.48px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.indexBarContainer {
+  width: 100%;
+  display: table;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1385px;
+}
+.indexBarContainer2 {
+  width: 100%;
+  display: table;
 }
 
 .parent {
