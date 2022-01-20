@@ -1,0 +1,233 @@
+.topBarMain{
+  background-color: #F7F2EC;
+  width: 100%;
+  position: sticky;
+  height: 60px;
+}
+
+.topBarWrapperMain{
+  width: 1800px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topBarLeftWrapperMain{
+  float: left;
+}
+
+.topBarLeft2WrapperMain{
+  position: relative;
+}
+
+.topBarLeftTextWrapperMain{
+  position: absolute;
+  top:50%;
+  transform: translate(10px, -50%);
+}
+
+.topBarRightTextWrapperMain{
+  position: absolute;
+  top:50%;
+  transform: translate(-20px, -50%);
+}
+
+.topBarLeftMain{
+  float: left;
+  margin-left: 2%;
+}
+
+.topBarRightMain{
+  float: right;
+  margin-right:2%;
+}
+
+.draft5Container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.draft5BackImage {
+  position: absolute;
+  background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642597682/draft5_pogbhx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 1080px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.exitButton {
+  cursor: pointer;
+}
+.infotext {
+  position: absolute;
+  opacity: 0;
+  width: 350px;
+  height: 80px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  text-align: left;
+  transition: opacity 0.1s ease-in;
+}
+
+.pos5a {
+  position: absolute;
+  left: 1117px;
+  top: 334px;
+}
+
+.pos5b {
+  position: absolute;
+  left: 904px;
+  top: 388px;
+}
+.pos5c {
+  position: absolute;
+  left: 1117px;
+  top: 588px;
+}
+
+.pos5d {
+  position: absolute;
+  left: 1748px;
+  top: 588px;
+}
+
+.pos5b:hover {
+  transform: scale(1.5);
+}
+.pos5c:hover {
+  transform: scale(1.5);
+}
+.pos5d:hover {
+  transform: scale(1.5);
+}
+.pos5a:hover {
+  transform: scale(1.5);
+}
+
+.pos5a:hover + .infotext {
+  opacity: 1;
+}
+
+.pos5b:hover + .infotext {
+  opacity: 1;
+}
+
+.pos5c:hover + .infotext {
+  opacity: 1;
+}
+
+.pos5d:hover + .infotext {
+  opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  width: 1860px;
+  bottom: 0;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+.footerLeft {
+  float: left;
+}
+
+.footerRight {
+  float: Right;
+}
+.iconFloat {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.infotext2 {
+  position: absolute;
+  opacity: 0;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  top: -170px;
+  left: 80px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+  text-align: left;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+.icoStyle {
+  float: left;
+  width: 20px;
+  margin-left: 10px;
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.infoStyle:hover {
+  transform: scale(1.5);
+}
+
+.infoStyle:hover + .infotext2 {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1600px) {
+  .topBarWrapperMain{
+    width: 1300px;
+  }
+  
+  .draft5BackImage {
+    width: 1366px;
+    height: 700px;
+  }
+
+  .pos5a {
+    width: 15px;
+    position: absolute;
+    left: 797px;
+    top: 244px;
+  }
+
+  .pos5b {
+    width: 15px;
+    position: absolute;
+    left: 644px;
+    top: 278px;
+  }
+  .pos5c {
+    width: 15px;
+    position: absolute;
+    left: 795px;
+    top: 422px;
+  }
+
+  .pos5d {
+    width: 15px;
+    position: absolute;
+    left: 1248px;
+    top: 418px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 1306px;
+    bottom: 0;
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
+}

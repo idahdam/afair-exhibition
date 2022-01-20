@@ -1,0 +1,210 @@
+.topBar {
+  background-color: #f7f2ec;
+  width: 100%;
+  position: sticky;
+  position: relative;
+  height: 60px;
+}
+
+.topBarWrapper {
+  width: 1500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topBarLeftWrapper {
+  cursor: pointer;
+  float: left;
+}
+
+.topBarLeft2Wrapper {
+  position: relative;
+}
+
+.topBarLeftTextWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate(10px, -50%);
+}
+
+.topBarRightTextWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate(-20px, -50%);
+}
+
+.topBarLeft {
+  float: left;
+  margin-left: 2%;
+}
+
+.topBarRight {
+  cursor: pointer;
+  float: right;
+  margin-right: 2%;
+}
+
+.carrouselBackground {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.carrouselContainer {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carrouselSide {
+  float: left;
+  width: 10%;
+}
+.carrouselMid {
+  float: left;
+  width: 80%;
+}
+
+img {
+  object-fit: cover;
+}
+.imageContent {
+  border-radius: 26.6667px;
+}
+
+.carrouselFullContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.imageContent:hover {
+  transform: scale(1.1);
+}
+.imgCarContainer {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+.imgCarText {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 5%;
+  text-align: left;
+  /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.imgCarTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: "SFProDisplay Regular";
+}
+
+.imgCarSubTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.buttonImgCar {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-top: 150%;
+}
+
+.buttonImgCar:hover {
+  transform: scale(1.5);
+}
+
+.iconArrowLeft {
+  transform: scaleX(-1);
+}
+
+.footerCar {
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  bottom: 0;
+  /* transform: translate(0%,750%); */
+}
+
+.footerCarWrapper {
+  width: 1500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footerCarLeft {
+  float: left;
+  margin-left: 2%;
+}
+
+.footerCarRight {
+  float: right;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.iconCarFloat {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+  color: black;
+}
+.exitCarButton {
+  cursor: pointer;
+}
+.infoCarText {
+  position: absolute;
+  opacity: 0;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  top: -170px;
+  left: 80px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+  text-align: left;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+.icoCarStyle {
+  float: left;
+  width: 20px;
+  margin-left: 10px;
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.infoCarStyle:hover {
+  transform: scale(1.5);
+}
+
+.infoCarStyle:hover + .infoCarText {
+  opacity: 1;
+}

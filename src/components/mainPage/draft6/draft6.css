@@ -1,0 +1,196 @@
+.topBarMain{
+  background-color: #F7F2EC;
+  width: 100%;
+  position: sticky;
+  height: 60px;
+}
+
+.topBarWrapperMain{
+  width: 1800px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topBarLeftWrapperMain{
+  float: left;
+}
+
+.topBarLeft2WrapperMain{
+  position: relative;
+}
+
+.topBarLeftTextWrapperMain{
+  position: absolute;
+  top:50%;
+  transform: translate(10px, -50%);
+}
+
+.topBarRightTextWrapperMain{
+  position: absolute;
+  top:50%;
+  transform: translate(-20px, -50%);
+}
+
+.topBarLeftMain{
+  float: left;
+  margin-left: 2%;
+}
+
+.topBarRightMain{
+  float: right;
+  margin-right:2%;
+}
+
+.draft6Container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.draft6BackImage {
+  position: absolute;
+  background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642599224/draft4_uxoiwq.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 1080px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.exitButton {
+  cursor: pointer;
+}
+.infotext {
+  position: absolute;
+  opacity: 0;
+  width: 350px;
+  height: 80px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  text-align: left;
+  transition: opacity 0.1s ease-in;
+  transform: translate(-50%, -150%);
+}
+
+.pos6a {
+  position: absolute;
+  left: 1019px;
+  top: 176px;
+}
+
+.pos6b {
+  position: absolute;
+  left: 1019px;
+  top: 892px;
+}
+
+.pos6b:hover {
+  transform: scale(1.5);
+}
+.pos6a:hover {
+  transform: scale(1.5);
+}
+
+.pos6a:hover + .infotext {
+  opacity: 1;
+}
+
+.pos6b:hover + .infotext {
+  opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  width: 1860px;
+  bottom: 0;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+.footerLeft {
+  float: left;
+}
+
+.footerRight {
+  float: Right;
+}
+.iconFloat {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.infotext2 {
+  position: absolute;
+  opacity: 0;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 15px;
+  top: -170px;
+  left: 80px;
+  transition: opacity 0.1s ease-in;
+  z-index: 2;
+  text-align: left;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+.icoStyle {
+  float: left;
+  width: 20px;
+  margin-left: 10px;
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.infoStyle:hover {
+  transform: scale(1.5);
+}
+
+.infoStyle:hover + .infotext2 {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1600px) {
+  .topBarWrapperMain{
+    width: 1300px;
+  }
+  
+  .draft6BackImage {
+    width: 1366px;
+    height: 700px;
+  }
+
+  .pos6a {
+    position: absolute;
+    width: 15px;
+    left: 729px;
+    top: 126px;
+  }
+
+  .pos6b {
+    position: absolute;
+    width: 15px;
+    left: 729px;
+    top: 622px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 1306px;
+    bottom: 0;
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
+}
