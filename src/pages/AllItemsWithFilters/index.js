@@ -7,7 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams, Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -70,6 +70,9 @@ const AllItemsWithFilters = () => {
         <div className="indexBarContainer">
           <div className="page-title-div">
             <div className="page-title">Projects Index</div>
+            <Link to="/into_the_wayout_future">
+              <span className="back-title">Back to Main Menu</span>
+            </Link>
           </div>
           <div>
             <div className="dropdown-div">

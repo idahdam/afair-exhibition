@@ -21,7 +21,7 @@ const Draft8 = () => {
                 </div>
                 <div className="topBarLeftWrapperMain">
                   <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
                   </div>
                 </div>
               </div>
@@ -53,7 +53,8 @@ const Draft8 = () => {
             >
               <div className="infoTitle">Mobilize Elsewhere</div>
               <div className="infoContent">
-                The enhancement of one{"’"}s displacement from a place to another
+                The enhancement of one{"’"}s displacement from a place to
+                another
               </div>
             </div>
           </Link>

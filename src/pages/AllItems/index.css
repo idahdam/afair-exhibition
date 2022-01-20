@@ -2,10 +2,10 @@
   margin: 1rem 1rem;
   color: black;
   position: relative;
-  font-family: "SFProDisplay Regular"
+  font-family: "SFProDisplay Regular";
 }
 
-option{
+option {
   background-color: white;
   border-radius: 0px;
   padding-top: 5px;
@@ -19,11 +19,21 @@ option{
 }
 
 .page-title {
+  padding-right: 2rem;
   font-size: 3rem;
+  float: left;
+  color: black;
+}
+
+.back-title {
+  color: black;
+  padding-top: 0.875rem;
+  padding-right: 2rem;
+  font-size: 2rem;
   float: left;
 }
 
-.page-title-div{
+.page-title-div {
   margin-left: auto;
   float: left;
   margin: 2rem 0;

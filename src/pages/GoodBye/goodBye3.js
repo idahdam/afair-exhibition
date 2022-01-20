@@ -51,6 +51,9 @@ const goodBye3 = () => {
               </div>
             </div>
           </div>
+          <div className="backButton">
+            <p>Back To Exhibition</p>
+          </div>
         </div>
       </div>
     </>

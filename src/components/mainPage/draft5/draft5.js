@@ -22,7 +22,7 @@ const Draft5 = () => {
                 </div>
                 <div className="topBarLeftWrapperMain">
                   <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,8 @@ const Draft5 = () => {
               <div class="infotext2">
                 <p>Understanding Us</p>
                 <p>
-                Unseen changes that is only felt by ourselves. They often relate to each and every individual's emotions
+                  Unseen changes that is only felt by ourselves. They often
+                  relate to each and every individual's emotions
                 </p>
               </div>
             </div>

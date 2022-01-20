@@ -22,7 +22,7 @@ const Draft4 = () => {
                 </div>
                 <div className="topBarLeftWrapperMain">
                   <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          
+
           <Link to="/understanding_us">
             <img src={pinIcon} alt="img5" className="pos8" />
             <div className="infotext">
