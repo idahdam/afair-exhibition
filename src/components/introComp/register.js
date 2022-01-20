@@ -8,23 +8,32 @@ const Register = () => {
   const [agree, setAgree] = useState(false);
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
+  const [testEmail, setTestEmail] = useState(false);
 
   const SubmitAndRedirect = async () => {
-    await formService
-      .postForm({
-        name: nama,
-        email: email,
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          sessionStorage.setItem("email", res.data.data.attributes.email);
-          sessionStorage.setItem("name", res.data.data.attributes.name);
-          sessionStorage.setItem("guest-list", true);
-          history.push("/video");
-        } else {
-          alert("Failed.");
-        }
-      });
+    // await formService
+    //   .postForm({
+    //     name: nama,
+    //     email: email,
+    //   })
+    //   .then((res) => {
+    //     if (res.status === 200) {
+    //       sessionStorage.setItem("email", res.data.data.attributes.email);
+    //       sessionStorage.setItem("name", res.data.data.attributes.name);
+    //       sessionStorage.setItem("guest-list", true);
+    //       history.push("/video");
+    //     } else {
+    //       alert("Failed.");
+    //     }
+    //   });
+    sessionStorage.setItem("guest-list", true);
+    history.push("/video");
+  };
+
+  const handleEmail = (input) => {
+    setEmail(input);
+    const regexEmail = /.+@.+\.[A-Za-z]+$/.test(input);
+    setTestEmail(regexEmail);
   };
 
   return (
@@ -47,25 +56,25 @@ const Register = () => {
             </div>
             <div className="subtext2" style={{ fontSize: "20px" }}>
               <span className="textBoxdeco2">I </span>{" "}
-              {/* <span className="textBoxdeco">Nama Orang</span>{" "}
-              <span className="textBoxdeco">Namaorang@gmail.com</span> */}
               <input
                 className="textBoxdeco"
                 type="text"
                 placeholder="nama"
+                value={nama}
                 onChange={(e) => setNama(e.target.value)}
               />
               <input
                 className="textBoxdeco"
-                type="text"
+                type="email"
                 placeholder="email"
-                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                onChange={(e) => handleEmail(e.target.value)}
               />
               <span className="textBoxdeco2">
                 AM READY TO EXPLORE INTO THE WAYOUT FUTURE.
               </span>
               <span className="iconRight2">
-                {agree && nama !== "" && email !== "" ? (
+                {agree && nama !== "" && email !== "" && testEmail !== false ? (
                   // <Link to="/video">
                   <img
                     src={iconArrow}
@@ -80,7 +89,9 @@ const Register = () => {
                     className="arrow"
                     alt="icon Logo"
                     onClick={() =>
-                      alert("Please agree to the data collection agreeement.")
+                      alert(
+                        "Please agree to the data collection agreeement or insert a valid email address."
+                      )
                     }
                   />
                 )}
@@ -99,7 +110,6 @@ const Register = () => {
                   type="checkbox"
                   onChange={() => {
                     setAgree(!agree);
-                    console.log(!agree);
                   }}
                 />
                 <label> I agree</label>

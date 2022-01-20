@@ -7,7 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -23,8 +23,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AllItems = () => {
+const AllItemsWithFilters = () => {
   const history = useHistory();
+  const { params } = useParams();
   const [open, setOpen] = React.useState(false);
   const [modalData, setModalData] = useState({});
   const [loading, setLoading] = useState(false);
@@ -41,7 +42,8 @@ const AllItems = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await artService.getArt();
+      const response = await artService.getArtsFiltered(params);
+      console.log(response.data.data);
       setData(response.data.data);
     };
 
@@ -78,7 +80,7 @@ const AllItems = () => {
                   handleFilters(e.target.value);
                 }}
               >
-                <option value="" disabled selected>
+                <option value="understanding_us" disabled selected>
                   Choose one to filter...
                 </option>
                 <option value="understanding_us">Understanding Us</option>
@@ -153,4 +155,4 @@ const AllItems = () => {
   );
 };
 
-export default AllItems;
+export default AllItemsWithFilters;
