@@ -4,6 +4,10 @@ import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
+import img7a from "../../../assets/images/mainPage/draft7_a.png";
+import img7b from "../../../assets/images/mainPage/draft7_b.png";
+import img7c from "../../../assets/images/mainPage/draft7_c.png";
+import img7d from "../../../assets/images/mainPage/draft7_d.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft7 = () => {
@@ -34,7 +38,7 @@ const Draft7 = () => {
           </div>
 
           <Link to="/everyone_as_well/others_around">
-            <img src={pinIcon} alt="7b" className="pos7b" />
+            <img src={img7b} alt="7b" className="pos7b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, -20%)" }}
@@ -46,7 +50,7 @@ const Draft7 = () => {
             </div>
           </Link>
           <Link to="/everyone_as_well/to_fulfill">
-            <img src={pinIcon} alt="7d" className="pos7d" />
+            <img src={img7d} alt="7d" className="pos7d" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -58,7 +62,7 @@ const Draft7 = () => {
             </div>
           </Link>
           <Link to="/everyone_as_well/amoung_our_peers">
-            <img src={pinIcon} alt="7a" className="pos7a" />
+            <img src={img7a} alt="7a" className="pos7a" />
             <div
               className="infotext"
               style={{ transform: "translate(10%, 10%)" }}
@@ -71,7 +75,7 @@ const Draft7 = () => {
             </div>
           </Link>
           <Link to="/everyone_as_well/better_version_of_us">
-            <img src={pinIcon} alt="7c" className="pos7c" />
+            <img src={img7c} alt="7c" className="pos7c" />
 
             <div
               className="infotext"
