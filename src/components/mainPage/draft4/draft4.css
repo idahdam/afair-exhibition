@@ -1,44 +1,43 @@
-.topBarMain {
+.topBar4Main {
   background-color: #f7f2ec;
-  width: 100%;
+  width: 20%;
   position: sticky;
-  height: 60px;
+  height: 50px;
 }
 
-.topBarWrapperMain {
-  width: 1800px;
+.topBar4WrapperMain {
+  width: 1066px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: red;
+
 }
 
-.topBarLeftWrapperMain {
+.topBar4LeftWrapperMain {
   float: left;
 }
 
-.topBarLeft2WrapperMain {
+.topBar4Left2WrapperMain {
   position: relative;
 }
 
-.topBarLeftTextWrapperMain {
+.topBar4LeftTextWrapperMain {
   position: absolute;
   top: 50%;
   transform: translate(10px, -50%);
 }
 
-.topBarRightTextWrapperMain {
+.topBar4RightTextWrapperMain {
   position: absolute;
   top: 50%;
   transform: translate(-20px, -50%);
 }
 
-.topBarLeftMain {
+.topBar4LeftMain {
   float: left;
   margin-left: 2%;
 }
 
-.topBarRightMain {
+.topBar4RightMain {
   float: right;
   margin-right: 2%;
 }
@@ -55,8 +54,8 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642599228/draft6_cvs285.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
-  height: 1080px;
+  width: 1066px;
+  height: 568px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -99,8 +98,9 @@
 
 .pos4 {
   position: absolute;
-  left: 1274px;
-  top: 172px;
+  width: 15px;
+  left: 914px;
+  top: 112px;
 }
 
 .content {
@@ -115,35 +115,49 @@
 .pos6 {
   position: absolute;
   left: 279px;
-  top: 663px;
+  top: 263px;
 }
 .pos7 {
   position: absolute;
   left: 1796px;
-  top: 635px;
+  top: 235px;
 }
 
 .pos8 {
   position: absolute;
   left: 796px;
-  top: 879px;
+  top: 379px;
 }
 
 .pos4:hover {
   transform: scale(1.5);
 }
 
-.pos6:hover {
-  transform: scale(1.5);
+.pos5 {
+  position: absolute;
+  width: 15px;
+  left: 542px;
+  top: 281px;
 }
-.pos7:hover {
-  transform: scale(1.5);
+
+.pos6 {
+  position: absolute;
+  width: 15px;
+  left: 199px;
+  top: 423px;
 }
-.pos8:hover {
-  transform: scale(1.5);
+.pos7 {
+  position: absolute;
+  width: 15px;
+  left: 1286px;
+  top: 445px;
 }
-.pos5:hover {
-  transform: scale(1.5);
+
+.pos8 {
+  position: absolute;
+  width: 15px;
+  left: 706px;
+  top: 209px;
 }
 
 .pos4:hover + .infotext {
@@ -227,7 +241,7 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
   .draft4BackImage {
     width: 1366px;
     height: 700px;
@@ -276,4 +290,4 @@
     margin-bottom: 30px;
     padding: 0 30px;
   }
-}
+} */

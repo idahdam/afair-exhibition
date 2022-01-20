@@ -25,7 +25,10 @@
 }
 
 .backButton {
+  text-decoration: none;
+  cursor: pointer;
   margin: auto;
+  color: white;
   text-align: center;
 }
 

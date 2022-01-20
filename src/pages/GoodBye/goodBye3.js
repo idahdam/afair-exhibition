@@ -4,6 +4,7 @@ import logoBanyak from "../../assets/images/logoBanyak.png";
 import logoBE from "../../assets/images/logoBE.png";
 import logoHino from "../../assets/images/logoHino.png";
 import logoMMAR from "../../assets/images/logoMMAR.png";
+import { Link } from "react-router-dom";
 const goodBye3 = () => {
   return (
     <>
@@ -52,7 +53,9 @@ const goodBye3 = () => {
             </div>
           </div>
           <div className="backButton">
-            <p>Back To Exhibition</p>
+            <Link to="/into_the_wayout_future">
+              <p className="backButton">Back To Exhibition</p>
+            </Link>
           </div>
         </div>
       </div>
