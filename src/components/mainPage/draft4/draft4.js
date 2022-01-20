@@ -14,21 +14,21 @@ const Draft4 = () => {
     <>
       <div className="draft4Container">
         <div className="draft4BackImage">
-          <div className="topBarMain">
-            <div className="topBarWrapperMain">
-              <div className="topBarLeftMain">
-                <div className="topBarLeftWrapperMain">
+          <div className="topBar4Main">
+            <div className="topBar4WrapperMain">
+              <div className="topBar4LeftMain">
+                <div className="topBarLef4tWrapperMain">
                   <img src={topLogo} alt="arrow" className="iconArrowRight" />
                 </div>
-                <div className="topBarLeftWrapperMain">
-                  <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFFAIR 2022</div>
+                <div className="topBar4LeftWrapperMain">
+                  <div className="topBar4LeftWrapper2" Main>
+                    <div className="topBar4LeftTextWrapperMain">AFFAIR 2022</div>
                   </div>
                 </div>
               </div>
-              <div className="topBarRightMain">
-                <div className="topBarLeftWrapper2Main">
-                  <div className="topBarRightTextWrapperMain">index</div>
+              <div className="topBar4RightMain">
+                <div className="topBar4LeftWrapper2Main">
+                  <div className="topBar4RightTextWrapperMain">index</div>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Draft4 = () => {
             </div>
           </Link>
 
-          <div className="footer">
+          {/* <div className="footer">
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
@@ -99,7 +99,7 @@ const Draft4 = () => {
               <span className="iconFloat">To The Exit</span>
               <img src={arrow} alt="arrow" className="icoStyle" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
