@@ -1,43 +1,43 @@
-.topBarMain{
+.topBarMain {
   background-color: #f7f2ec;
   width: 100%;
   position: sticky;
   height: 50px;
 }
 
-.topBarWrapperMain{
+.topBarWrapperMain {
   width: 1066px;
   position: absolute;
 }
 
-.topBarLeftWrapperMain{
+.topBarLeftWrapperMain {
   float: left;
 }
 
-.topBarLeft2WrapperMain{
+.topBarLeft2WrapperMain {
   position: relative;
 }
 
-.topBarLeftTextWrapperMain{
+.topBarLeftTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(10px, -50%);
 }
 
-.topBarRightTextWrapperMain{
+.topBarRightTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(-20px, -50%);
 }
 
-.topBarLeftMain{
+.topBarLeftMain {
   float: left;
   margin-left: 2%;
 }
 
-.topBarRightMain{
+.topBarRightMain {
   float: right;
-  margin-right:4%;
+  margin-right: 4%;
 }
 
 .draftContainer {
@@ -57,7 +57,7 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642597682/draft5_pogbhx.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1066px;
+  width: 1186px;
   height: 668px;
   top: 50%;
   left: 50%;
@@ -99,30 +99,32 @@
   font-size: 15px;
 }
 
-
 .pos5a {
   position: absolute;
-  left: 1117px;
-  top: 334px;
+  width: 10.6%;
+  left: 47.9%;
+  top: 36%;
 }
 
 .pos5b {
   position: absolute;
-  left: 904px;
-  top: 388px;
+  width: 12%;
+  left: 55.4%;
+  top: 23.25%;
 }
 .pos5c {
   position: absolute;
-  left: 1117px;
-  top: 588px;
+  width: 10.6%;
+  left: 58.5%;
+  top: 54.8%;
 }
 
 .pos5d {
   position: absolute;
-  left: 1748px;
-  top: 588px;
+  width: 50%;
+  right: -122px;
+  bottom: 0;
 }
-
 
 .pos5a:hover + .infotext {
   opacity: 1;

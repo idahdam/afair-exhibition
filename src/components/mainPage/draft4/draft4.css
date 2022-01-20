@@ -105,9 +105,9 @@
 
 .pos4 {
   position: absolute;
-  width: 1186px;
+  width: 100%;
   left: 0px;
-  top: 97px;
+  bottom: 0;
 }
 
 .pos5 {
@@ -119,10 +119,11 @@
 
 .pos6 {
   position: absolute;
-  width: 25%;
-  left: 159px;
-  top: 403px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
 }
+
 .pos7 {
   position: absolute;
   width: 25%;
@@ -132,17 +133,17 @@
 
 .pos8 {
   position: absolute;
-  width: 25%;
-  left: 476px;
-  top: 579px;
+  width: 33.5%;
+  bottom: 0px;
+  left: 39%;
 }
 .content {
   position: relative;
 }
 
-.pos4:hover {
-  /* transform: scale(1.5); */
-}
+/* .pos4:hover {
+  transform: scale(1.5); 
+} */
 
 .pos4:hover + .infotext {
   opacity: 1;
