@@ -5,7 +5,7 @@ import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import img7a from "../../../assets/images/mainPage/draft7_a.png";
-import img7b from "../../../assets/images/mainPage/draft7_b.png";
+import img7b from "../../../assets/images/mainPage/draft7_bb.png";
 import img7c from "../../../assets/images/mainPage/draft7_c.png";
 import img7d from "../../../assets/images/mainPage/draft7_d.png";
 import { Link, useHistory } from "react-router-dom";
