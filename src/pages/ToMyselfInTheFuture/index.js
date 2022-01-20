@@ -8,18 +8,18 @@ const ToMyselfInTheFuture = () => {
   const [message, setMessage] = useState("");
 
   const SubmitMessageAndRedirect = async () => {
-    await futureMessageService
-      .postFutureMessage({
-        message: message,
-        email: sessionStorage.getItem("email"),
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          history.push("/goodbye");
-        } else {
-          alert("Failed to send message.");
-        }
-      });
+    // await futureMessageService
+    //   .postFutureMessage({
+    //     message: message,
+    //     email: sessionStorage.getItem("email"),
+    //   })
+    //   .then((res) => {
+    //     if (res.status === 200) {
+    //     } else {
+    //       alert("Failed to send message.");
+    //     }
+    //   });
+    history.push("/goodbye");
   };
   return (
     <>
