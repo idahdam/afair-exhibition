@@ -8,7 +8,6 @@
 .topBar4WrapperMain {
   width: 1066px;
   position: absolute;
-
 }
 
 .topBar4LeftWrapperMain {
@@ -58,8 +57,8 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642599228/draft6_cvs285.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1266px;
-  height: 100vh;
+  width: 1066px;
+  height: 668px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -102,57 +101,27 @@
 
 .pos4 {
   position: absolute;
-  width: 15px;
-  left: 914px;
-  top: 112px;
-}
-
-.content {
-  position: relative;
-}
-.pos5 {
-  position: absolute;
-  left: 772px;
-  top: 391px;
-}
-
-.pos6 {
-  position: absolute;
-  left: 279px;
-  top: 263px;
-}
-.pos7 {
-  position: absolute;
-  left: 1796px;
-  top: 235px;
-}
-
-.pos8 {
-  position: absolute;
-  left: 796px;
-  top: 379px;
-}
-
-.pos4:hover {
-  transform: scale(1.5);
+  width: 1186px;
+  left: 0px;
+  top: 97px;
 }
 
 .pos5 {
   position: absolute;
-  width: 15px;
-  left: 542px;
-  top: 281px;
+  width: 25%;
+  left: 452px;
+  top: 100px;
 }
 
 .pos6 {
   position: absolute;
-  width: 15px;
-  left: 199px;
-  top: 423px;
+  width: 25%;
+  left: 159px;
+  top: 403px;
 }
 .pos7 {
   position: absolute;
-  width: 15px;
+  width: 25%;
   left: 1286px;
   top: 445px;
 }
@@ -160,8 +129,15 @@
 .pos8 {
   position: absolute;
   width: 15px;
-  left: 706px;
-  top: 209px;
+  left: 476px;
+  top: 579px;
+}
+.content {
+  position: relative;
+}
+
+.pos4:hover {
+  /* transform: scale(1.5); */
 }
 
 .pos4:hover + .infotext {
@@ -186,29 +162,29 @@
 .content {
   position: absolute;
 }
-.footer {
+.footer4 {
   position: absolute;
-  width: 1860px;
+  width: 1036px;
   bottom: 0;
-  margin-bottom: 50px;
-  padding: 0 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
-.footerLeft {
+.footerLeft4 {
   float: left;
 }
 
-.footerRight {
+.footerRight4 {
   float: Right;
 }
-.iconFloat {
+.iconFloat4 {
   float: left;
   margin-top: 6px;
   margin-left: 10px;
 }
-.exitButton {
+.exitButton4 {
   cursor: pointer;
 }
-.infotext2 {
+.infotext24 {
   position: absolute;
   opacity: 0;
   width: 500px;
@@ -227,7 +203,7 @@
   border-style: solid;
 }
 
-.icoStyle {
+.icoStyle4 {
   float: left;
   width: 20px;
   margin-left: 10px;
@@ -237,11 +213,11 @@
   font-size: 18px;
 }
 
-.infoStyle:hover {
+.infoStyle4:hover {
   transform: scale(1.5);
 }
 
-.infoStyle:hover + .infotext2 {
+.infoStyle4:hover + .infotext24 {
   opacity: 1;
 }
 
