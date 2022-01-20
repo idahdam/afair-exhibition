@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useSpring, animated, config } from "react-spring";
+import img1 from "../../assets/images/perspektif71.png";
+import img2 from "../../assets/images/perspektif72.png";
+import img3 from "../../assets/images/perspektif73.png";
 import "./index.css";
 
 const ApparentlyYes = () => {
@@ -38,24 +41,30 @@ const ApparentlyYes = () => {
   });
 
   return (
-    <animated.div
-      style={{
-        position: "relative",
-        width: "95%",
-        height: 968,
-        overflow: "auto",
-        fontSize: "6em",
-        paddingLeft: "1em",
-      }}
-      //   className="animation"
-      scrollTop={scroll}
-    >
-      {words.map((word, i) => (
-        <div key={`${word}_${i}`} className="scrollingText">
-          {word}
-        </div>
-      ))}
-    </animated.div>
+    <div className="scrollContainer">
+      <animated.div
+        style={{
+          position: "absolute",
+          width: "95%",
+          height: 968,
+          overflow: "auto",
+          fontSize: "6em",
+          paddingLeft: "1em",
+        }}
+        //   className="animation"
+        scrollTop={scroll}
+      >
+        {words.map((word, i) => (
+          <div key={`${word}_${i}`} className="scrollingText">
+            {word}
+          </div>
+        ))}
+        
+      </animated.div>{" "}
+      <img src={img1} alt="image1" className="image1pos" />
+      <img src={img2} alt="image1" className="image2pos" />
+      <img src={img3} alt="image1" className="image3pos"/>
+    </div>
   );
 };
 

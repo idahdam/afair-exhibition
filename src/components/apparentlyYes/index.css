@@ -11,3 +11,39 @@
   overflow: "auto";
   font-size: "6em";
 }
+
+.scrollContainer{
+  position: relative;
+}
+
+.image1pos{
+  position: absolute;
+  transform: translate(50%,50%);
+  animation-name: show;
+  animation-duration:5s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.image2pos{
+  position: absolute;
+  transform: translate(180%,50%);
+  animation-name: show;
+  animation-duration:5s;
+  animation-delay: 7s;
+  opacity: 0;
+}
+
+.image3pos{
+  position: absolute;
+  opacity: 0;
+  transform: translate(720%,50%);
+  animation-name: show;
+  animation-duration: 5s;
+  animation-delay: 12s;
+}
+
+@keyframes show {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
