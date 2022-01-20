@@ -5,6 +5,10 @@ import { useHistory } from "react-router-dom";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
+import img5 from "../../../assets/images/mainPage/draft4_5.png";
+import img4 from "../../../assets/images/mainPage/draft4_4.png";
+import img6 from "../../../assets/images/mainPage/draft4_6.png";
+import img8 from "../../../assets/images/mainPage/draft4_8.png";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 import { Link } from "react-router-dom";
 const Draft4 = () => {
@@ -35,7 +39,7 @@ const Draft4 = () => {
           </div>
 
           <Link to="/in_where_we_exist">
-            <img src={pinIcon} alt="img5" className="pos4" />
+            <img src={img4} alt="imgIcon" className="pos4" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -48,7 +52,7 @@ const Draft4 = () => {
             </div>
           </Link>
           <Link Link to="/bodily_presence">
-            <img src={pinIcon} alt="img5" className="pos5" />
+            <img src={img5} alt="imgIcon" className="pos5" />
             <div className="infotext">
               <div className="infoTitle">Bodily Presence</div>
               <div className="infoContent">
@@ -58,7 +62,7 @@ const Draft4 = () => {
             </div>
           </Link>
           <Link to="/everyone_as_well">
-            <img src={pinIcon} alt="img5" className="pos6" />
+            <img src={img6} alt="imgIcon" className="pos6" />
             <div className="infotext">
               <div className="infoTitle">Everyone As Well</div>
               <div className="infoContent">
@@ -69,7 +73,7 @@ const Draft4 = () => {
           </Link>
 
           <Link to="/understanding_us">
-            <img src={pinIcon} alt="img5" className="pos8" />
+            <img src={img8} alt="imgIcon" className="pos8" />
             <div className="infotext">
               <div className="infoTitle">Understanding Us</div>
               <div className="infoContent">
@@ -79,10 +83,10 @@ const Draft4 = () => {
             </div>
           </Link>
 
-          {/* <div className="footer">
-            <div className="footerLeft">
-              <img src={info} alt="info" className="infoStyle" />
-              <div class="infotext2">
+          <div className="footer4">
+            <div className="footerLeft4">
+              <img src={info} alt="info" className="infoStyle4" />
+              <div class="infotext24">
                 <p>Into The Wayout Future</p>
                 <p>
                   Unseen changes that is only felt by ourselves. They often
@@ -91,15 +95,15 @@ const Draft4 = () => {
               </div>
             </div>
             <div
-              className="footerRight exitButton"
+              className="footerRight4 exitButton"
               onClick={() => {
                 history.push("/exit");
               }}
             >
-              <span className="iconFloat">To The Exit</span>
-              <img src={arrow} alt="arrow" className="icoStyle" />
+              <span className="iconFloat4">To The Exit</span>
+              <img src={arrow} alt="arrow" className="icoStyle4" />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
