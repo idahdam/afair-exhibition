@@ -7,6 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -23,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const AllItems = () => {
+  const history = useHistory();
   const [open, setOpen] = React.useState(false);
   const [modalData, setModalData] = useState({});
   const handleOpen = (item) => {
@@ -42,7 +44,12 @@ const AllItems = () => {
       console.log(response.data.data);
       setData(response.data.data);
     };
-    fetchData();
+    console.log(sessionStorage);
+    if (sessionStorage.getItem("guest-list") === "true") {
+      fetchData();
+    } else {
+      history.push("/register");
+    }
   }, []);
   // if (data.length === 0) return null;
   return (

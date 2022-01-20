@@ -15,7 +15,6 @@ const Video = () => {
         height="100%"
         controls={false}
         onEnded={() => {
-          alert("OK");
           history.push("/question");
         }}
         onReady={() => {}}

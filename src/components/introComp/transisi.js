@@ -6,9 +6,12 @@ const Transisi = () => {
   const history = useHistory();
   useEffect(() => {
     let interval = null;
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
     interval = setInterval(() => {
       history.push("/into_the_wayout_future");
-    }, 3000);
+    }, 5000);
     // }
     return () => (interval ? clearInterval(interval) : null);
   }, []);

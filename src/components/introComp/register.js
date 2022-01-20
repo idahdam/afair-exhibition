@@ -17,9 +17,9 @@ const Register = () => {
       })
       .then((res) => {
         if (res.status === 200) {
-          localStorage.setItem("email", res.data.data.attributes.email);
-          localStorage.setItem("name", res.data.data.attributes.name);
-          localStorage.setItem("guest-list", true);
+          sessionStorage.setItem("email", res.data.data.attributes.email);
+          sessionStorage.setItem("name", res.data.data.attributes.name);
+          sessionStorage.setItem("guest-list", true);
           history.push("/video");
         } else {
           alert("Failed.");
