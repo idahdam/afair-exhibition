@@ -32,12 +32,12 @@ function App() {
           {/* <Route exact path="/main" component={MainPage} /> */}
           <Route exact path="/build" component={Landing} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/popBuild" component={PopUpBuild} />
+          {/* <Route exact path="/popBuild" component={PopUpBuild} /> */}
           <Route exact path="/video" component={Video} />
-          <Route exact path="/build" component={Landing} />
+          {/* <Route exact path="/build" component={Landing} /> */}
           <Route exact path="/question" component={Question} />
           <Route exact path="/transition" component={Transisi} />
-          <Route exact path="/imgBuild" component={ImgBuild} />
+          {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
           <Route exact path="/apparently-yes" component={ApparentlyYes} />
           <Route exact path="/index" component={AllItems} />
           <Route
