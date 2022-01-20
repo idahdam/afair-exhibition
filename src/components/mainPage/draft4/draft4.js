@@ -34,28 +34,21 @@ const Draft4 = () => {
             </div>
           </div>
 
-          <Link to="/into_the_wayout_future/compact_living">
+          <Link to="/in_where_we_exist">
             <img src={pinIcon} alt="img5" className="pos4" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Compact Living</div>
-              <div className="infoContent">How we live in the future</div>
-            </div>
-          </Link>
-          <Link to="/understanding_us">
-            <img src={pinIcon} alt="img5" className="pos5" />
-            <div className="infotext">
-              <div className="infoTitle">Understanding Us</div>
+              <div className="infoTitle">In Where We Exist</div>
               <div className="infoContent">
-                Unseen changes that is only felt by ourselves. They often relate
-                to each and every individual's emotions
+                How the relations between the environment and ourselves are
+                dynamic, affecting each other endlessly
               </div>
             </div>
           </Link>
-          <Link to="/bodily_presence">
-            <img src={pinIcon} alt="img5" className="pos6" />
+          <Link Link to="/bodily_presence">
+            <img src={pinIcon} alt="img5" className="pos5" />
             <div className="infotext">
               <div className="infoTitle">Bodily Presence</div>
               <div className="infoContent">
@@ -65,11 +58,8 @@ const Draft4 = () => {
             </div>
           </Link>
           <Link to="/everyone_as_well">
-            <img src={pinIcon} alt="img5" className="pos7" />
-            <div
-              className="infotext"
-              style={{ transform: "translate(-110%, 10%)" }}
-            >
+            <img src={pinIcon} alt="img5" className="pos6" />
+            <div className="infotext">
               <div className="infoTitle">Everyone As Well</div>
               <div className="infoContent">
                 Changes happening not within the individuality, but rather
@@ -77,13 +67,14 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist">
+          
+          <Link to="/understanding_us">
             <img src={pinIcon} alt="img5" className="pos8" />
             <div className="infotext">
-              <div className="infoTitle">In Where We Exist</div>
+              <div className="infoTitle">Understanding Us</div>
               <div className="infoContent">
-                How the relations between the environment and ourselves are
-                dynamic, affecting each other endlessly
+                Unseen changes that is only felt by ourselves. They often relate
+                to each and every individual's emotions
               </div>
             </div>
           </Link>

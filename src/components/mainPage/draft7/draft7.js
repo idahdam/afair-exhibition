@@ -35,30 +35,63 @@ const Draft7 = () => {
 
           <Link to="/everyone_as_well/others_around">
             <img src={pinIcon} alt="7b" className="pos7b" />
-            <span class="infotext">Among Our Peers</span>
-          </Link>
-          <Link to="/everyone_as_well/amoung_our_peers">
-            <img src={pinIcon} alt="7d" className="pos7d" />
-            <span class="infotext">To Fulfill</span>
-          </Link>
-          <Link to="/everyone_as_well/better_version_of_us">
-            <img src={pinIcon} alt="7a" className="pos7a" />
-            <span class="infotext">Others Around</span>
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, -20%)" }}
+            >
+              <div className="infoTitle">Others Around</div>
+              <div className="infoContent">
+                The evolution of human methods to connect each other
+              </div>
+            </div>
           </Link>
           <Link to="/everyone_as_well/to_fulfill">
+            <img src={pinIcon} alt="7d" className="pos7d" />
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">To Fulfill</div>
+              <div className="infoContent">
+                Adaptation by humans to fulfill their needs
+              </div>
+            </div>
+          </Link>
+          <Link to="/everyone_as_well/amoung_our_peers">
+            <img src={pinIcon} alt="7a" className="pos7a" />
+            <div
+              className="infotext"
+              style={{ transform: "translate(10%, 10%)" }}
+            >
+              <div className="infoTitle">Among Our Peers</div>
+              <div className="infoContent">
+                The alteration of human interaction contributes in social
+                communities
+              </div>
+            </div>
+          </Link>
+          <Link to="/everyone_as_well/better_version_of_us">
             <img src={pinIcon} alt="7c" className="pos7c" />
-            <span class="infotext">Better Version of Us</span>
+
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Better Version of Us</div>
+              <div className="infoContent">
+                Attempt to figure out surroundings that keep changing in order
+                to adapt in it
+              </div>
+            </div>
           </Link>
           <div className="footer">
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Judul</p>
+                <p>Everyone As Well</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  nec ultricies urna, quis tempus enim. Nullam ullamcorper metus
-                  non orci condimentum, ac dapibus purus commodo. Fusce
-                  fringilla orci auctor, feugiat tellus vel, lacinia nunc.
+                  Changes happening not within the individuality, but rather
+                  outside involving the collective.
                 </p>
               </div>
             </div>
