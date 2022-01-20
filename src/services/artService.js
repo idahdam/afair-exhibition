@@ -16,7 +16,29 @@ const getArtWithParams = async (params) => {
   return response;
 };
 
+const getArtsSorted = async (params) => {
+  const body = {};
+  const response = await gatewayHelper.http(
+    "GET",
+    `arts?sort=${params}&populate=*`,
+    body
+  );
+  return response;
+};
+
+const getArtsFiltered = async (params) => {
+  const body = {};
+  const response = await gatewayHelper.http(
+    "GET",
+    `arts?filters[part][$eq]=${params}&populate=*`,
+    body
+  );
+  return response;
+};
+
 export const artService = {
   getArt,
   getArtWithParams,
+  getArtsSorted,
+  getArtsFiltered,
 };
