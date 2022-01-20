@@ -24,6 +24,14 @@
   margin-bottom: 5%;
 }
 
+.backButton {
+  text-decoration: none;
+  cursor: pointer;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
 .contentMember {
   margin-bottom: 5%;
 }
@@ -75,7 +83,7 @@
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.logoGoodStyle{
+.logoGoodStyle {
   margin-right: 2%;
 }
 .logoStyle {

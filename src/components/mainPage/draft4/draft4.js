@@ -67,7 +67,7 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          
+
           <Link to="/understanding_us">
             <img src={pinIcon} alt="img5" className="pos8" />
             <div className="infotext">
