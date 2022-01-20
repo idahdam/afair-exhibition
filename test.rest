@@ -1,0 +1,13 @@
+
+
+POST http://156.67.214.132/api/api/guest-lists
+content-type: application/json
+
+{
+    "name": "sample",
+    "email": "email"
+}
+
+###
+
+GET

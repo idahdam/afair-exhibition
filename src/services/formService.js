@@ -1,8 +1,13 @@
 import { gatewayHelper } from "../utils";
 
-const postForm = async () => {
+const postForm = async (payload) => {
   const body = {};
-  const response = await gatewayHelper.http("GET", "", body);
+  const response = await gatewayHelper.http(
+    "POST",
+    "guest-lists",
+    body,
+    payload
+  );
   return response;
 };
 
