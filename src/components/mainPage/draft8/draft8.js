@@ -4,6 +4,10 @@ import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
+import img8a from "../../../assets/images/mainPage/8A.png";
+import img8b from "../../../assets/images/mainPage/8B.png";
+import img8c from "../../../assets/images/mainPage/8C.png";
+import img8d from "../../../assets/images/mainPage/8D.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft8 = () => {
@@ -33,7 +37,7 @@ const Draft8 = () => {
             </div>
           </div>
           <Link to="/in_where_we_exist/ecosystem_made_by_our_own_hands">
-            <img src={pinIcon} alt="8a" className="pos8a" />
+            <img src={img8a} alt="8a" className="pos8a" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -46,7 +50,7 @@ const Draft8 = () => {
             </div>
           </Link>
           <Link to="/in_where_we_exist/mobilize_elsewhere">
-            <img src={pinIcon} alt="8b" className="pos8b" />
+            <img src={img8b} alt="8b" className="pos8b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -59,7 +63,7 @@ const Draft8 = () => {
             </div>
           </Link>
           <Link to="/in_where_we_exist/keeping_it_running">
-            <img src={pinIcon} alt="8c" className="pos8c" />
+            <img src={img8c} alt="8c" className="pos8c" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -71,7 +75,7 @@ const Draft8 = () => {
             </div>
           </Link>
           <Link to="/in_where_we_exist/waste_no_more">
-            <img src={pinIcon} alt="8d" className="pos8d" />
+            <img src={img8d} alt="8d" className="pos8d" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
