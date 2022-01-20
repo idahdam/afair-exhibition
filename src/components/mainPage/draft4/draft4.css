@@ -57,11 +57,15 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642599228/draft6_cvs285.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1066px;
+  width: 1186px;
   height: 668px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.exitButton {
+  cursor: pointer;
 }
 
 .infotext {
@@ -137,9 +141,9 @@
   position: relative;
 }
 
-.pos4:hover {
-  /* transform: scale(1.5); */
-}
+/* .pos4:hover {
+  transform: scale(1.5); 
+} */
 
 .pos4:hover + .infotext {
   opacity: 1;

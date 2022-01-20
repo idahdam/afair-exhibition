@@ -1,16 +1,13 @@
 .topBarMain{
-  background-color: #F7F2EC;
+  background-color: #f7f2ec;
   width: 100%;
   position: sticky;
-  height: 60px;
+  height: 50px;
 }
 
 .topBarWrapperMain{
-  width: 1800px;
+  width: 1066px;
   position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .topBarLeftWrapperMain{
@@ -40,14 +37,19 @@
 
 .topBarRightMain{
   float: right;
-  margin-right:2%;
+  margin-right:4%;
 }
 
 .draft6Container {
   background-color: white;
+  z-index: 1;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .draft6BackImage {
@@ -91,7 +93,7 @@
   top: 892px;
 }
 
-.pos6b:hover {
+/* .pos6b:hover {
   transform: scale(1.5);
 }
 .pos6a:hover {
@@ -104,14 +106,14 @@
 
 .pos6b:hover + .infotext {
   opacity: 1;
-}
+} */
 
 .footer {
   position: absolute;
-  width: 1860px;
+  width: 1036px;
   bottom: 0;
-  margin-bottom: 50px;
-  padding: 0 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 .footerLeft {
   float: left;
@@ -162,7 +164,7 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
   .topBarWrapperMain{
     width: 1300px;
   }
@@ -193,4 +195,4 @@
     margin-bottom: 30px;
     padding: 0 30px;
   }
-}
+} */

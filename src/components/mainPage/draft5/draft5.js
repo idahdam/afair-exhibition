@@ -6,14 +6,18 @@ import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
+import beyond from "../../../assets/images/mainPage/eco.png";
+import inorderto from "../../../assets/images/mainPage/inOrderTo.png";
+import isense from "../../../assets/images/mainPage/isense.png";
+import what from "../../../assets/images/mainPage/what.png";
 import { Link } from "react-router-dom";
 const Draft5 = () => {
   const history = useHistory();
   Hover();
   return (
     <>
-      <div className="draft5Container">
-        <div className="draft5BackImage">
+      <div className="draftContainer">
+        <div className="draftBackImage">
           <div className="topBarMain">
             <div className="topBarWrapperMain">
               <div className="topBarLeftMain">
@@ -35,7 +39,7 @@ const Draft5 = () => {
           </div>
 
           <Link to="/understanding_us/beyond_our_senses">
-            <img src={pinIcon} alt="5a" className="pos5a" />
+            <img src={beyond} alt="5a" className="pos5a" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -49,7 +53,7 @@ const Draft5 = () => {
             </div>
           </Link>
           <Link to="/understanding_us/i_sense_therefore_i_feel">
-            <img src={pinIcon} alt="5b" className="pos5b" />
+            <img src={isense} alt="5b" className="pos5b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -64,7 +68,7 @@ const Draft5 = () => {
             </div>
           </Link>
           <Link to="/understanding_us/what_i_really_want">
-            <img src={pinIcon} alt="5c" className="pos5c" />
+            <img src={what} alt="5c" className="pos5c" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -77,7 +81,7 @@ const Draft5 = () => {
             </div>
           </Link>
           <Link to="/understanding_us/in_order_to">
-            <img src={pinIcon} alt="5d" className="pos5d" />
+            <img src={inorderto} alt="5d" className="pos5d" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
