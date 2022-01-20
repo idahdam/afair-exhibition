@@ -28,9 +28,11 @@ const Transisi = () => {
                   lineHeight: "29px",
                 }}
               >
-                It seems that each of us has felt something has changed in our
-                life somehow. Those changes lead to something beyond what we can
-                see.
+                As those changes and the solutions are merely predictions, we
+                are still unsure on what is going to happen. The practice of
+                architecture should constantly adapt to these challenges related
+                to the space we all experience. As we exist not only within the
+                space but time as well.
               </span>
             </p>
           </div>
