@@ -6,7 +6,7 @@
 }
 
 .topBar4WrapperMain {
-  width: 1066px;
+  width: 1186px;
   position: absolute;
 }
 
@@ -109,6 +109,7 @@
   width: 100%;
   left: 0px;
   bottom: 0;
+
 }
 
 .pos5 {
@@ -123,6 +124,7 @@
   width: 100%;
   left: 0px;
   bottom: 0px;
+
 }
 
 .pos7 {
@@ -130,6 +132,7 @@
   width: 25%;
   left: 1286px;
   top: 445px;
+
 }
 
 .pos8 {
@@ -137,6 +140,7 @@
   width: 30%;
   bottom: 0px;
   left: 35%;
+  
 }
 .content {
   position: relative;
@@ -193,7 +197,7 @@
 }
 .footer4 {
   position: absolute;
-  width: 1036px;
+  width: 1146px;
   bottom: 0;
   margin-bottom: 20px;
   padding: 0 20px;
