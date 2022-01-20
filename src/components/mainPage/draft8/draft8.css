@@ -1,5 +1,5 @@
 .topBarMain {
-  background-color: #F7F2EC;
+  background-color: #f7f2ec;
   width: 100%;
   position: sticky;
   height: 50px;
@@ -57,7 +57,7 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642597687/draft8_mmh4m0.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1066px;
+  width: 1186px;
   height: 668px;
   top: 50%;
   left: 50%;
@@ -83,26 +83,31 @@
 
 .pos8a {
   position: absolute;
-  left: 1169px;
-  top: 602px;
+  width: 43%;
+  left: 48.7%;
+  top: 181px;
 }
 
 .pos8b {
   position: absolute;
-  left: 1641px;
-  top: 674px;
+  width: 34.5%;
+  bottom: 0;
+  right: 5px;
 }
 
 .pos8c {
   position: absolute;
-  left: 523px;
-  top: 602px;
+  width: 18.9%;
+  top: 340px;
+  left: 274px;
 }
 
 .pos8d {
   position: absolute;
-  left: 1424px;
-  top: 341px;
+  width: 67.6%;
+  top: 42px;
+  left: 284px;
+  z-index: -1;
 }
 
 /* .pos8b:hover {
@@ -191,7 +196,6 @@
 .infoStyle:hover + .infotext2 {
   opacity: 1;
 }
-
 
 /* @media only screen and (max-width: 1600px) {
   .draft8BackImage {
