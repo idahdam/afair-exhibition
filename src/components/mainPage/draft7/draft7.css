@@ -1,43 +1,43 @@
-.topBarMain{
-  background-color: #F7F2EC;
+.topBarMain {
+  background-color: #f7f2ec;
   width: 100%;
   position: sticky;
   height: 50px;
 }
 
-.topBarWrapperMain{
+.topBarWrapperMain {
   width: 1066px;
   position: absolute;
 }
 
-.topBarLeftWrapperMain{
+.topBarLeftWrapperMain {
   float: left;
 }
 
-.topBarLeft2WrapperMain{
+.topBarLeft2WrapperMain {
   position: relative;
 }
 
-.topBarLeftTextWrapperMain{
+.topBarLeftTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(10px, -50%);
 }
 
-.topBarRightTextWrapperMain{
+.topBarRightTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(-20px, -50%);
 }
 
-.topBarLeftMain{
+.topBarLeftMain {
   float: left;
   margin-left: 2%;
 }
 
-.topBarRightMain{
+.topBarRightMain {
   float: right;
-  margin-right:4%;
+  margin-right: 4%;
 }
 
 .draft7Container {
@@ -83,28 +83,31 @@
 
 .pos7a {
   position: absolute;
-  left: 510px;
-  top: 206px;
+  width: 35.2%;
+  top: 110px;
+  left: 71.2px;
 }
 
 .pos7b {
   position: absolute;
-  left: 1560px;
-  top: 479px;
+  width: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .pos7c {
   position: absolute;
-  left: 999px;
-  top: 500px;
+  width: 13.3%;
+  left: 50.35%;
+  bottom: 123.5px;
 }
 
 .pos7d {
   position: absolute;
-  left: 934px;
-  top: 853px;
+  width: 25.5%;
+  bottom: 0;
+  left: 47.3%;
 }
-
 
 .pos7a:hover + .infotext {
   opacity: 1;
