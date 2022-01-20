@@ -1,7 +1,6 @@
 import React from "react";
 import "./draft6.css";
 import { Hover } from "../hoverfunc.js";
-import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import { Link, useHistory } from "react-router-dom";

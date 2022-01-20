@@ -2,7 +2,6 @@ import React from "react";
 import "./draft5.css";
 import { Hover } from "../hoverfunc.js";
 import { useHistory } from "react-router-dom";
-import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
@@ -37,7 +36,19 @@ const Draft5 = () => {
               </div>
             </div>
           </div>
-
+          <Link to="/understanding_us/in_order_to">
+            <img src={inorderto} alt="5d" className="pos5d" />
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">In Order To</div>
+              <div className="infoContent">
+                How human respond their needs and wants in order to face the
+                changes for their future.
+              </div>
+            </div>
+          </Link>
           <Link to="/understanding_us/beyond_our_senses">
             <img src={beyond} alt="5a" className="pos5a" />
             <div
@@ -80,19 +91,7 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/in_order_to">
-            <img src={inorderto} alt="5d" className="pos5d" />
-            <div
-              className="infotext"
-              style={{ transform: "translate(-110%, 10%)" }}
-            >
-              <div className="infoTitle">In Order To</div>
-              <div className="infoContent">
-                How human respond their needs and wants in order to face the
-                changes for their future.
-              </div>
-            </div>
-          </Link>
+
           <div className="footer">
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />

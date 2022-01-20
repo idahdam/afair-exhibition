@@ -1,7 +1,6 @@
 import React from "react";
 import "./draft7.css";
 import { Hover } from "../hoverfunc.js";
-import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import img7a from "../../../assets/images/mainPage/draft7_a.png";

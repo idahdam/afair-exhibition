@@ -6,7 +6,7 @@
 }
 
 .topBarWrapperMain {
-  width: 1066px;
+  width: 1186px;
   position: absolute;
 }
 
@@ -110,18 +110,18 @@
   z-index: -1;
 }
 
-/* .pos8b:hover {
-  transform: scale(1.5);
+.pos8b:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos8a:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos8c:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos8d:hover {
-  transform: scale(1.5);
-} */
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
 
 .pos8a:hover + .infotext {
   opacity: 1;
@@ -143,7 +143,7 @@
 
 .footer {
   position: absolute;
-  width: 1036px;
+  width: 1146px;
   bottom: 0;
   margin-bottom: 20px;
   padding: 0 20px;
