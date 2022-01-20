@@ -64,6 +64,10 @@
   transform: translate(-50%, -50%);
 }
 
+.exitButton {
+  cursor: pointer;
+}
+
 .infotext {
   font-family: "SFProDisplay Regular";
 }
@@ -128,7 +132,7 @@
 
 .pos8 {
   position: absolute;
-  width: 15px;
+  width: 25%;
   left: 476px;
   top: 579px;
 }
