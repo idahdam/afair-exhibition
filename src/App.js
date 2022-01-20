@@ -20,6 +20,8 @@ import AllItems from "./pages/AllItems";
 import Exit from "./pages/Exit";
 import ToMyselfInTheFuture from "./pages/ToMyselfInTheFuture";
 import GoodBye from "./pages/GoodBye";
+import AllItemsWithFilters from "./pages/AllItemsWithFilters";
+import AllItemsWithSort from "./pages/AllItemsWithSort";
 function App() {
   return (
     <>
@@ -38,6 +40,16 @@ function App() {
           <Route exact path="/imgBuild" component={ImgBuild} />
           <Route exact path="/apparently-yes" component={ApparentlyYes} />
           <Route exact path="/index" component={AllItems} />
+          <Route
+            exact
+            path="/index/filters/:params"
+            component={AllItemsWithFilters}
+          />
+          <Route
+            exact
+            path="/index/sort/:params"
+            component={AllItemsWithSort}
+          />
           <Route exact path="/into_the_wayout_future" component={MainPage} />
           <Route
             exact

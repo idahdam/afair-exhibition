@@ -34,22 +34,37 @@ const Draft6 = () => {
           </div>
           <Link to="/bodily_presence/our_body">
             <img src={pinIcon} alt="6a" className="pos6a" />
-            <span class="infotext">Our body</span>
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Our Body</div>
+              <div className="infoContent">
+                How body condition could change our wellbeing
+              </div>
+            </div>
           </Link>
           <Link to="/bodily_presence/in_action">
             <img src={pinIcon} alt="6b" className="pos6b" />
-            <span class="infotext">In Action</span>
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">In Action</div>
+              <div className="infoContent">
+                Interconnection between our body potential and the dynamics of
+                the activities carried out.
+              </div>
+            </div>
           </Link>
           <div className="footer">
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Judul</p>
+                <p>Bodily Presence</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  nec ultricies urna, quis tempus enim. Nullam ullamcorper metus
-                  non orci condimentum, ac dapibus purus commodo. Fusce
-                  fringilla orci auctor, feugiat tellus vel, lacinia nunc.
+                  Activities involving the human bodies are constantly altering.
+                  Space response has to adapt to its ever-changing needs.
                 </p>
               </div>
             </div>

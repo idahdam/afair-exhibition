@@ -34,30 +34,61 @@ const Draft8 = () => {
           </div>
           <Link to="/in_where_we_exist/ecosystem_made_by_our_own_hands">
             <img src={pinIcon} alt="8a" className="pos8a" />
-            <span class="infotext">Others Around</span>
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Ecosystem Made By Our Own Hands</div>
+              <div className="infoContent">
+                environmental cohesiveness between natural and built elements by
+                its components
+              </div>
+            </div>
           </Link>
           <Link to="/in_where_we_exist/mobilize_elsewhere">
             <img src={pinIcon} alt="8b" className="pos8b" />
-            <span class="infotext">Among Our Peers</span>{" "}
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Mobilize Elsewhere</div>
+              <div className="infoContent">
+                The enhancement of one{"’"}s displacement from a place to another
+              </div>
+            </div>
           </Link>
           <Link to="/in_where_we_exist/keeping_it_running">
             <img src={pinIcon} alt="8c" className="pos8c" />
-            <span class="infotext">Better Version of Us</span>
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Keeping It Running</div>
+              <div className="infoContent">
+                Methods of resource efficiency in a changing context
+              </div>
+            </div>
           </Link>
           <Link to="/in_where_we_exist/waste_no_more">
             <img src={pinIcon} alt="8d" className="pos8d" />
-            <span class="infotext">To Fulfill</span>
+            <div
+              className="infotext"
+              style={{ transform: "translate(-110%, 10%)" }}
+            >
+              <div className="infoTitle">Waste No More</div>
+              <div className="infoContent">
+                Waste is more than residue and will not always be useless
+              </div>
+            </div>
           </Link>
           <div className="footer">
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Judul</p>
+                <p>In Where We Exist</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  nec ultricies urna, quis tempus enim. Nullam ullamcorper metus
-                  non orci condimentum, ac dapibus purus commodo. Fusce
-                  fringilla orci auctor, feugiat tellus vel, lacinia nunc.
+                  How the relations between the environment and ourselves are
+                  dynamic, affecting each other endlessly.
                 </p>
               </div>
             </div>

@@ -7,7 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -23,9 +23,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AllItems = () => {
+const AllItemsWithSort = () => {
   const history = useHistory();
+  const { params } = useParams();
   const [open, setOpen] = React.useState(false);
+  const [sort, setSort] = useState("");
+  const [filters, setFilters] = useState("");
   const [modalData, setModalData] = useState({});
   const [loading, setLoading] = useState(false);
   const handleOpen = (item) => {
@@ -40,12 +43,14 @@ const AllItems = () => {
   const classes = useStyles();
   const [data, setData] = useState([]);
   useEffect(() => {
+    console.log(params);
     const fetchData = async () => {
-      const response = await artService.getArt();
+      const response = await artService.getArtsSorted(params);
+      console.log(response.data.data);
       setData(response.data.data);
     };
 
-    if (sessionStorage.getItem("guest-list") === "true") {
+    if (sessionStorage.getItem("guest-list") === "true" && sort === "") {
       fetchData();
     } else {
       history.push("/register");
@@ -61,7 +66,7 @@ const AllItems = () => {
     history.push("/index/filters/" + params);
     history.go(0);
   };
-
+  if (data.length === 0) return null;
   return (
     <div className="container">
       <div className="indexWrapper">
@@ -75,10 +80,10 @@ const AllItems = () => {
                 name="filters"
                 className="Dropdownstyle"
                 onChange={(e) => {
-                  handleFilters(e.target.value);
+                  console.log(e.target.value);
                 }}
               >
-                <option value="" disabled selected>
+                <option value="understanding_us" disabled selected>
                   Choose one to filter...
                 </option>
                 <option value="understanding_us">Understanding Us</option>
@@ -153,4 +158,4 @@ const AllItems = () => {
   );
 };
 
-export default AllItems;
+export default AllItemsWithSort;
