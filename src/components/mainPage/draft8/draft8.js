@@ -4,6 +4,10 @@ import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
+import img8a from "../../../assets/images/mainPage/8A.png";
+import img8b from "../../../assets/images/mainPage/8B.png";
+import img8c from "../../../assets/images/mainPage/8C.png";
+import img8d from "../../../assets/images/mainPage/8D.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft8 = () => {
