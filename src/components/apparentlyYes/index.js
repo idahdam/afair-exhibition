@@ -28,9 +28,9 @@ const ApparentlyYes = () => {
     from: { scroll: 0 },
     reset: true,
     reverse: flip,
-    delay: 500,
+    delay: 1000,
     // config: config.molasses,
-    config: { duration: 5000 },
+    config: { duration: 20000 },
     // onRest: () => set(!flip),
     onRest: () => {
       history.push("/transition");

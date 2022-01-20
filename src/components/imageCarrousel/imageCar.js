@@ -43,6 +43,12 @@ function ImgCar(props) {
   const [open, setOpen] = React.useState(false);
   const [data, setData] = useState([]);
 
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
+
   const handleOpen = () => {
     setOpen(true);
   };

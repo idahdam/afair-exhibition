@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import background from "../../assets/images/image3.png";
 import "./index.css";
 
 const Question = () => {
   const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   return (
     <div className="container">
       <img src={background} alt="Yes" className="image" />

@@ -1,9 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import { futureMessageService } from "../../services/futrureMessageService";
 import "./index.css";
 
 const ToMyselfInTheFuture = () => {
   const history = useHistory();
+  const [message, setMessage] = useState("");
+
+  const SubmitMessageAndRedirect = async () => {
+    await futureMessageService
+      .postFutureMessage({
+        message: message,
+        email: sessionStorage.getItem("email"),
+      })
+      .then((res) => {
+        if (res.status === 200) {
+          history.push("/goodbye");
+        } else {
+          alert("Failed to send message.");
+        }
+      });
+  };
   return (
     <>
       <div className="background2">
@@ -22,16 +39,27 @@ const ToMyselfInTheFuture = () => {
                   <textarea
                     className="wishes"
                     placeholder="Fill your message here"
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
-                  <p
-                    className="submit-wishes"
-                    onClick={() => {
-                      alert("wishes submitted! (testing)");
-                      history.push("/goodbye");
-                    }}
-                  >
-                    Submit
-                  </p>
+                  {message !== "" ? (
+                    <p
+                      className="submit-wishes"
+                      onClick={() => {
+                        SubmitMessageAndRedirect();
+                      }}
+                    >
+                      Submit
+                    </p>
+                  ) : (
+                    <p
+                      className="submit-wishes"
+                      onClick={() => {
+                        alert("Input your message.");
+                      }}
+                    >
+                      Submit
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

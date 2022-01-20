@@ -6,6 +6,9 @@ const Transisi = () => {
   const history = useHistory();
   useEffect(() => {
     let interval = null;
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
     interval = setInterval(() => {
       history.push("/to-myself-in-the-future");
     }, 5000);
