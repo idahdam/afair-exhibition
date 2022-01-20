@@ -83,21 +83,23 @@
 
 .pos6a {
   position: absolute;
-  left: 1019px;
-  top: 176px;
+  width: 19%;
+  left: 445px;
+  top: 53px;
 }
 
 .pos6b {
   position: absolute;
-  left: 1019px;
-  top: 892px;
+  width: 20%;
+  left: 440px;
+  top: 348px;
 }
 
-/* .pos6b:hover {
-  transform: scale(1.5);
+.pos6b:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos6a:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 
 .pos6a:hover + .infotext {
@@ -106,7 +108,7 @@
 
 .pos6b:hover + .infotext {
   opacity: 1;
-} */
+}
 
 .footer {
   position: absolute;
