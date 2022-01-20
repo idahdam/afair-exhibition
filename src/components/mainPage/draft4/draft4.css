@@ -1,6 +1,6 @@
 .topBar4Main {
   background-color: #f7f2ec;
-  width: 20%;
+  width: 100%;
   position: sticky;
   height: 50px;
 }
@@ -8,7 +8,6 @@
 .topBar4WrapperMain {
   width: 1066px;
   position: absolute;
-  background-color: red;
 
 }
 
@@ -23,7 +22,7 @@
 .topBar4LeftTextWrapperMain {
   position: absolute;
   top: 50%;
-  transform: translate(10px, -50%);
+  transform: translate(50px, -50%);
 }
 
 .topBar4RightTextWrapperMain {
@@ -39,14 +38,19 @@
 
 .topBar4RightMain {
   float: right;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .draft4Container {
   background-color: white;
+  z-index: 1;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .draft4BackImage {
@@ -54,8 +58,8 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642599228/draft6_cvs285.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1066px;
-  height: 568px;
+  width: 1266px;
+  height: 100vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
