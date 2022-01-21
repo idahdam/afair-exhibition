@@ -54,7 +54,7 @@ const Draft7 = () => {
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/redefine_public/integrating_the_physical_and_the_digital">
+          <Link to="/redefine_the_public/integrating_the_physical_and_the_digital">
             <img src={img7b} alt="7b" className="pos7b" />
             <div
               className="infotext"
@@ -70,7 +70,7 @@ const Draft7 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/redefine_public/speculating_the_industries">
+          <Link to="/redefine_the_public/speculating_the_industries">
             <img src={img7d} alt="7d" className="pos7d" />
             <div
               className="infotext"
@@ -84,7 +84,7 @@ const Draft7 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/redefine_public/among_the_culture_and_the_everyday">
+          <Link to="/redefine_the_public/among_the_culture_and_the_everyday">
             <img src={img7a} alt="7a" className="pos7a" />
             <div
               className="infotext"
@@ -99,7 +99,7 @@ const Draft7 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/redefine_public/sharing_knowledge_and_information">
+          <Link to="/redefine_the_public/sharing_knowledge_and_information">
             <img src={img7c} alt="7c" className="pos7c" />
 
             <div

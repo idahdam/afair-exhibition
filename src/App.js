@@ -30,14 +30,14 @@ function App() {
           <Route exact path="/" component={Fullpage} />
           {/* <Route exact path="/welcome" component={Intro} /> */}
           {/* <Route exact path="/main" component={MainPage} /> */}
+          {/* <Route exact path="/popBuild" component={PopUpBuild} /> */}
+          {/* <Route exact path="/build" component={Landing} /> */}
+          {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
           <Route exact path="/build" component={Landing} />
           <Route exact path="/register" component={Register} />
-          {/* <Route exact path="/popBuild" component={PopUpBuild} /> */}
           <Route exact path="/video" component={Video} />
-          {/* <Route exact path="/build" component={Landing} /> */}
           <Route exact path="/question" component={Question} />
           <Route exact path="/transition" component={Transisi} />
-          {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
           <Route exact path="/not-really" component={NotReally} />
           <Route exact path="/index" component={AllItems} />
           <Route
