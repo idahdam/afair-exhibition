@@ -15,6 +15,7 @@ import { Link, useHistory, useParams } from "react-router-dom";
 import { artService } from "../../services/artService";
 import { css } from "@emotion/react";
 import MoonLoader from "react-spinners/MoonLoader";
+import { datas } from "./data";
 
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
@@ -46,6 +47,7 @@ function ImgCar(props) {
   const [data, setData] = useState([]);
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("black");
+  let dataCarousel = datas.find((datas) => datas.slug === params);
 
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -199,11 +201,8 @@ function ImgCar(props) {
             <div className="footerCarLeft">
               <img src={info} alt="info" className="infoCarStyle" />
               <div class="infoCarText">
-                <p>Into The Wayout Future</p>
-                <p>
-                  Unseen changes that is only felt by ourselves. They often
-                  relate to each and every individual's emotions
-                </p>
+                <p>{dataCarousel.title}</p>
+                <p>{dataCarousel.body}</p>
               </div>
             </div>
             <div

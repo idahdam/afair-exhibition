@@ -91,7 +91,7 @@ const Draft8 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="">Keeping It RunningL Performative Systems</div>
+              <div className="">Keeping It Running: Performative Systems</div>
               <br />
               <div className="">
                 Highlighting methods of resource efficiency in a changing
