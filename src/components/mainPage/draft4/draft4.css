@@ -109,7 +109,6 @@
   width: 100%;
   left: 0px;
   bottom: 0;
-
 }
 
 .pos5 {
@@ -124,7 +123,6 @@
   width: 100%;
   left: 0px;
   bottom: 0px;
-
 }
 
 .pos7 {
@@ -132,7 +130,6 @@
   width: 25%;
   left: 1286px;
   top: 445px;
-
 }
 
 .pos8 {
@@ -140,7 +137,6 @@
   width: 30%;
   bottom: 0px;
   left: 35%;
-  
 }
 .content {
   position: relative;
@@ -161,7 +157,6 @@
 .pos8:hover {
   filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
-
 
 .pos4:hover + .infotext {
   opacity: 1;

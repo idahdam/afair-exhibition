@@ -25,21 +25,27 @@ const Draft7 = () => {
         <div className="draft7BackImage">
           <div className="topBarMain">
             <div className="topBarWrapperMain">
-              <div className="topBarLeftMain">
-                <div className="topBarLeftWrapperMain">
-                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
-                </div>
-                <div className="topBarLeftWrapperMain">
-                  <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
+              <Link to="/into_the_wayout_future">
+                <div className="topBarLeftMain">
+                  <div className="topBarLeftWrapperMain">
+                    <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                  </div>
+                  <div className="topBarLeftWrapperMain">
+                    <div className="topBarLeftWrapper2" Main>
+                      <div className="topBarLeftTextWrapperMain">
+                        AFAIR 2022
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="topBarRightMain">
-                <div className="topBarLeftWrapper2Main">
-                  <div className="topBarRightTextWrapperMain">index</div>
+              </Link>
+              <Link to="/index">
+                <div className="topBarRightMain">
+                  <div className="topBarLeftWrapper2Main">
+                    <div className="topBarRightTextWrapperMain">Index</div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <Modal
