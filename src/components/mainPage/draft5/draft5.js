@@ -50,63 +50,66 @@ const Draft5 = () => {
             </div>
           </div>
           <Modal
-            title="Understanding Us"
-            desc="Unseen changes that is only felt by ourselves. They often
-          relate to each and every individual's emotions"
+            title="Altering the Self"
+            desc="Capturing the unseen changes that are only felt by ourselves, often related to each and every individual's emotions"
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/understanding_us/in_order_to">
+          <Link to="/altering_the_self/in_order_to">
             <img src={inorderto} alt="5d" className="pos5d" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">In Order To</div>
+              <div className="infoTitle">Past Events, and Beyond</div>
               <div className="infoContent">
-                How human respond their needs and wants in order to face the
-                changes for their future.
+                Space is shaped by conditions of humans' emotion and memory
+                attributed by past events. Memory involvement, psychological
+                intervention in regards to past events and identities alter the
+                possible intervention of space
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/i_sense_therefore_i_feel">
+          <Link to="/altering_the_self/i_sense_therefore_i_feel">
             <img src={beyond} alt="5a" className="pos5a" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">I Sense Therefore I Feel</div>
+              <div className="infoTitle">Linking the System Gap</div>
               <div className="infoContent">
-                How human tries to understand their own emotions in the
-                space.Memory involvement; Psychological memory and mind
-                intervention by space
+                Speculating the environmental and urban systems driven by self
+                perception and individual way of life, annotating the gap and
+                respond to the foreseeable future changes.
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/beyond_our_senses">
+          <Link to="/altering_the_self/beyond_our_senses">
             <img src={isense} alt="5b" className="pos5b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Beyond Our Senses</div>
+              <div className="infoTitle">The Customized Individuality</div>
               <div className="infoContent">
-                How human tries to understand their own emotions in the
-                space.Memory involvement; Psychological memory and mind
-                intervention by space
+                Space can be altered and customized by human desires to have a
+                creative platform of expression, creating various scenarios of
+                programming that support the users' individuality
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/what_i_really_want">
+          <Link to="/altering_the_self/what_i_really_want">
             <img src={what} alt="5c" className="pos5c" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">What I Really Wants</div>
+              <div className="infoTitle">I Sense, Therefore I Experience</div>
               <div className="infoContent">
-                How human desires created after they feel the changes their
-                surrounding.
+                Human senses become the centre of information, absorbing the
+                stimulus information of the space around them. The stimulus
+                shape experiences towards the space around them, and acknowledge
+                the changes occurred around and to the space.
               </div>
             </div>
           </Link>
@@ -115,10 +118,10 @@ const Draft5 = () => {
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Understanding Us</p>
+                <p>Altering the Self</p>
                 <p>
-                  Unseen changes that is only felt by ourselves. They often
-                  relate to each and every individual's emotions
+                  Capturing the unseen changes that are only felt by ourselves,
+                  often related to each and every individual's emotions
                 </p>
               </div>
             </div>

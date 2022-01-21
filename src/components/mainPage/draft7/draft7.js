@@ -49,8 +49,8 @@ const Draft7 = () => {
             </div>
           </div>
           <Modal
-            title="Everyone As Well"
-            desc="Changes happening not only within the individuality, but rather outside involving the collective."
+            title="Redefine the Public"
+            desc="Changes are happening not by the individual drive or within the individual terrain, but rather by and to the collective public, redefining the shared spaces."
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
@@ -60,9 +60,14 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, -20%)" }}
             >
-              <div className="infoTitle">Others Around</div>
+              <div className="infoTitle">
+                Integrating the Physical and the Digital
+              </div>
               <div className="infoContent">
-                The evolution of human methods to connect each other
+                Speculating alternative ways of interactions within the society.
+                The current evolution of human methods of connecting with each
+                other emphasizes the merge between the physical and the digital
+                realm.
               </div>
             </div>
           </Link>
@@ -72,9 +77,10 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">To Fulfill</div>
+              <div className="infoTitle">Speculating the Industries</div>
               <div className="infoContent">
-                Adaptation by humans to fulfill their needs
+                Adaptation of workspaces and systems of the industry, creating
+                new means of working and new flows of goods and services
               </div>
             </div>
           </Link>
@@ -84,10 +90,13 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(10%, 10%)" }}
             >
-              <div className="infoTitle">Among Our Peers</div>
+              <div className="infoTitle">
+                Among the Culture and the Everyday
+              </div>
               <div className="infoContent">
-                The alteration of human interaction contributes in social
-                communities
+                The alteration of human interactions as a shared cultural and
+                everyday life response and its contribution to the social and
+                spatial structures of the communities
               </div>
             </div>
           </Link>
@@ -98,10 +107,11 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Better Version of Us</div>
+              <div className="infoTitle">Sharing Knowledge and Information</div>
               <div className="infoContent">
-                Attempt to figure out surroundings that keep changing in order
-                to adapt in it
+                Attempts to educate communities and figure out new and dynamic
+                ways of sharing knowledge and distributing information, towards
+                a more knowledgeable and skilled society
               </div>
             </div>
           </Link>
@@ -109,10 +119,11 @@ const Draft7 = () => {
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Everyone As Well</p>
+                <p>Redefine the Public</p>
                 <p>
-                  Changes happening not within the individuality, but rather
-                  outside involving the collective.
+                  Changes are happening not by the individual drive or within
+                  the individual terrain, but rather by and to the collective
+                  public, redefining the shared spaces.
                 </p>
               </div>
             </div>

@@ -56,7 +56,7 @@ const Draft4 = () => {
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/in_where_we_exist">
+          <Link to="/environment_reconstruct">
             <img src={img4} alt="imgIcon" className="pos4" />
             <div
               className="infotext"
@@ -86,7 +86,7 @@ const Draft4 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/everyone_as_well">
+          <Link to="/redefine_the_public">
             <img src={img6} alt="imgIcon" className="pos6" />
             <div className="infotext">
               <div className="infoTitle">Redefine the Public</div>
@@ -98,7 +98,7 @@ const Draft4 = () => {
             </div>
           </Link>
 
-          <Link to="/understanding_us">
+          <Link to="/altering_the_self">
             <img src={img8} alt="imgIcon" className="pos8" />
             <div className="infotext">
               <div className="infoTitle">Altering the Self</div>
