@@ -26,7 +26,7 @@ const Draft5 = () => {
         <div className="draftBackImage">
           <div className="topBarMain">
             <div className="topBarWrapperMain">
-              <Link to="">
+              <Link to="/into_the_wayout_future">
                 <div className="topBarLeftMain">
                   <div className="topBarLeftWrapperMain">
                     <img src={topLogo} alt="arrow" className="iconArrowRight" />

@@ -56,14 +56,22 @@ function App() {
             path="/into_the_wayout_future/:params"
             component={ImgBuild}
           />
-          <Route exact path="/understanding_us" component={Draft5} />
-          <Route exact path="/understanding_us/:params" component={ImgBuild} />
+          <Route exact path="/altering_the_self" component={Draft5} />
+          <Route exact path="/altering_the_self/:params" component={ImgBuild} />
           <Route exact path="/bodily_presence" component={Draft6} />
           <Route exact path="/bodily_presence/:params" component={ImgBuild} />
-          <Route exact path="/everyone_as_well" component={Draft7} />
-          <Route exact path="/everyone_as_well/:params" component={ImgBuild} />
-          <Route exact path="/in_where_we_exist" component={Draft8} />
-          <Route exact path="/in_where_we_exist/:params" component={ImgBuild} />
+          <Route exact path="/redefine_the_public" component={Draft7} />
+          <Route
+            exact
+            path="/redefine_the_public/:params"
+            component={ImgBuild}
+          />
+          <Route exact path="/environment_reconstruct" component={Draft8} />
+          <Route
+            exact
+            path="/environment_reconstruct/:params"
+            component={ImgBuild}
+          />
           <Route exact path="/exit" component={Exit} />
           <Route
             exact
