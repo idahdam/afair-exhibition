@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./draft6.css";
 import { Hover } from "../hoverfunc.js";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
@@ -9,6 +9,11 @@ import imgBawah from "../../../assets/images/mainPage/bodyBawah.png";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft6 = () => {
   const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   Hover();
   return (
     <>

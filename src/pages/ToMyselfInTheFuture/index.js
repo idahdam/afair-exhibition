@@ -6,7 +6,11 @@ import "./index.css";
 const ToMyselfInTheFuture = () => {
   const history = useHistory();
   const [message, setMessage] = useState("");
-
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   const SubmitMessageAndRedirect = async () => {
     // await futureMessageService
     //   .postFutureMessage({

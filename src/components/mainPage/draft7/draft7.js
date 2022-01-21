@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./draft7.css";
 import { Hover } from "../hoverfunc.js";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
@@ -11,6 +11,11 @@ import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft7 = () => {
   const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   Hover();
   return (
     <>
