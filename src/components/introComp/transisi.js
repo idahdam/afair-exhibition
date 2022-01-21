@@ -11,7 +11,7 @@ const Transisi = () => {
     }
     interval = setInterval(() => {
       history.push("/into_the_wayout_future");
-    }, 5000);
+    }, 60000);
     // }
     return () => (interval ? clearInterval(interval) : null);
   }, []);
@@ -52,7 +52,7 @@ const Transisi = () => {
                   fontWeight: "300",
                 }}
               >
-                Prof. Yandi Andri</span><br/>
+                Prof. Yandi Andri Yatmo, PhD </span><br/>
                 <span
                 style={{
                   fontSize: "20px",
@@ -60,7 +60,7 @@ const Transisi = () => {
                   fontWeight: "300",
                 }}
               >
-                Yatmo, PhD AFAIR UI 2022 Exhibition Curator
+                AFAIR UI 2022 Exhibition Curator
               </span>
               </p>
           </div>
