@@ -11,7 +11,7 @@ const Transisi = () => {
     }
     interval = setInterval(() => {
       history.push("/into_the_wayout_future");
-    }, 5000);
+    }, 60000);
     // }
     return () => (interval ? clearInterval(interval) : null);
   }, []);
