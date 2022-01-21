@@ -100,7 +100,7 @@ function ImgCar(props) {
   }));
   if (data.length === 0)
     return (
-      <MoonLoader color={color} loading={loading} css={override} size={15} />
+      <MoonLoader color={color} loading={loading} css={override} size={50} />
     );
   return (
     <div className="carrouselBackground">

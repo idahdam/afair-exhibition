@@ -27,21 +27,27 @@ const Draft4 = () => {
         <div className="draft4BackImage">
           <div className="topBar4Main">
             <div className="topBar4WrapperMain">
-              <div className="topBar4LeftMain">
-                <div className="topBarLef4tWrapperMain">
-                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
-                </div>
-                <div className="topBar4LeftWrapperMain">
-                  <div className="topBar4LeftWrapper2" Main>
-                    <div className="topBar4LeftTextWrapperMain">AFAIR 2022</div>
+              <Link to="/into_the_wayout_future">
+                <div className="topBar4LeftMain">
+                  <div className="topBarLef4tWrapperMain">
+                    <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                  </div>
+                  <div className="topBar4LeftWrapperMain">
+                    <div className="topBar4LeftWrapper2" Main>
+                      <div className="topBar4LeftTextWrapperMain">
+                        AFAIR 2022
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="topBar4RightMain">
-                <div className="topBar4LeftWrapper2Main">
-                  <div className="topBar4RightTextWrapperMain">index</div>
+              </Link>
+              <Link to="/index">
+                <div className="topBar4RightMain">
+                  <div className="topBar4LeftWrapper2Main">
+                    <div className="topBar4RightTextWrapperMain">Index</div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <Modal
