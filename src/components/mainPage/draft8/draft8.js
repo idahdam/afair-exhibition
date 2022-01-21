@@ -61,8 +61,9 @@ const Draft8 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Ecosystem Made By Our Own Hands</div>
-              <div className="infoContent">
+              <div className="">Ecosystem Made By Our Own Hands</div>
+              <br />
+              <div className="">
                 Weaving an environmental cohesiveness between natural and built
                 elements by its components, utilizing leftover materials and
                 leftover spaces, developing the ecosystem
@@ -75,8 +76,9 @@ const Draft8 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Speed and Transition</div>
-              <div className="infoContent">
+              <div className="">Speed and Transition</div>
+              <br />
+              <div className="">
                 Enhancing and regulating urban mobilization, creating new
                 channels of movements as well as transitional spaces to support
                 the balance of urban livelihood
@@ -89,10 +91,9 @@ const Draft8 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">
-                Keeping It RunningL Performative Systems
-              </div>
-              <div className="infoContent">
+              <div className="">Keeping It RunningL Performative Systems</div>
+              <br />
+              <div className="">
                 Highlighting methods of resource efficiency in a changing
                 context, operating the built environment using creative and
                 clean energy sources
@@ -105,8 +106,9 @@ const Draft8 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Waste No More</div>
-              <div className="infoContent">
+              <div className="">Waste No More</div>
+              <br />
+              <div className="">
                 Wasted spaces, wasted goods, wasted substances should be seen as
                 more than residue and must be transformed to regain further use
               </div>

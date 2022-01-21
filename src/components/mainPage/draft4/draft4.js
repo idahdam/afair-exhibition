@@ -62,8 +62,9 @@ const Draft4 = () => {
               className="infotext"
               // style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Environment: Reconstruct</div>
-              <div className="infoContent">
+              <div className="">Environment: Reconstruct</div>
+              <br />
+              <div className="">
                 Redefining the natural and the built environment, creating new
                 materials, systems, and spatial relations within the
                 civilization
@@ -73,10 +74,9 @@ const Draft4 = () => {
           <Link Link to="/bodily_presence">
             <img src={img5} alt="imgIcon" className="pos5" />
             <div className="infotext">
-              <div className="infoTitle">
-                Bodily Presence: In Space, To Space
-              </div>
-              <div className="infoContent">
+              <div className="">Bodily Presence: In Space, To Space</div>
+              <br />
+              <div className="">
                 The bodies of living beings present arrays of parameters that
                 represent their dynamic conditions, providing oppportunities to
                 inform spatial alteration. The bodies provides possibilities of
@@ -89,8 +89,9 @@ const Draft4 = () => {
           <Link to="/redefine_the_public">
             <img src={img6} alt="imgIcon" className="pos6" />
             <div className="infotext">
-              <div className="infoTitle">Redefine the Public</div>
-              <div className="infoContent">
+              <div className="">Redefine the Public</div>
+              <br />
+              <div className="">
                 Changes are happening not by the individual drive or within the
                 individual terrain, but rather by and to the collective public,
                 redefining the shared spaces.
@@ -101,8 +102,9 @@ const Draft4 = () => {
           <Link to="/altering_the_self">
             <img src={img8} alt="imgIcon" className="pos8" />
             <div className="infotext">
-              <div className="infoTitle">Altering the Self</div>
-              <div className="infoContent">
+              <div className="">Altering the Self</div>
+              <br />
+              <div className="">
                 Capturing the unseen changes that are only felt by ourselves,
                 often related to each and every individual's emotions
               </div>

@@ -61,8 +61,9 @@ const Draft5 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Past Events, and Beyond</div>
-              <div className="infoContent">
+              <div className="">Past Events, and Beyond</div>
+              <br />
+              <div className="">
                 Space is shaped by conditions of humans' emotion and memory
                 attributed by past events. Memory involvement, psychological
                 intervention in regards to past events and identities alter the
@@ -76,8 +77,9 @@ const Draft5 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Linking the System Gap</div>
-              <div className="infoContent">
+              <div className="">Linking the System Gap</div>
+              <br />
+              <div className="">
                 Speculating the environmental and urban systems driven by self
                 perception and individual way of life, annotating the gap and
                 respond to the foreseeable future changes.
@@ -90,8 +92,9 @@ const Draft5 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">The Customized Individuality</div>
-              <div className="infoContent">
+              <div className="">The Customized Individuality</div>
+              <br />
+              <div className="">
                 Space can be altered and customized by human desires to have a
                 creative platform of expression, creating various scenarios of
                 programming that support the users' individuality
@@ -104,8 +107,9 @@ const Draft5 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">I Sense, Therefore I Experience</div>
-              <div className="infoContent">
+              <div className="">I Sense, Therefore I Experience</div>
+              <br />
+              <div className="">
                 Human senses become the centre of information, absorbing the
                 stimulus information of the space around them. The stimulus
                 shape experiences towards the space around them, and acknowledge

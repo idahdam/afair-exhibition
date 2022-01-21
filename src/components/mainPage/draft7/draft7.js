@@ -60,10 +60,9 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, -20%)" }}
             >
-              <div className="infoTitle">
-                Integrating the Physical and the Digital
-              </div>
-              <div className="infoContent">
+              <div className="">Integrating the Physical and the Digital</div>
+              <br />
+              <div className="">
                 Speculating alternative ways of interactions within the society.
                 The current evolution of human methods of connecting with each
                 other emphasizes the merge between the physical and the digital
@@ -77,8 +76,9 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Speculating the Industries</div>
-              <div className="infoContent">
+              <div className="">Speculating the Industries</div>
+              <br />
+              <div className="">
                 Adaptation of workspaces and systems of the industry, creating
                 new means of working and new flows of goods and services
               </div>
@@ -90,10 +90,9 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(10%, 10%)" }}
             >
-              <div className="infoTitle">
-                Among the Culture and the Everyday
-              </div>
-              <div className="infoContent">
+              <div className="">Among the Culture and the Everyday</div>
+              <br />
+              <div className="">
                 The alteration of human interactions as a shared cultural and
                 everyday life response and its contribution to the social and
                 spatial structures of the communities
@@ -107,8 +106,9 @@ const Draft7 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Sharing Knowledge and Information</div>
-              <div className="infoContent">
+              <div className="">Sharing Knowledge and Information</div>
+              <br />
+              <div className="">
                 Attempts to educate communities and figure out new and dynamic
                 ways of sharing knowledge and distributing information, towards
                 a more knowledgeable and skilled society

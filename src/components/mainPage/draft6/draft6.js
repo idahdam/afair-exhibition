@@ -58,8 +58,9 @@ const Draft6 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">The Augmented Body</div>
-              <div className="infoContent">
+              <div className="">The Augmented Body</div>
+              <br />
+              <div className="">
                 Ability to sense and create modification to the body drives
                 possibilities of scenarios of spaces that responds to our
                 physical and mental wellbeing; spanning from energy to
@@ -73,8 +74,9 @@ const Draft6 = () => {
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Provoking the Body</div>
-              <div className="infoContent">
+              <div className="">Provoking the Body</div>
+              <br />
+              <div className="">
                 Design can enable, develop, enhance, and promote possibilities
                 of bodily potential, as well as the dynamics of the activities
                 being carried out.
