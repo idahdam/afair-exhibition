@@ -78,7 +78,7 @@ const Draft7 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/everyone_as_well/amoung_our_peers">
+          <Link to="/everyone_as_well/among_our_peers">
             <img src={img7a} alt="7a" className="pos7a" />
             <div
               className="infotext"
