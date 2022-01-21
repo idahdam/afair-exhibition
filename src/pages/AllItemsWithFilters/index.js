@@ -63,7 +63,7 @@ const AllItemsWithFilters = () => {
     history.push("/index/filters/" + params);
     history.go(0);
   };
-
+  if (data.length === 0) return null;
   return (
     <div className="container">
       <div className="indexWrapper">

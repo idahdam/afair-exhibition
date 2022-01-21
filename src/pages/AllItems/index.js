@@ -8,6 +8,7 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
 import { useHistory, Link } from "react-router-dom";
+import LazyLoad from "react-lazyload";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -42,6 +43,7 @@ const AllItems = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await artService.getArt();
+      console.log(response.data.data);
       setData(response.data.data);
     };
 
@@ -115,14 +117,16 @@ const AllItems = () => {
               {data.map((item) => {
                 return (
                   <div className="child">
-                    <img
-                      src={item.attributes.art.data.attributes.url}
-                      alt="sss"
-                      className="item_image"
-                      onClick={() => handleOpen(item)}
-                    />
-                    <p className="item_title">{item.attributes.title}</p>
-                    <p className="item_author">{item.attributes.author}</p>
+                    <LazyLoad>
+                      <img
+                        src={item.attributes.art.data.attributes.url}
+                        alt="sss"
+                        className="item_image"
+                        onClick={() => handleOpen(item)}
+                      />
+                      <p className="item_title">{item.attributes.title}</p>
+                      <p className="item_author">{item.attributes.author}</p>
+                    </LazyLoad>
                   </div>
                 );
               })}
