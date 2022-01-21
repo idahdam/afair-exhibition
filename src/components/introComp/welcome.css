@@ -11,6 +11,14 @@
   background-size: cover;
   font-family: "SFProDisplay Regular";
 }
+.background23 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "SFProDisplay Regular";
+}
 .bgContainerText3 {
   position: absolute;
   /* background-color: aqua; */
@@ -69,20 +77,18 @@
   }
 }
 
+.titleTrans {
+  text-align: left;
+  font-weight: 10;
+  font-size: 20px;
+}
+
 .bgWrapper2 {
   padding-left: 5%;
   padding-right: 5%;
   top: 0;
   position: absolute;
   max-width: 1366px;
-}
-
-.textContainer2 {
-  /* background-color: aqua; */
-}
-
-.textContainer2 {
-  /* background-color: aqua; */
 }
 
 .subtext2 {
@@ -104,6 +110,13 @@
   font-size: 48px;
   font-weight: 300;
   line-height: 60px;
+  font-family: "SFProDisplay Regular";
+}
+
+.title3 {
+  font-size: 61px;
+  font-weight: 300;
+  line-height: 65px;
   font-family: "SFProDisplay Regular";
 }
 
