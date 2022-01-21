@@ -38,7 +38,7 @@ const NotReally = () => {
     reverse: flip,
     delay: 1000,
     // config: config.molasses,
-    config: { duration: 30000 },
+    config: { duration: 40000 },
     // config: { duration: 5000000 },
     // onRest: () => set(!flip),
     onRest: () => {
@@ -47,13 +47,15 @@ const NotReally = () => {
   });
 
   return (
+    <>
+    <div className="Scrollbg">
+      <div className="scrollWrapper">
     <div className="scrollContainer">
       <animated.div
         style={{
           position: "absolute",
           width: "95%",
           height: 600,
-          paddingTop: "0.375em",
           overflow: "auto",
           fontSize: "4em",
           paddingLeft: "1em",
@@ -71,6 +73,9 @@ const NotReally = () => {
       <img src={img2} alt="image1" className="image2pos" />
       <img src={img3} alt="image1" className="image3pos" />
     </div>
+    </div>
+    </div>
+    </>
   );
 };
 
