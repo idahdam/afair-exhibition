@@ -1,15 +1,18 @@
-.container {
-  position: relative;
+.background {
   text-align: center;
-  color: white;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  background-color: black;
   color: white;
-  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "SFProDisplay Regular";
 }
 
 .image {

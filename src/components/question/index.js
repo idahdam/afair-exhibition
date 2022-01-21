@@ -11,8 +11,8 @@ const Question = () => {
     }
   }, []);
   return (
-    <div className="container">
-      <img src={background} alt="Yes" className="image" />
+    <div className="background">
+      {/* <img src={background} alt="Yes" className="image" /> */}
       <div className="centered">
         <div>Have you noticed any changes in your life recently?</div>
         <br />
