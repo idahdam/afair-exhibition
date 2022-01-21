@@ -22,7 +22,7 @@ const goodBye3 = () => {
                 <div className="contentContainer">
                   <div className="contentTitle">Media Partners </div>
                   <div className="contentImg">
-                    <img src={logoBanyak} alt="logoBnayak" />
+                    <img src={logoBanyak} alt="logoBnayak" className="logoBanyak"/>
                   </div>
                 </div>
               </div>
