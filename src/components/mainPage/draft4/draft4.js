@@ -11,6 +11,7 @@ import img6 from "../../../assets/images/mainPage/draft4_6.png";
 import img8 from "../../../assets/images/mainPage/draft4_8.png";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 import { Link } from "react-router-dom";
+import Modal from "react-modal";
 const Draft4 = () => {
   const history = useHistory();
   useEffect(() => {
