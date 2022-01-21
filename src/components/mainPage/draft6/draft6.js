@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft6.css";
 import { Hover } from "../hoverfunc.js";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
@@ -7,7 +7,9 @@ import { Link, useHistory } from "react-router-dom";
 import imgAtas from "../../../assets/images/mainPage/bodyAtas.png";
 import imgBawah from "../../../assets/images/mainPage/bodyBawah.png";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
+import Modal from "../modal/modal";
 const Draft6 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -38,6 +40,12 @@ const Draft6 = () => {
               </div>
             </div>
           </div>
+          <Modal
+            title="I Sense Therefore I Feel"
+            desc="How human senses become the center of information processing of the space around them and acknowledge the changes occurred around them.To feel; Human senses absorb the stimulus information of the space around them."
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/bodily_presence/our_body">
             <img src={imgAtas} alt="6a" className="pos6a" />
             <div

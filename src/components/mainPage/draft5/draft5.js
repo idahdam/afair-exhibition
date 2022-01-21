@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft5.css";
 import { Hover } from "../hoverfunc.js";
 import { useHistory } from "react-router-dom";
@@ -10,7 +10,9 @@ import inorderto from "../../../assets/images/mainPage/inOrderTo.png";
 import isense from "../../../assets/images/mainPage/isense.png";
 import what from "../../../assets/images/mainPage/what.png";
 import { Link } from "react-router-dom";
+import Modal from "../modal/modal";
 const Draft5 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -41,6 +43,13 @@ const Draft5 = () => {
               </div>
             </div>
           </div>
+          <Modal
+            title="Understanding Us"
+            desc="Unseen changes that is only felt by ourselves. They often
+          relate to each and every individual's emotions"
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/understanding_us/in_order_to">
             <img src={inorderto} alt="5d" className="pos5d" />
             <div

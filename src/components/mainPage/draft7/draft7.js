@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft7.css";
 import { Hover } from "../hoverfunc.js";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
@@ -9,7 +9,9 @@ import img7c from "../../../assets/images/mainPage/draft7_c.png";
 import img7d from "../../../assets/images/mainPage/draft7_d.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
+import Modal from "../modal/modal";
 const Draft7 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -40,7 +42,12 @@ const Draft7 = () => {
               </div>
             </div>
           </div>
-
+          <Modal
+            title="Everyone As Well"
+            desc="Changes happening not only within the individuality, but rather outside involving the collective."
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/everyone_as_well/others_around">
             <img src={img7b} alt="7b" className="pos7b" />
             <div

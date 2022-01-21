@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft4.css";
 import { Hover } from "../hoverfunc.js";
 import { useHistory } from "react-router-dom";
@@ -11,8 +11,9 @@ import img6 from "../../../assets/images/mainPage/draft4_6.png";
 import img8 from "../../../assets/images/mainPage/draft4_8.png";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 import { Link } from "react-router-dom";
-import Modal from "react-modal";
+import Modal from "../modal/modal";
 const Draft4 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -43,7 +44,13 @@ const Draft4 = () => {
               </div>
             </div>
           </div>
-
+          <Modal
+            title="Into The Wayout Future"
+            desc="Unseen changes that is only felt by ourselves. They often
+          relate to each and every individual's emotions"
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/in_where_we_exist">
             <img src={img4} alt="imgIcon" className="pos4" />
             <div

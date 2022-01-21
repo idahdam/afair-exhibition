@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft8.css";
 import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
@@ -10,7 +10,9 @@ import img8c from "../../../assets/images/mainPage/8C.png";
 import img8d from "../../../assets/images/mainPage/8D.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
+import Modal from "../modal/modal";
 const Draft8 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -41,6 +43,13 @@ const Draft8 = () => {
               </div>
             </div>
           </div>
+          <Modal
+            title="Into The Wayout Future"
+            desc="Unseen changes that is only felt by ourselves. They often
+          relate to each and every individual's emotions"
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/in_where_we_exist/ecosystem_made_by_our_own_hands">
             <img src={img8a} alt="8a" className="pos8a" />
             <div
