@@ -50,59 +50,67 @@ const Draft8 = () => {
             </div>
           </div>
           <Modal
-            title="Into The Wayout Future"
-            desc="Unseen changes that is only felt by ourselves. They often
-          relate to each and every individual's emotions"
+            title="Environment: Reconstruct"
+            desc="Redefining the natural and the built environment, creating new materials, systems, and spatial relations within the civilization "
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/in_where_we_exist/ecosystem_made_by_our_own_hands">
+          <Link to="/environment_reconstruct/ecosystem_made_by_our_own_hands">
             <img src={img8a} alt="8a" className="pos8a" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Ecosystem Made By Our Own Hands</div>
-              <div className="infoContent">
-                environmental cohesiveness between natural and built elements by
-                its components
+              <div className="">Ecosystem Made By Our Own Hands</div>
+              <br />
+              <div className="">
+                Weaving an environmental cohesiveness between natural and built
+                elements by its components, utilizing leftover materials and
+                leftover spaces, developing the ecosystem
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist/mobilize_elsewhere">
+          <Link to="/environment_reconstruct/speed_and_transition">
             <img src={img8b} alt="8b" className="pos8b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Mobilize Elsewhere</div>
-              <div className="infoContent">
-                The enhancement of one{"’"}s displacement from a place to
-                another
+              <div className="">Speed and Transition</div>
+              <br />
+              <div className="">
+                Enhancing and regulating urban mobilization, creating new
+                channels of movements as well as transitional spaces to support
+                the balance of urban livelihood
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist/keeping_it_running">
+          <Link to="/environment_reconstruct/keeping_it_running_performative_systems">
             <img src={img8c} alt="8c" className="pos8c" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Keeping It Running</div>
-              <div className="infoContent">
-                Methods of resource efficiency in a changing context
+              <div className="">Keeping It Running: Performative Systems</div>
+              <br />
+              <div className="">
+                Highlighting methods of resource efficiency in a changing
+                context, operating the built environment using creative and
+                clean energy sources
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist/waste_no_more">
+          <Link to="/environment_reconstruct/waste_no_more">
             <img src={img8d} alt="8d" className="pos8d" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Waste No More</div>
-              <div className="infoContent">
-                Waste is more than residue and will not always be useless
+              <div className="">Waste No More</div>
+              <br />
+              <div className="">
+                Wasted spaces, wasted goods, wasted substances should be seen as
+                more than residue and must be transformed to regain further use
               </div>
             </div>
           </Link>
@@ -110,10 +118,11 @@ const Draft8 = () => {
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>In Where We Exist</p>
+                <p>Environment: Reconstruct</p>
                 <p>
-                  How the relations between the environment and ourselves are
-                  dynamic, affecting each other endlessly.
+                  Redefining the natural and the built environment, creating new
+                  materials, systems, and spatial relations within the
+                  civilization
                 </p>
               </div>
             </div>

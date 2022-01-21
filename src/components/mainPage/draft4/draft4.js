@@ -32,7 +32,7 @@ const Draft4 = () => {
                   <div className="topBarLef4tWrapperMain">
                     <img src={topLogo} alt="arrow" className="iconArrowRight" />
                   </div>
-                  <div className="topBar4LeftWrapperMain">
+                  <div className="topBar4LeftWrapperMain"style={{color:"black"}}>
                     <div className="topBar4LeftWrapper2" Main>
                       <div className="topBar4LeftTextWrapperMain">
                         AFAIR 2022
@@ -43,7 +43,7 @@ const Draft4 = () => {
               </Link>
               <Link to="/index">
                 <div className="topBar4RightMain">
-                  <div className="topBar4LeftWrapper2Main">
+                  <div className="topBar4LeftWrapper2Main" style={{color:"black"}}>
                     <div className="topBar4RightTextWrapperMain">Index</div>
                   </div>
                 </div>
@@ -52,52 +52,61 @@ const Draft4 = () => {
           </div>
           <Modal
             title="Into The Wayout Future"
-            desc="Unseen changes that is only felt by ourselves. They often
-          relate to each and every individual's emotions"
+            desc="The future is full of possibilities. From your everyday behavior to a global scale phenomena, everything around us is changing. How we answers those questions, architecturally, shall change as well."
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/in_where_we_exist">
+          <Link to="/environment_reconstruct">
             <img src={img4} alt="imgIcon" className="pos4" />
             <div
               className="infotext"
-              // style={{ transform: "translate(-110%, 10%)" }}
+              style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">In Where We Exist</div>
-              <div className="infoContent">
-                How the relations between the environment and ourselves are
-                dynamic, affecting each other endlessly
+              <div className="">Environment: Reconstruct</div>
+              <br />
+              <div className="">
+                Redefining the natural and the built environment, creating new
+                materials, systems, and spatial relations within the
+                civilization
               </div>
             </div>
           </Link>
           <Link Link to="/bodily_presence">
             <img src={img5} alt="imgIcon" className="pos5" />
-            <div className="infotext">
-              <div className="infoTitle">Bodily Presence</div>
-              <div className="infoContent">
-                Activities involving the human bodies are constantly altering.
-                Space response has to adapt to its ever-changing needs
+            <div className="infotext" style={{ transform: "translate(-130%, 10%)" }}>
+              <div className="">Bodily Presence: In Space, To Space</div>
+              <br />
+              <div className="">
+                The bodies of living beings present arrays of parameters that
+                represent their dynamic conditions, providing oppportunities to
+                inform spatial alteration. The bodies provides possibilities of
+                spatial occupation and appropriation, and it is increasingly
+                important to address how the bodies' ever-changing needs shape
+                spatial scenarios in real time.
               </div>
             </div>
           </Link>
-          <Link to="/everyone_as_well">
+          <Link to="/redefine_the_public">
             <img src={img6} alt="imgIcon" className="pos6" />
             <div className="infotext">
-              <div className="infoTitle">Everyone As Well</div>
-              <div className="infoContent">
-                Changes happening not within the individuality, but rather
-                outside involving the collective
+              <div className="">Redefine the Public</div>
+              <br />
+              <div className="">
+                Changes are happening not by the individual drive or within the
+                individual terrain, but rather by and to the collective public,
+                redefining the shared spaces.
               </div>
             </div>
           </Link>
 
-          <Link to="/understanding_us">
+          <Link to="/altering_the_self">
             <img src={img8} alt="imgIcon" className="pos8" />
             <div className="infotext">
-              <div className="infoTitle">Understanding Us</div>
-              <div className="infoContent">
-                Unseen changes that is only felt by ourselves. They often relate
-                to each and every individual's emotions
+              <div className="">Altering the Self</div>
+              <br />
+              <div className="">
+                Capturing the unseen changes that are only felt by ourselves,
+                often related to each and every individual's emotions
               </div>
             </div>
           </Link>
@@ -108,8 +117,10 @@ const Draft4 = () => {
               <div class="infotext24">
                 <p>Into The Wayout Future</p>
                 <p>
-                  Unseen changes that is only felt by ourselves. They often
-                  relate to each and every individual's emotions
+                  The future is full of possibilities. From your everyday
+                  behavior to a global scale phenomena, everything around us is
+                  changing. How we answers those questions, architecturally,
+                  shall change as well.
                 </p>
               </div>
             </div>

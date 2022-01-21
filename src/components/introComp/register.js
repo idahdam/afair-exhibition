@@ -43,15 +43,16 @@ const Register = () => {
           <div className="bgContainerText3">
             <div className="textContainer3">
               <p className="subtitle2">
-                Everything changes, so does how we view things. With the
-                pandemics emerging back in 2020, it triggered us that the
-                changes were caused by our own doings. Thus, our understanding
-                towards space changes as well. In result, the practice of
-                architecture does not only respond to the vivid present anymore,
-                but also the unknown future. AFAIR 2022 attemptS to reveal how
-                the architecture students of Universitas Indonesia dive into the
-                smallest things such as daily behavior regarding a bigger
-                changes through architecture design.
+                Everything changes, so does how we view things. The emergence of
+                pandemic in 2020 triggered changes that were caused by our own
+                doings. Our understanding towards space changes as well,
+                resulting in the practice of architecture which does not only
+                respond to the vivid presence anymore, but also to the unknown
+                future. AFAIR 2022 attempt to reveal how these changes unfold in
+                the Department of Architecture University of Indonesia, where
+                its students question and speculate how these changes apply;
+                from the smallest daily behavior to bigger changes in the realm
+                of architecture and interior architecture design.
               </p>
             </div>
             <div className="subtext2" style={{ fontSize: "20px" }}>

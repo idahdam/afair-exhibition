@@ -10,7 +10,7 @@ const Transisi = () => {
       history.push("/register");
     }
     interval = setInterval(() => {
-      history.push("/to-myself-in-the-future");
+      history.push("/a-final-note");
     }, 5000);
     return () => (interval ? clearInterval(interval) : null);
   }, []);
@@ -20,19 +20,33 @@ const Transisi = () => {
         <div className="bgContainer2">
           <div className="bgContainerText2" style={{ maxWidth: "50%" }}>
             <p>
-              <span
+              <p
+                style={{
+                  fontSize: "21px",
+                  fontWeight: "300",
+                  lineHeight: "30px",
+                  textAlign: "left",
+                  fontWeight: "bold",
+                }}
+              >
+                The Ending: A Premise
+              </p>
+              <p
                 style={{
                   fontSize: "24px",
                   fontWeight: "300",
                   lineHeight: "30px",
+                  textAlign: "left",
                 }}
               >
-                As those changes and the solutions are merely predictions, we
-                are still unsure on what is going to happen. The practice of
-                architecture should constantly adapt to these challenges related
-                to the space we all experience. As we exist not only within the
-                space but time as well.
-              </span>
+                These exhibits portray the many predictions of changes and the
+                solutions of our living spaces. Yet, the future remain uncertain
+                and we are still unsure of what is going to happen. Constant
+                adaptation to the practice of architecture must be done to
+                enable adjustment towards the upcoming challenges to us, our
+                livelihood, and the surrounding environment, both across time
+                and space
+              </p>
             </p>
           </div>
         </div>

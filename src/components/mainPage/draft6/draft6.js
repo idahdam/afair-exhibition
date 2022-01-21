@@ -47,33 +47,39 @@ const Draft6 = () => {
             </div>
           </div>
           <Modal
-            title="I Sense Therefore I Feel"
-            desc="How human senses become the center of information processing of the space around them and acknowledge the changes occurred around them.To feel; Human senses absorb the stimulus information of the space around them."
+            title="Bodily Presence: In Space, To Space"
+            desc="The bodies of living beings present arrays of parameters that represent their dynamic conditions, providing oppportunities to inform spatial alteration. The bodies provides possibilities of spatial occupation and appropriation, and it is increasingly important to address how the bodies' ever-changing needs shape spatial scenarios in real time. "
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/bodily_presence/our_body">
+          <Link to="/bodily_presence/the_augmented_body">
             <img src={imgAtas} alt="6a" className="pos6a" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Our Body</div>
-              <div className="infoContent">
-                How body condition could change our wellbeing
+              <div className="">The Augmented Body</div>
+              <br />
+              <div className="">
+                Ability to sense and create modification to the body drives
+                possibilities of scenarios of spaces that responds to our
+                physical and mental wellbeing; spanning from energy to
+                temperature, or from sickness to grief
               </div>
             </div>
           </Link>
-          <Link to="/bodily_presence/in_action">
+          <Link to="/bodily_presence/provoking_the_body">
             <img src={imgBawah} alt="6b" className="pos6b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">In Action</div>
-              <div className="infoContent">
-                Interconnection between our body potential and the dynamics of
-                the activities carried out.
+              <div className="">Provoking the Body</div>
+              <br />
+              <div className="">
+                Design can enable, develop, enhance, and promote possibilities
+                of bodily potential, as well as the dynamics of the activities
+                being carried out.
               </div>
             </div>
           </Link>
@@ -81,10 +87,14 @@ const Draft6 = () => {
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Bodily Presence</p>
+                <p>Bodily Presence: In Space, To Space</p>
                 <p>
-                  Activities involving the human bodies are constantly altering.
-                  Space response has to adapt to its ever-changing needs.
+                  The bodies of living beings present arrays of parameters that
+                  represent their dynamic conditions, providing oppportunities
+                  to inform spatial alteration. The bodies provides
+                  possibilities of spatial occupation and appropriation, and it
+                  is increasingly important to address how the bodies'
+                  ever-changing needs shape spatial scenarios in real time.
                 </p>
               </div>
             </div>

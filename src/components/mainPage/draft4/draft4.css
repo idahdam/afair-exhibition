@@ -24,10 +24,18 @@
   transform: translate(50px, -50%);
 }
 
+.topBar4LeftTextWrapperMain:hover {
+  color:#406D96;
+}
+
 .topBar4RightTextWrapperMain {
   position: absolute;
   top: 50%;
   transform: translate(-20px, -50%);
+}
+
+.topBar4RightTextWrapperMain:hover {
+  color:#406D96;
 }
 
 .topBar4LeftMain {
@@ -77,7 +85,7 @@
   display: none;
   opacity: 0;
   width: 350px;
-  height: 80px;
+  height: fit-content;
   padding: 10px;
   background-color: white;
   color: black;
@@ -86,9 +94,11 @@
   text-align: left;
   transition: opacity 0.1s ease-in;
   transform: translate(10000000000000px, -1000000000px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
-.infoTitle {
+.infoTitleDraft4 {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: normal;
@@ -97,7 +107,7 @@
   margin-bottom: 10px;
 }
 
-.infoContent {
+.infoContentDraft44 {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 300;
@@ -201,6 +211,7 @@
   float: left;
 }
 
+
 .footerRight4 {
   float: Right;
 }
@@ -208,6 +219,10 @@
   float: left;
   margin-top: 6px;
   margin-left: 10px;
+}
+
+.iconFloat4:hover {
+  color:#E24748;
 }
 .exitButton4 {
   cursor: pointer;

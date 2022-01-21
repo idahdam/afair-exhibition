@@ -49,59 +49,69 @@ const Draft7 = () => {
             </div>
           </div>
           <Modal
-            title="Everyone As Well"
-            desc="Changes happening not only within the individuality, but rather outside involving the collective."
+            title="Redefine the Public"
+            desc="Changes are happening not by the individual drive or within the individual terrain, but rather by and to the collective public, redefining the shared spaces."
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/everyone_as_well/others_around">
+          <Link to="/redefine_the_public/integrating_the_physical_and_the_digital">
             <img src={img7b} alt="7b" className="pos7b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, -20%)" }}
             >
-              <div className="infoTitle">Others Around</div>
-              <div className="infoContent">
-                The evolution of human methods to connect each other
+              <div className="">Integrating the Physical and the Digital</div>
+              <br />
+              <div className="">
+                Speculating alternative ways of interactions within the society.
+                The current evolution of human methods of connecting with each
+                other emphasizes the merge between the physical and the digital
+                realm.
               </div>
             </div>
           </Link>
-          <Link to="/everyone_as_well/to_fulfill">
+          <Link to="/redefine_the_public/speculating_the_industries">
             <img src={img7d} alt="7d" className="pos7d" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">To Fulfill</div>
-              <div className="infoContent">
-                Adaptation by humans to fulfill their needs
+              <div className="">Speculating the Industries</div>
+              <br />
+              <div className="">
+                Adaptation of workspaces and systems of the industry, creating
+                new means of working and new flows of goods and services
               </div>
             </div>
           </Link>
-          <Link to="/everyone_as_well/among_our_peers">
+          <Link to="/redefine_the_public/among_the_culture_and_the_everyday">
             <img src={img7a} alt="7a" className="pos7a" />
             <div
               className="infotext"
               style={{ transform: "translate(10%, 10%)" }}
             >
-              <div className="infoTitle">Among Our Peers</div>
-              <div className="infoContent">
-                The alteration of human interaction contributes in social
-                communities
+              <div className="">Among the Culture and the Everyday</div>
+              <br />
+              <div className="">
+                The alteration of human interactions as a shared cultural and
+                everyday life response and its contribution to the social and
+                spatial structures of the communities
               </div>
             </div>
           </Link>
-          <Link to="/everyone_as_well/better_version_of_us">
+          <Link to="/redefine_the_public/sharing_knowledge_and_information">
             <img src={img7c} alt="7c" className="pos7c" />
 
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Better Version of Us</div>
-              <div className="infoContent">
-                Attempt to figure out surroundings that keep changing in order
-                to adapt in it
+              <div className="">Sharing Knowledge and Information</div>
+              <br />
+              <div className="">
+                Attempts to educate communities and figure out new and dynamic
+                ways of sharing knowledge and distributing information, towards
+                a more knowledgeable and skilled society
               </div>
             </div>
           </Link>
@@ -109,10 +119,11 @@ const Draft7 = () => {
             <div className="footerLeft">
               <img src={info} alt="info" className="infoStyle" />
               <div class="infotext2">
-                <p>Everyone As Well</p>
+                <p>Redefine the Public</p>
                 <p>
-                  Changes happening not within the individuality, but rather
-                  outside involving the collective.
+                  Changes are happening not by the individual drive or within
+                  the individual terrain, but rather by and to the collective
+                  public, redefining the shared spaces.
                 </p>
               </div>
             </div>

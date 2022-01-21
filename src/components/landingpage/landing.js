@@ -17,7 +17,7 @@ const Landing = () => {
   return (
     <>
       <div
-        className="background"
+        className="backgroundLand"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >
         <animated.div
@@ -32,29 +32,29 @@ const Landing = () => {
           class="card44"
           style={{ transform: props.xy.interpolate(trans3) }}
         />
-        <div className="bgContainer">
-          <div className="bgContainerText">
+        <div className="bgContainerLand">
+          <div className="bgContainerTextLand">
             <div>
               <img src={iconLogo} alt="icon Logo" />
             </div>
-            <h2 className="subtitle" style={{ color: "#E24748" }}>
+            <h2 className="subtitleLand" style={{ color: "#E24748" }}>
               COMING SOON
             </h2>
-            <h1 className="title">
+            <h1 className="titleLand">
               <span style={{ fontWeight: 300 }}>AFAIR 2022</span>
               <br />
               VIRTUAL EXHIBITION
             </h1>
-            <h2 className="subtitle" style={{ color: "#FE7235" }}>
-              21.01.2022
+            <h2 className="subtitleLand" style={{ color: "#FE7235" }}>
+              22.01.2022
             </h2>
-            <div className="textFooter">
+            <div className="textFooterLand">
               <img
                 src={iconInsta}
-                className="footerImages"
+                className="footerImagesLand"
                 alt="instagram logo"
               />
-              <span className="footerText">afairui</span>
+              <span className="footerTextLand">afairui</span>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@
   width: 100%;
   position: sticky;
   height: 50px;
+  color: black;
 }
 
 .topBarWrapperMain {
@@ -20,12 +21,26 @@
 
 .topBarLeftTextWrapperMain {
   position: absolute;
+  color: black;
   top: 50%;
   transform: translate(10px, -50%);
 }
 
+.topBarLeftTextWrapperMain:hover {
+  color:#406D96;
+}
+
+.topBarRightTextWrapperMain:hover {
+  color:#406D96;
+}
+
+.iconFloat:hover {
+  color:#E24748;
+}
+
 .topBarRightTextWrapperMain {
   position: absolute;
+  color: black;
   top: 50%;
   transform: translate(-20px, -50%);
 }
@@ -73,7 +88,7 @@
   opacity: 0;
   display: none;
   width: 350px;
-  height: 80px;
+  height: fit-content;
   padding: 10px;
   background-color: white;
   color: black;
@@ -82,6 +97,8 @@
   text-align: left;
   transition: opacity 0.1s ease-in;
   transform: translate(115110px, -115110px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 .infoTitle {

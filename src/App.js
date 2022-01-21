@@ -30,14 +30,14 @@ function App() {
           <Route exact path="/" component={Fullpage} />
           {/* <Route exact path="/welcome" component={Intro} /> */}
           {/* <Route exact path="/main" component={MainPage} /> */}
+          {/* <Route exact path="/popBuild" component={PopUpBuild} /> */}
+          {/* <Route exact path="/build" component={Landing} /> */}
+          {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
           <Route exact path="/build" component={Landing} />
           <Route exact path="/register" component={Register} />
-          {/* <Route exact path="/popBuild" component={PopUpBuild} /> */}
           <Route exact path="/video" component={Video} />
-          {/* <Route exact path="/build" component={Landing} /> */}
           <Route exact path="/question" component={Question} />
           <Route exact path="/transition" component={Transisi} />
-          {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
           <Route exact path="/not-really" component={NotReally} />
           <Route exact path="/index" component={AllItems} />
           <Route
@@ -56,20 +56,24 @@ function App() {
             path="/into_the_wayout_future/:params"
             component={ImgBuild}
           />
-          <Route exact path="/understanding_us" component={Draft5} />
-          <Route exact path="/understanding_us/:params" component={ImgBuild} />
+          <Route exact path="/altering_the_self" component={Draft5} />
+          <Route exact path="/altering_the_self/:params" component={ImgBuild} />
           <Route exact path="/bodily_presence" component={Draft6} />
           <Route exact path="/bodily_presence/:params" component={ImgBuild} />
-          <Route exact path="/everyone_as_well" component={Draft7} />
-          <Route exact path="/everyone_as_well/:params" component={ImgBuild} />
-          <Route exact path="/in_where_we_exist" component={Draft8} />
-          <Route exact path="/in_where_we_exist/:params" component={ImgBuild} />
-          <Route exact path="/exit" component={Exit} />
+          <Route exact path="/redefine_the_public" component={Draft7} />
           <Route
             exact
-            path="/to-myself-in-the-future"
-            component={ToMyselfInTheFuture}
+            path="/redefine_the_public/:params"
+            component={ImgBuild}
           />
+          <Route exact path="/environment_reconstruct" component={Draft8} />
+          <Route
+            exact
+            path="/environment_reconstruct/:params"
+            component={ImgBuild}
+          />
+          <Route exact path="/exit" component={Exit} />
+          <Route exact path="/a-final-note" component={ToMyselfInTheFuture} />
           <Route exact path="/goodbye" component={GoodBye} />
           <Route
             exact

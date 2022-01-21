@@ -81,12 +81,16 @@ const AllItemsWithSort = () => {
   return (
     <div className="container">
       <div className="indexWrapper">
+      <div className="indexBarContainerQuit">
+          <div className="page-title-divQuit">
+            <Link to="/into_the_wayout_future">
+              <span className="back-title"style={{fontSize:"17px"}}>Back to Main Menu</span>
+            </Link>
+          </div>
+        </div>
         <div className="indexBarContainer">
           <div className="page-title-div">
             <div className="page-title">Projects Index</div>
-            <Link to="/into_the_wayout_future">
-              <span className="back-title">Back to Main Menu</span>
-            </Link>
           </div>
           <div>
             <div className="dropdown-div">
@@ -97,13 +101,17 @@ const AllItemsWithSort = () => {
                   handleFilters(e.target.value);
                 }}
               >
-                <option value="understanding_us" disabled selected>
+                <option value="" disabled selected>
                   Choose one to filter...
                 </option>
-                <option value="understanding_us">Understanding Us</option>
-                <option value="bodily_presence">Bodily Presence</option>
-                <option value="everyone_as_well">Everyone As Well</option>
-                <option value="in_where_we_exist">In Where We Exist</option>
+                <option value="altering_the_self">Altering The Self</option>
+                <option value="bodily_presence_in_space_to_space">
+                  Bodily Presence
+                </option>
+                <option value="redefine_the_public">Redefine The Public</option>
+                <option value="environment_reconstruct">
+                  Environment Reconstruct
+                </option>
               </select>
             </div>
             <div className="dropdown-div">

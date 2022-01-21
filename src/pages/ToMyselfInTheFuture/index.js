@@ -29,16 +29,18 @@ const ToMyselfInTheFuture = () => {
     <>
       <div className="background2">
         <div className="bgContainer2">
-          <div className="bgContainerText2" style={{ maxWidth: "100%" }}>
+          <div className="bgContainerText5" style={{ maxWidth: "100%" }}>
             <div>
               <div className="row-letter">
                 <div className="column-letter left-letter">
-                  <p className="left-side-text">To Myself In The Future</p>
+                  <p className="left-side-text">A Final</p>
+                  <p className="left-side-text">Note</p>
                 </div>
                 <div className="column-letter right-letter">
                   <p>
-                    My life has been constantly changing, and always will be. To
-                    me in the future,
+                    To everyone visiting, our life has been constantly changing,
+                    and change will always persist. Please leave a message of
+                    your thoughts regarding such change and the exhibition.
                   </p>
                   <textarea
                     className="wishes"

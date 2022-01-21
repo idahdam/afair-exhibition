@@ -5,6 +5,22 @@
   font-family: "SFProDisplay Regular";
 }
 
+.indexBarContainerQuit {
+  width: 100%;
+  display: table;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1385px;
+}
+
+.page-title-divQuit {
+  float: right;
+}
+
+.back-title:hover{
+  color:#E24748;
+}
+
 option {
   background-color: white;
   border-radius: 0px;
