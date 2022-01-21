@@ -11,7 +11,7 @@ const Transisi = () => {
     }
     interval = setInterval(() => {
       history.push("/a-final-note");
-    }, 60000);
+    }, 20000);
     return () => (interval ? clearInterval(interval) : null);
   }, []);
   return (
