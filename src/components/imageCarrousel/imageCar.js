@@ -47,9 +47,7 @@ function ImgCar(props) {
   const [data, setData] = useState([]);
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("black");
-  let dataCarousel = datas.find(
-    (datas) => datas.title.toLowerCase() === params.replaceAll("_", " ")
-  );
+  let dataCarousel = datas.find((datas) => datas.slug === params);
 
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
