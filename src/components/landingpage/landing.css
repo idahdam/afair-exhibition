@@ -1,4 +1,4 @@
-.background {
+.backgroundLand {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -51,7 +51,7 @@
   animation-fill-mode: forwards;
 }
 
-.bgContainerText {
+.bgContainerTextLand {
   position: absolute;
   /* background-color: aqua; */
   padding-top: 5%;
@@ -67,34 +67,34 @@
   animation-fill-mode: forwards;
 }
 
-.subtitle {
+.subtitleLand {
   font-size: 24px;
   font-weight: 600;
   margin-top: 3%;
 }
 
-.title {
+.titleLand {
   font-size: 60px;
   line-height: 60px;
   font-weight: 500;
 }
 
-.textFooter {
+.textFooterLand {
   padding-top: 10%;
 }
 
-.footerText {
+.footerTextLand {
   font-size: 20px;
   margin-left: 3px;
 }
 
-.footerImages {
+.footerImagesLand {
   vertical-align: middle;
   margin-bottom: 0.7em;
 }
 
 
-.bgContainer{
+.bgContainerLand{
   position: absolute;
   /* background-color: yellow; */
   max-width: 1800px;
