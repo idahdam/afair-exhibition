@@ -52,7 +52,7 @@ const Transisi = () => {
                   fontWeight: "300",
                 }}
               >
-                Prof. Yandi Andri</span><br/>
+                Prof. Yandi Andri Yatmo, PhD </span><br/>
                 <span
                 style={{
                   fontSize: "20px",
@@ -60,7 +60,7 @@ const Transisi = () => {
                   fontWeight: "300",
                 }}
               >
-                Yatmo, PhD AFAIR UI 2022 Exhibition Curator
+                AFAIR UI 2022 Exhibition Curator
               </span>
               </p>
           </div>
