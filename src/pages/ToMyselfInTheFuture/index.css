@@ -1,11 +1,16 @@
+.row-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .column-letter {
-  float: left;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
 .left-letter {
-  width: 25%;
+  width: 18%;
 }
 .wishes {
   resize: none;
@@ -13,9 +18,10 @@
   font-family: "SFProDisplay Regular";
   font-size: 1.5rem;
   width: 100%;
-  height: 50%;
+  height: 100%;
   padding: 10px;
   color: white;
+  margin: 20px 0;
 }
 .right-letter {
   font-size: 1.5rem;
@@ -23,8 +29,14 @@
   text-align: left;
 }
 
+.right-letter p {
+  margin: 0;
+}
+
 .left-side-text {
   font-size: 2.5rem;
+  margin: 0;
+  text-align: left;
 }
 
 .submit-wishes {

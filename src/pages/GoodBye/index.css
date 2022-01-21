@@ -77,11 +77,6 @@
   height: 100%;
   float: left;
 }
-.column-letter {
-  float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 
 .logoGoodStyle {
   margin-right: 2%;
@@ -92,41 +87,6 @@
 }
 .tite {
   text-align: center;
-}
-.left-letter {
-  width: 25%;
-}
-
-.wishes {
-  resize: none;
-  background-color: black;
-  font-family: "SFProDisplay Regular";
-  font-size: 1.5rem;
-  width: 100%;
-  height: 50%;
-  padding: 10px;
-  color: white;
-}
-.right-letter {
-  font-size: 1.5rem;
-  width: 70%;
-  text-align: left;
-}
-
-.left-side-text {
-  font-size: 2.5rem;
-}
-
-.submit-wishes {
-  text-align: right;
-  cursor: pointer;
-}
-
-/* Clear floats after the columns */
-.row-letter:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .background2 {
