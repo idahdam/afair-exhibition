@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./draft4.css";
 import { Hover } from "../hoverfunc.js";
 import { useHistory } from "react-router-dom";
@@ -14,6 +14,11 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 const Draft4 = () => {
   const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   Hover();
   return (
     <>
@@ -43,7 +48,7 @@ const Draft4 = () => {
             <img src={img4} alt="imgIcon" className="pos4" />
             <div
               className="infotext"
-              style={{ transform: "translate(-110%, 10%)" }}
+              // style={{ transform: "translate(-110%, 10%)" }}
             >
               <div className="infoTitle">In Where We Exist</div>
               <div className="infoContent">

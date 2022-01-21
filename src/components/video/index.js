@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./index.css";
 import { useHistory } from "react-router-dom";
 
 const Video = () => {
   const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   return (
     <div className="player-wrapper">
       <ReactPlayer

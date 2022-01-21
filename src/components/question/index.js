@@ -20,7 +20,7 @@ const Question = () => {
           <div
             class="column"
             onClick={() => {
-              history.push("/apparently-yes");
+              history.push("/transition");
             }}
           >
             Apparently, yes
@@ -28,7 +28,7 @@ const Question = () => {
           <div
             class="column"
             onClick={() => {
-              history.push("/transition");
+              history.push("/not-really");
             }}
           >
             No, not really

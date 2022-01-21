@@ -6,7 +6,7 @@
 }
 
 .topBar4WrapperMain {
-  width: 1066px;
+  width: 1186px;
   position: absolute;
 }
 
@@ -85,7 +85,7 @@
   border-radius: 6px;
   text-align: left;
   transition: opacity 0.1s ease-in;
-  transform: translate(-50%, -150%);
+  transform: translate(10000000000000px, -1000000000px);
 }
 
 .infoTitle {
@@ -109,6 +109,7 @@
   width: 100%;
   left: 0px;
   bottom: 0;
+
 }
 
 .pos5 {
@@ -123,6 +124,7 @@
   width: 100%;
   left: 0px;
   bottom: 0px;
+
 }
 
 .pos7 {
@@ -130,6 +132,7 @@
   width: 25%;
   left: 1286px;
   top: 445px;
+
 }
 
 .pos8 {
@@ -137,6 +140,7 @@
   width: 30%;
   bottom: 0px;
   left: 35%;
+  
 }
 .content {
   position: relative;
@@ -162,33 +166,38 @@
 .pos4:hover + .infotext {
   opacity: 1;
   display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos5:hover + .infotext {
   opacity: 1;
   display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos6:hover + .infotext {
   opacity: 1;
   display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos7:hover + .infotext {
   opacity: 1;
   display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos8:hover + .infotext {
   opacity: 1;
   display: block;
+  transform: translate(-50%, -150%);
 }
 .content {
   position: absolute;
 }
 .footer4 {
   position: absolute;
-  width: 1036px;
+  width: 1146px;
   bottom: 0;
   margin-bottom: 20px;
   padding: 0 20px;

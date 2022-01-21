@@ -6,7 +6,7 @@
 }
 
 .topBarWrapperMain {
-  width: 1066px;
+  width: 1186px;
   position: absolute;
 }
 
@@ -71,6 +71,7 @@
 .infotext {
   position: absolute;
   opacity: 0;
+  display: none;
   width: 350px;
   height: 80px;
   padding: 10px;
@@ -80,7 +81,7 @@
   border-radius: 6px;
   text-align: left;
   transition: opacity 0.1s ease-in;
-  transform: translate(-50%, -150%);
+  transform: translate(115110px, -115110px);
 }
 
 .infoTitle {
@@ -90,6 +91,7 @@
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 10px;
+  z-index: 999;
 }
 
 .infoContent {
@@ -126,25 +128,49 @@
   bottom: 0;
 }
 
+.pos5a:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+
+.pos5b:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+
+.pos5c:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+
+.pos5d:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+
 .pos5a:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos5b:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos5c:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos5d:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .footer {
   position: absolute;
-  width: 1036px;
+  width: 1146px;
   bottom: 0;
   margin-bottom: 20px;
   padding: 0 20px;
@@ -164,14 +190,15 @@
 .infotext2 {
   position: absolute;
   opacity: 0;
+  display: none;
   width: 500px;
   background-color: white;
   color: black;
   text-align: center;
   border-radius: 10px;
   padding: 5px 15px;
-  top: -170px;
-  left: 80px;
+  top: -1170px;
+  left: 1180px;
   transition: opacity 0.1s ease-in;
   z-index: 2;
   text-align: left;
@@ -196,6 +223,9 @@
 
 .infoStyle:hover + .infotext2 {
   opacity: 1;
+  top: -170px;
+  left: 80px;
+  display: block;
 }
 
 /* @media only screen and (max-width: 1600px) {
