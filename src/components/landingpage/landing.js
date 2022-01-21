@@ -46,7 +46,7 @@ const Landing = () => {
               VIRTUAL EXHIBITION
             </h1>
             <h2 className="subtitleLand" style={{ color: "#FE7235" }}>
-              21.01.2022
+              22.01.2022
             </h2>
             <div className="textFooterLand">
               <img
