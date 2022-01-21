@@ -63,7 +63,7 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/beyond_our_senses">
+          <Link to="/understanding_us/i_sense_therefore_i_feel">
             <img src={beyond} alt="5a" className="pos5a" />
             <div
               className="infotext"
@@ -77,18 +77,17 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/i_sense_therefore_i_feel">
+          <Link to="/understanding_us/beyond_our_senses">
             <img src={isense} alt="5b" className="pos5b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Ecosystem Made By Our Own Hands</div>
+              <div className="infoTitle">Beyond Our Senses</div>
               <div className="infoContent">
-                How human senses become the center of information processing of
-                the space around them and acknowledge the changes occurred
-                around them.To feel; Human senses absorb the stimulus
-                information of the space around them.
+                How human tries to understand their own emotions in the
+                space.Memory involvement; Psychological memory and mind
+                intervention by space
               </div>
             </div>
           </Link>

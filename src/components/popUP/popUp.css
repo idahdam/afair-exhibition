@@ -27,7 +27,6 @@
   color: black;
   text-align: center;
   margin-top: 10%;
-
 }
 
 .popUpLeft {
@@ -105,15 +104,17 @@
   animation-duration: 1s;
 }
 
-.popUpTextTitleH{
+.popUpTextTitleH {
   font-size: 55px;
 }
 
-.popUpTextTitle{
+.popUpTextTitle {
   font-size: 27px;
 }
 
 .popUpTextContent {
+  text-align: justify;
+  text-justify: inter-word;
   margin-top: 5%;
 }
 .ContentImg {

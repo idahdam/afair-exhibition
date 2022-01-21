@@ -102,8 +102,9 @@ const Draft4 = () => {
               <div class="infotext24">
                 <p>Into The Wayout Future</p>
                 <p>
-                  Unseen changes that is only felt by ourselves. They often
-                  relate to each and every individual's emotions
+                  The future is full of questions. From your everyday behavior
+                  to a global scale phenomena, everything around us is changing.
+                  How we answers those questions shall change as well.
                 </p>
               </div>
             </div>
