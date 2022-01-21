@@ -9,6 +9,15 @@ import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
 import { useHistory, Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
+import MoonLoader from "react-spinners/MoonLoader";
+import { css } from "@emotion/react";
+
+// Can be a string as well. Need to ensure each key-value pair ends with ;
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -28,7 +37,9 @@ const AllItems = () => {
   const history = useHistory();
   const [open, setOpen] = React.useState(false);
   const [modalData, setModalData] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
+  let [color, setColor] = useState("black");
   const handleOpen = (item) => {
     console.log(item);
     setOpen(true);
@@ -39,11 +50,9 @@ const AllItems = () => {
     setOpen(false);
   };
   const classes = useStyles();
-  const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const response = await artService.getArt();
-      console.log(response.data.data);
       setData(response.data.data);
     };
 
@@ -64,6 +73,10 @@ const AllItems = () => {
     history.go(0);
   };
 
+  if (data.length === 0)
+    return (
+      <MoonLoader color={color} loading={loading} css={override} size={50} />
+    );
   return (
     <div className="container">
       <div className="indexWrapper">

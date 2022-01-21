@@ -71,6 +71,22 @@ function App() {
             component={ToMyselfInTheFuture}
           />
           <Route exact path="/goodbye" component={GoodBye} />
+          <Route
+            exact
+            path="/IntoANewOld"
+            component={() => {
+              window.location.href = "http://bit.ly/RegistrasiIntoANewOld";
+              return null;
+            }}
+          />
+          <Route
+            exact
+            path="/OpeningAttendance"
+            component={() => {
+              window.location.href = "https://forms.gle/Q1JpBqeXEETr55yw7";
+              return null;
+            }}
+          />
         </Switch>
       </Router>
     </>

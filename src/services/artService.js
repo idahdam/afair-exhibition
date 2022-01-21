@@ -14,7 +14,7 @@ const getArtWithParams = async (params) => {
   const body = {};
   const response = await gatewayHelper.http(
     "GET",
-    `arts?filters[tags][$eq]=${params}&populate=*?pagination[page]=1&pagination[pageSize]=250`,
+    `arts?filters[tags][$eq]=${params}&populate=*&pagination[page]=1&pagination[pageSize]=250`,
     body
   );
   return response;

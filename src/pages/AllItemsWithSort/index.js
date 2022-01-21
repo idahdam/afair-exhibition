@@ -8,6 +8,15 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import PopUp from "../../components/popUP/popUp";
 import { useHistory, useParams, Link } from "react-router-dom";
+import MoonLoader from "react-spinners/MoonLoader";
+import { css } from "@emotion/react";
+
+// Can be a string as well. Need to ensure each key-value pair ends with ;
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -30,7 +39,8 @@ const AllItemsWithSort = () => {
   const [sort, setSort] = useState("");
   const [filters, setFilters] = useState("");
   const [modalData, setModalData] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  let [color, setColor] = useState("black");
   const handleOpen = (item) => {
     console.log(item);
     setOpen(true);
