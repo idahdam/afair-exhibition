@@ -1,10 +1,33 @@
 .background2 {
-  position: relative;
-  height: 100vh;
-  width: 100%;
   background-color: black;
   color: white;
+  z-index: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: "SFProDisplay Regular";
+}
+.bgContainerText3 {
+  position: absolute;
+  /* background-color: aqua; */
+  max-width: 1450px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .bgContainerText2 {
@@ -39,11 +62,15 @@
   padding-right: 5%;
   top: 0;
   position: absolute;
+  max-width: 1366px;
 }
 
 .textContainer2 {
   /* background-color: aqua; */
-  padding-right: 10%;
+}
+
+.textContainer2 {
+  /* background-color: aqua; */
 }
 
 .subtext2 {
@@ -95,9 +122,10 @@
   float: left;
 }
 
-.iconRight2 {
+.iconRight3 {
   cursor: pointer;
-  float: right;
+  float: left;
+  margin-left: 5%;
 }
 .textBoxdeco2 {
   display: block;

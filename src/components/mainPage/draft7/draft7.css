@@ -1,53 +1,55 @@
-.topBarMain{
-  background-color: #F7F2EC;
+.topBarMain {
+  background-color: #f7f2ec;
   width: 100%;
   position: sticky;
-  height: 60px;
+  height: 50px;
 }
 
-.topBarWrapperMain{
-  width: 1800px;
+.topBarWrapperMain {
+  width: 1186px;
   position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.topBarLeftWrapperMain{
+.topBarLeftWrapperMain {
   float: left;
 }
 
-.topBarLeft2WrapperMain{
+.topBarLeft2WrapperMain {
   position: relative;
 }
 
-.topBarLeftTextWrapperMain{
+.topBarLeftTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(10px, -50%);
 }
 
-.topBarRightTextWrapperMain{
+.topBarRightTextWrapperMain {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(-20px, -50%);
 }
 
-.topBarLeftMain{
+.topBarLeftMain {
   float: left;
   margin-left: 2%;
 }
 
-.topBarRightMain{
+.topBarRightMain {
   float: right;
-  margin-right:2%;
+  margin-right: 4%;
 }
 
 .draft7Container {
   background-color: white;
+  z-index: 1;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .draft7BackImage {
@@ -55,8 +57,8 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642597690/draft7_e3fvyu.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
-  height: 1080px;
+  width: 1186px;
+  height: 668px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -81,39 +83,43 @@
 
 .pos7a {
   position: absolute;
-  left: 510px;
-  top: 206px;
+  width: 35.2%;
+  top: 110px;
+  left: 71.2px;
 }
 
 .pos7b {
   position: absolute;
-  left: 1560px;
-  top: 479px;
+  width: 49%;
+  bottom: 0;
+  right: 0;
 }
 
 .pos7c {
   position: absolute;
-  left: 999px;
-  top: 500px;
+  width: 13.3%;
+  left: 50.35%;
+  bottom: 123.5px;
+}
+
+.pos7a:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos7b:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos7c:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos7d:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 
 .pos7d {
   position: absolute;
-  left: 934px;
-  top: 853px;
-}
-
-.pos7b:hover {
-  transform: scale(1.5);
-}
-.pos7a:hover {
-  transform: scale(1.5);
-}
-.pos7c:hover {
-  transform: scale(1.5);
-}
-.pos7d:hover {
-  transform: scale(1.5);
+  width: 25.5%;
+  bottom: 0;
+  left: 47.3%;
 }
 
 .pos7a:hover + .infotext {
@@ -136,10 +142,10 @@
 
 .footer {
   position: absolute;
-  width: 1860px;
+  width: 1146px;
   bottom: 0;
-  margin-bottom: 50px;
-  padding: 0 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 .footerLeft {
   float: left;
@@ -190,7 +196,7 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
   .topBarWrapperMain{
     width: 1300px;
   }
@@ -235,4 +241,4 @@
     margin-bottom: 30px;
     padding: 0 30px;
   }
-}
+} */

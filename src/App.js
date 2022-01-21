@@ -15,13 +15,13 @@ import Video from "./components/video";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Question from "./components/question";
-import ApparentlyYes from "./components/apparentlyYes";
 import AllItems from "./pages/AllItems";
 import Exit from "./pages/Exit";
 import ToMyselfInTheFuture from "./pages/ToMyselfInTheFuture";
 import GoodBye from "./pages/GoodBye";
 import AllItemsWithFilters from "./pages/AllItemsWithFilters";
 import AllItemsWithSort from "./pages/AllItemsWithSort";
+import NotReally from "./components/notReally";
 function App() {
   return (
     <>
@@ -38,7 +38,7 @@ function App() {
           <Route exact path="/question" component={Question} />
           <Route exact path="/transition" component={Transisi} />
           {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
-          <Route exact path="/apparently-yes" component={ApparentlyYes} />
+          <Route exact path="/not-really" component={NotReally} />
           <Route exact path="/index" component={AllItems} />
           <Route
             exact
@@ -71,6 +71,22 @@ function App() {
             component={ToMyselfInTheFuture}
           />
           <Route exact path="/goodbye" component={GoodBye} />
+          <Route
+            exact
+            path="/IntoANewOld"
+            component={() => {
+              window.location.href = "http://bit.ly/RegistrasiIntoANewOld";
+              return null;
+            }}
+          />
+          <Route
+            exact
+            path="/OpeningAttendance"
+            component={() => {
+              window.location.href = "https://forms.gle/Q1JpBqeXEETr55yw7";
+              return null;
+            }}
+          />
         </Switch>
       </Router>
     </>

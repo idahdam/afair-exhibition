@@ -11,8 +11,8 @@ const Question = () => {
     }
   }, []);
   return (
-    <div className="container">
-      <img src={background} alt="Yes" className="image" />
+    <div className="background">
+      {/* <img src={background} alt="Yes" className="image" /> */}
       <div className="centered">
         <div>Have you noticed any changes in your life recently?</div>
         <br />
@@ -20,7 +20,7 @@ const Question = () => {
           <div
             class="column"
             onClick={() => {
-              history.push("/apparently-yes");
+              history.push("/transition");
             }}
           >
             Apparently, yes
@@ -28,7 +28,7 @@ const Question = () => {
           <div
             class="column"
             onClick={() => {
-              history.push("/transition");
+              history.push("/not-really");
             }}
           >
             No, not really

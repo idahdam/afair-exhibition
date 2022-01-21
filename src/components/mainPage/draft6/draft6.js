@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./draft6.css";
 import { Hover } from "../hoverfunc.js";
-import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
 import arrow from "../../../assets/images/mainPage/arrowDark.svg";
 import { Link, useHistory } from "react-router-dom";
+import imgAtas from "../../../assets/images/mainPage/bodyAtas.png";
+import imgBawah from "../../../assets/images/mainPage/bodyBawah.png";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
 const Draft6 = () => {
   const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   Hover();
   return (
     <>
@@ -33,7 +39,7 @@ const Draft6 = () => {
             </div>
           </div>
           <Link to="/bodily_presence/our_body">
-            <img src={pinIcon} alt="6a" className="pos6a" />
+            <img src={imgAtas} alt="6a" className="pos6a" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
@@ -45,7 +51,7 @@ const Draft6 = () => {
             </div>
           </Link>
           <Link to="/bodily_presence/in_action">
-            <img src={pinIcon} alt="6b" className="pos6b" />
+            <img src={imgBawah} alt="6b" className="pos6b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}

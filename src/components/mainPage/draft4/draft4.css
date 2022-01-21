@@ -6,9 +6,8 @@
 }
 
 .topBar4WrapperMain {
-  width: 1066px;
+  width: 1186px;
   position: absolute;
-
 }
 
 .topBar4LeftWrapperMain {
@@ -58,11 +57,15 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642599228/draft6_cvs285.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1266px;
-  height: 100vh;
+  width: 1186px;
+  height: 668px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.exitButton {
+  cursor: pointer;
 }
 
 .infotext {
@@ -71,6 +74,7 @@
 
 .infotext4 {
   position: absolute;
+  display: none;
   opacity: 0;
   width: 350px;
   height: 80px;
@@ -81,7 +85,7 @@
   border-radius: 6px;
   text-align: left;
   transition: opacity 0.1s ease-in;
-  transform: translate(-50%, -150%);
+  transform: translate(10000000000000px, -1000000000px);
 }
 
 .infoTitle {
@@ -102,123 +106,128 @@
 
 .pos4 {
   position: absolute;
-  width: 15px;
-  left: 914px;
-  top: 112px;
+  width: 100%;
+  left: 0px;
+  bottom: 0;
+
 }
 
+.pos5 {
+  position: absolute;
+  width: 22%;
+  left: 452px;
+  top: 100px;
+}
+
+.pos6 {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+
+}
+
+.pos7 {
+  position: absolute;
+  width: 25%;
+  left: 1286px;
+  top: 445px;
+
+}
+
+.pos8 {
+  position: absolute;
+  width: 30%;
+  bottom: 0px;
+  left: 35%;
+  
+}
 .content {
   position: relative;
 }
-.pos5 {
-  position: absolute;
-  left: 772px;
-  top: 391px;
-}
-
-.pos6 {
-  position: absolute;
-  left: 279px;
-  top: 263px;
-}
-.pos7 {
-  position: absolute;
-  left: 1796px;
-  top: 235px;
-}
-
-.pos8 {
-  position: absolute;
-  left: 796px;
-  top: 379px;
-}
 
 .pos4:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos5:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos6:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos7:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
+}
+.pos8:hover {
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 
-.pos5 {
-  position: absolute;
-  width: 15px;
-  left: 542px;
-  top: 281px;
-}
-
-.pos6 {
-  position: absolute;
-  width: 15px;
-  left: 199px;
-  top: 423px;
-}
-.pos7 {
-  position: absolute;
-  width: 15px;
-  left: 1286px;
-  top: 445px;
-}
-
-.pos8 {
-  position: absolute;
-  width: 15px;
-  left: 706px;
-  top: 209px;
-}
 
 .pos4:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos5:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos6:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos7:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos8:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 .content {
   position: absolute;
 }
-.footer {
+.footer4 {
   position: absolute;
-  width: 1860px;
+  width: 1146px;
   bottom: 0;
-  margin-bottom: 50px;
-  padding: 0 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
-.footerLeft {
+.footerLeft4 {
   float: left;
 }
 
-.footerRight {
+.footerRight4 {
   float: Right;
 }
-.iconFloat {
+.iconFloat4 {
   float: left;
   margin-top: 6px;
   margin-left: 10px;
 }
-.exitButton {
+.exitButton4 {
   cursor: pointer;
 }
-.infotext2 {
+.infotext24 {
   position: absolute;
-  opacity: 0;
+  display: none;
   width: 500px;
   background-color: white;
   color: black;
   text-align: center;
   border-radius: 10px;
   padding: 5px 15px;
-  top: -170px;
-  left: 80px;
+  top: -1170px;
+  left: 1180px;
   transition: opacity 0.1s ease-in;
   z-index: 2;
   text-align: left;
@@ -227,7 +236,7 @@
   border-style: solid;
 }
 
-.icoStyle {
+.icoStyle4 {
   float: left;
   width: 20px;
   margin-left: 10px;
@@ -237,12 +246,15 @@
   font-size: 18px;
 }
 
-.infoStyle:hover {
+.infoStyle4:hover {
   transform: scale(1.5);
 }
 
-.infoStyle:hover + .infotext2 {
+.infoStyle4:hover + .infotext24 {
   opacity: 1;
+  top: -170px;
+  left: 80px;
+  display: block;
 }
 
 /* @media only screen and (max-width: 1600px) {

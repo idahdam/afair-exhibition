@@ -40,8 +40,8 @@ const Register = () => {
     <>
       <div className="background2">
         <div className="bgContainer2">
-          <div className="bgWrapper2">
-            <div className="textContainer2">
+          <div className="bgContainerText3">
+            <div className="textContainer3">
               <p className="subtitle2">
                 Everything changes, so does how we view things. With the
                 pandemics emerging back in 2020, it triggered us that the
@@ -73,7 +73,7 @@ const Register = () => {
               <span className="textBoxdeco2">
                 AM READY TO EXPLORE INTO THE WAYOUT FUTURE.
               </span>
-              <span className="iconRight2">
+              <span className="iconRight3">
                 {agree && nama !== "" && email !== "" && testEmail !== false ? (
                   // <Link to="/video">
                   <img
@@ -98,7 +98,7 @@ const Register = () => {
               </span>
             </div>
             <br />
-            <div className="subtext2" style={{ fontSize: "12px" }}>
+            <div className="subtext2" style={{ fontSize: "18px" }}>
               AFAIR 2022 is collecting the data for audience overview purpose
               only.
               <br />

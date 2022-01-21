@@ -2,15 +2,12 @@
   background-color: #f7f2ec;
   width: 100%;
   position: sticky;
-  height: 60px;
+  height: 50px;
 }
 
 .topBarWrapperMain {
-  width: 1800px;
+  width: 1186px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .topBarLeftWrapperMain {
@@ -40,14 +37,19 @@
 
 .topBarRightMain {
   float: right;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .draft8Container {
   background-color: white;
+  z-index: 1;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .draft8BackImage {
@@ -55,8 +57,8 @@
   background-image: url(https://res.cloudinary.com/afairui/image/upload/v1642597687/draft8_mmh4m0.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
-  height: 1080px;
+  width: 1186px;
+  height: 668px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -81,39 +83,44 @@
 
 .pos8a {
   position: absolute;
-  left: 1169px;
-  top: 602px;
+  width: 43%;
+  left: 48.7%;
+  top: 181px;
 }
 
 .pos8b {
   position: absolute;
-  left: 1641px;
-  top: 674px;
+  width: 34.5%;
+  bottom: 0;
+  right: 5px;
 }
 
 .pos8c {
   position: absolute;
-  left: 523px;
-  top: 602px;
+  width: 18.9%;
+  top: 340px;
+  left: 274px;
 }
 
 .pos8d {
   position: absolute;
-  left: 1424px;
-  top: 341px;
+  width: 67.6%;
+  top: 42px;
+  left: 284px;
+  z-index: -1;
 }
 
 .pos8b:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos8a:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos8c:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 .pos8d:hover {
-  transform: scale(1.5);
+  filter: drop-shadow(0px 4px 4px rgba(254, 114, 53, 0.69));
 }
 
 .pos8a:hover + .infotext {
@@ -136,10 +143,10 @@
 
 .footer {
   position: absolute;
-  width: 1860px;
+  width: 1146px;
   bottom: 0;
-  margin-bottom: 50px;
-  padding: 0 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 .footerLeft {
   float: left;
@@ -162,7 +169,7 @@
   text-align: center;
   border-radius: 10px;
   padding: 5px 15px;
-  top: -180px;
+  top: -170px;
   left: 80px;
   transition: opacity 0.1s ease-in;
   z-index: 2;
@@ -190,7 +197,7 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
   .draft8BackImage {
     width: 1366px;
     height: 700px;
@@ -234,4 +241,4 @@
     margin-bottom: 30px;
     padding: 0 30px;
   }
-}
+} */
