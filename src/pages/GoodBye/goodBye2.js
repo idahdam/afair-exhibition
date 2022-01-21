@@ -19,6 +19,11 @@ const goodBye2 = () => {
                   <div className="contentTitle">Project Officer </div>
                   <div className="contentMember">M. Aqil Ersa Putra</div>
                 </div>
+                <div className="contentContainer" style={{ marginTop: "65%" }}>
+                  <div className="contentTitle">Secretary</div>
+                  <div className="contentMember">Layla Dutha Faradiba</div>
+                  <div className="contentMember">Raina Hanifa</div>
+                </div>
               </div>
 
               <div className="SectionRightColumnRight">
@@ -43,15 +48,6 @@ const goodBye2 = () => {
                     Arif Rahman Wahid S.Ars., MA
                   </div>
                   <div className="contentMember">Afifah Karimah S.Ars.</div>
-                </div>
-              </div>
-            </div>
-            <div className="SectionRighRow">
-              <div className="SectionRightColumnLeft">
-                <div className="contentContainer">
-                  <div className="contentTitle">Secretary</div>
-                  <div className="contentMember">Layla Dutha Faradiba</div>
-                  <div className="contentMember">Raina Hanifa</div>
                 </div>
               </div>
             </div>
@@ -214,119 +210,119 @@ const goodBye2 = () => {
                 <div className="contentMember">Selma Shafanisa D.</div>
               </div>
             </div>
-          </div>
-          <div className="SectionRighRow">
-            <div className="SectionRightColumnLeft">
-              <br />
-              <div className="contentContainer">
-                <div className="contentTitle">Operational Team</div>
-                <div className="contentMember">Annisa Ratna Asri</div>
-                <div className="contentMember">Faradillah E. Agusman</div>
-                <div className="contentMember">Keshia Putri</div>
-              </div>
-            </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Event</div>
-                <div className="contentMember">Alvina Olivia</div>
-                <div className="contentMember">Reyna Faradila</div>
-                <div className="contentMember">Tannia Aurellia</div>
+            <div className="SectionRighRow">
+              <div className="SectionRightColumnLeft">
                 <br />
-                <div className="contentMember">M. Bintang Akbar</div>
-                <div className="contentMember">Audrey Caroline</div>
-                <div className="contentMember">Salma Adrian</div>
-                <div className="contentMember">Sherin Meutia</div>
-                <div className="contentMember">M. Abdel Shah</div>
-                <div className="contentMember">M. Rizky Irhansyah</div>
-                <div className="contentMember">Tiara Valentina R.</div>
-                <div className="contentMember">Alfian Maulana</div>
-                <div className="contentMember">Dendang Belantara</div>
-                <div className="contentMember">Zulfan Fadilah</div>
-                <div className="contentMember">Salma Azhari</div>
-                <div className="contentMember">Nabiel Dzaky A.</div>
+                <div className="contentContainer">
+                  <div className="contentTitle">Operational Team</div>
+                  <div className="contentMember">Annisa Ratna Asri</div>
+                  <div className="contentMember">Faradillah E. Agusman</div>
+                  <div className="contentMember">Keshia Putri</div>
+                </div>
+              </div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Event</div>
+                  <div className="contentMember">Alvina Olivia</div>
+                  <div className="contentMember">Reyna Faradila</div>
+                  <div className="contentMember">Tannia Aurellia</div>
+                  <br />
+                  <div className="contentMember">M. Bintang Akbar</div>
+                  <div className="contentMember">Audrey Caroline</div>
+                  <div className="contentMember">Salma Adrian</div>
+                  <div className="contentMember">Sherin Meutia</div>
+                  <div className="contentMember">M. Abdel Shah</div>
+                  <div className="contentMember">M. Rizky Irhansyah</div>
+                  <div className="contentMember">Tiara Valentina R.</div>
+                  <div className="contentMember">Alfian Maulana</div>
+                  <div className="contentMember">Dendang Belantara</div>
+                  <div className="contentMember">Zulfan Fadilah</div>
+                  <div className="contentMember">Salma Azhari</div>
+                  <div className="contentMember">Nabiel Dzaky A.</div>
+                </div>
+              </div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">F{"&"}B</div>
+                  <div className="contentMember">Raisa Alda</div>
+                  <div className="contentMember">Shahira Hanun</div>
+                  <br />
+                  <div className="contentMember">Tjust Arasya N.</div>
+                  <div className="contentMember">M. Arief Kurniawan</div>
+                  <div className="contentMember">Adam Hutana N</div>
+                </div>
               </div>
             </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">F{"&"}B</div>
-                <div className="contentMember">Raisa Alda</div>
-                <div className="contentMember">Shahira Hanun</div>
-                <br />
-                <div className="contentMember">Tjust Arasya N.</div>
-                <div className="contentMember">M. Arief Kurniawan</div>
-                <div className="contentMember">Adam Hutana N</div>
+            <div className="SectionRighRow">
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Public Relation Team</div>
+                  <div className="contentMember">Gita Advenia</div>
+                  <div className="contentMember">Nadyafatin N.R.S</div>
+                </div>
+              </div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Publication</div>
+                  <div className="contentMember">James Paul Awuy</div>
+                  <div className="contentMember">Putri Ayu Azhari</div>
+                  <br />
+                  <div className="contentMember">Nabila</div>
+                  <div className="contentMember">Namieza Zafhyra</div>
+                  <div className="contentMember">Josephine Avriella</div>
+                  <div className="contentMember">Tsaniya Hasya</div>
+                  <div className="contentMember">Nadhil Hibatul W.</div>
+                  <div className="contentMember">Rahma Dyah A.</div>
+                  <div className="contentMember">Analundy Rafika N.</div>
+                  <div className="contentMember">Leonardo Dillon</div>
+                  <div className="contentMember">Syafrianina A.R.</div>
+                  <div className="contentMember">Vemi Xafiera</div>
+                </div>
+              </div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Media Partner</div>
+                  <div className="contentMember">Amira Salsabila</div>
+                  <div className="contentMember">Diana Tri Mellianti</div>
+                  <br />
+                  <div className="contentMember">Maesayu Aurea</div>
+                  <div className="contentMember">Hafidzah M.</div>
+                  <div className="contentMember">Nada Sharfina</div>
+                  <div className="contentMember">Fira Dwi Putri</div>
+                  <div className="contentMember">Sheila Maharani</div>
+                  <div className="contentMember">Jasmine Evania A.</div>
+                  <div className="contentMember">Nabila Haditya Arius</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="SectionRighRow">
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Public Relation Team</div>
-                <div className="contentMember">Gita Advenia</div>
-                <div className="contentMember">Nadyafatin N.R.S</div>
+            <div className="SectionRighRow">
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Facilities Team</div>
+                  <div className="contentMember">Satria Jetmelin P.</div>
+                </div>
               </div>
-            </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Publication</div>
-                <div className="contentMember">James Paul Awuy</div>
-                <div className="contentMember">Putri Ayu Azhari</div>
-                <br />
-                <div className="contentMember">Nabila</div>
-                <div className="contentMember">Namieza Zafhyra</div>
-                <div className="contentMember">Josephine Avriella</div>
-                <div className="contentMember">Tsaniya Hasya</div>
-                <div className="contentMember">Nadhil Hibatul W.</div>
-                <div className="contentMember">Rahma Dyah A.</div>
-                <div className="contentMember">Analundy Rafika N.</div>
-                <div className="contentMember">Leonardo Dillon</div>
-                <div className="contentMember">Syafrianina A.R.</div>
-                <div className="contentMember">Vemi Xafiera</div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Logistics</div>
+                  <div className="contentMember">M. Raihan</div>
+                  <div className="contentMember">Muardy Husin</div>
+                  <br />
+                  <div className="contentMember">Justin Olivia S.</div>
+                  <div className="contentMember">Ilham Raflie Susanto</div>
+                  <div className="contentMember">Aditya Nugraha</div>
+                </div>
               </div>
-            </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Media Partner</div>
-                <div className="contentMember">Amira Salsabila</div>
-                <div className="contentMember">Diana Tri Mellianti</div>
-                <br />
-                <div className="contentMember">Maesayu Aurea</div>
-                <div className="contentMember">Hafidzah M.</div>
-                <div className="contentMember">Nada Sharfina</div>
-                <div className="contentMember">Fira Dwi Putri</div>
-                <div className="contentMember">Sheila Maharani</div>
-                <div className="contentMember">Jasmine Evania A.</div>
-                <div className="contentMember">Nabila Haditya Arius</div>
-              </div>
-            </div>
-          </div>
-          <div className="SectionRighRow">
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Facilities Team</div>
-                <div className="contentMember">Satria Jetmelin P.</div>
-              </div>
-            </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Logistics</div>
-                <div className="contentMember">M. Raihan</div>
-                <div className="contentMember">Muardy Husin</div>
-                <br />
-                <div className="contentMember">Justin Olivia S.</div>
-                <div className="contentMember">Ilham Raflie Susanto</div>
-                <div className="contentMember">Aditya Nugraha</div>
-              </div>
-            </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Transportation</div>
-                <div className="contentMember">Alva Maula R</div>
-                <div className="contentMember">M. Rayhan Rasyid</div>
-                <br />
-                <div className="contentMember">Balqis Aathifah</div>
-                <div className="contentMember">Caroline Annisa A.</div>
-                <div className="contentMember">Putri Aprilia</div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Transportation</div>
+                  <div className="contentMember">Alva Maula R</div>
+                  <div className="contentMember">M. Rayhan Rasyid</div>
+                  <br />
+                  <div className="contentMember">Balqis Aathifah</div>
+                  <div className="contentMember">Caroline Annisa A.</div>
+                  <div className="contentMember">Putri Aprilia</div>
+                </div>
               </div>
             </div>
           </div>
