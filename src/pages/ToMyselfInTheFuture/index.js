@@ -29,7 +29,7 @@ const ToMyselfInTheFuture = () => {
     <>
       <div className="background2">
         <div className="bgContainer2">
-          <div className="bgContainerText2" style={{ maxWidth: "100%" }}>
+          <div className="bgContainerText5" style={{ maxWidth: "100%" }}>
             <div>
               <div className="row-letter">
                 <div className="column-letter left-letter">

@@ -32,7 +32,7 @@ const Draft4 = () => {
                   <div className="topBarLef4tWrapperMain">
                     <img src={topLogo} alt="arrow" className="iconArrowRight" />
                   </div>
-                  <div className="topBar4LeftWrapperMain">
+                  <div className="topBar4LeftWrapperMain"style={{color:"black"}}>
                     <div className="topBar4LeftWrapper2" Main>
                       <div className="topBar4LeftTextWrapperMain">
                         AFAIR 2022
@@ -43,7 +43,7 @@ const Draft4 = () => {
               </Link>
               <Link to="/index">
                 <div className="topBar4RightMain">
-                  <div className="topBar4LeftWrapper2Main">
+                  <div className="topBar4LeftWrapper2Main" style={{color:"black"}}>
                     <div className="topBar4RightTextWrapperMain">Index</div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ const Draft4 = () => {
             <img src={img4} alt="imgIcon" className="pos4" />
             <div
               className="infotext"
-              // style={{ transform: "translate(-110%, 10%)" }}
+              style={{ transform: "translate(-110%, 10%)" }}
             >
               <div className="">Environment: Reconstruct</div>
               <br />
@@ -73,7 +73,7 @@ const Draft4 = () => {
           </Link>
           <Link Link to="/bodily_presence">
             <img src={img5} alt="imgIcon" className="pos5" />
-            <div className="infotext">
+            <div className="infotext" style={{ transform: "translate(-130%, 10%)" }}>
               <div className="">Bodily Presence: In Space, To Space</div>
               <br />
               <div className="">

@@ -10,7 +10,9 @@
 }
 
 .left-letter {
-  width: 18%;
+  width: 10%;
+  
+
 }
 .wishes {
   resize: none;
@@ -60,10 +62,10 @@
   font-family: "SFProDisplay Regular";
 }
 
-.bgContainerText2 {
+.bgContainerText5 {
   position: absolute;
   /* background-color: aqua; */
-  padding-top: 5%;
+  padding-top: 0%;
   max-width: 1600px;
   width: 100%;
   color: white;
@@ -71,13 +73,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation4 ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-@keyframes fadeInAnimation {
+@keyframes fadeInAnimation4 {
   from {
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -45%);
     opacity: 0;
   }
 

@@ -24,10 +24,18 @@
   transform: translate(50px, -50%);
 }
 
+.topBar4LeftTextWrapperMain:hover {
+  color:#406D96;
+}
+
 .topBar4RightTextWrapperMain {
   position: absolute;
   top: 50%;
   transform: translate(-20px, -50%);
+}
+
+.topBar4RightTextWrapperMain:hover {
+  color:#406D96;
 }
 
 .topBar4LeftMain {
@@ -203,6 +211,7 @@
   float: left;
 }
 
+
 .footerRight4 {
   float: Right;
 }
@@ -210,6 +219,10 @@
   float: left;
   margin-top: 6px;
   margin-left: 10px;
+}
+
+.iconFloat4:hover {
+  color:#E24748;
 }
 .exitButton4 {
   cursor: pointer;

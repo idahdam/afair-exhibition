@@ -81,12 +81,16 @@ const AllItemsWithSort = () => {
   return (
     <div className="container">
       <div className="indexWrapper">
+      <div className="indexBarContainerQuit">
+          <div className="page-title-divQuit">
+            <Link to="/into_the_wayout_future">
+              <span className="back-title"style={{fontSize:"17px"}}>Back to Main Menu</span>
+            </Link>
+          </div>
+        </div>
         <div className="indexBarContainer">
           <div className="page-title-div">
             <div className="page-title">Projects Index</div>
-            <Link to="/into_the_wayout_future">
-              <span className="back-title">Back to Main Menu</span>
-            </Link>
           </div>
           <div>
             <div className="dropdown-div">

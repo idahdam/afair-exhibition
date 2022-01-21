@@ -18,18 +18,31 @@
   position: relative;
 }
 
-.topBarLeftTextWrapperMain {
+topBarLeftTextWrapperMain {
   position: absolute;
+  color: black;
   top: 50%;
   transform: translate(10px, -50%);
 }
 
+.topBarLeftTextWrapperMain:hover {
+  color:#406D96;
+}
+
+.topBarRightTextWrapperMain:hover {
+  color:#406D96;
+}
+
+.iconFloat:hover {
+  color:#E24748;
+}
+
 .topBarRightTextWrapperMain {
   position: absolute;
+  color: black;
   top: 50%;
   transform: translate(-20px, -50%);
 }
-
 .topBarLeftMain {
   float: left;
   margin-left: 2%;
