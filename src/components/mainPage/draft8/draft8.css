@@ -125,17 +125,25 @@
 
 .pos8a:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos8b:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 .pos8c:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos8d:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 .infoStyle:hover {
   transform: scale(1.5);

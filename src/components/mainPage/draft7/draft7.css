@@ -124,17 +124,25 @@
 
 .pos7a:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos7b:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 .pos7c:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos7d:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 .infoStyle:hover {
   transform: scale(1.5);
