@@ -55,7 +55,7 @@ const Draft5 = () => {
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/altering_the_self/in_order_to">
+          <Link to="/altering_the_self/past_events_and_beyond">
             <img src={inorderto} alt="5d" className="pos5d" />
             <div
               className="infotext"
@@ -70,7 +70,7 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/altering_the_self/i_sense_therefore_i_feel">
+          <Link to="/altering_the_self/linking_the_system_gap">
             <img src={beyond} alt="5a" className="pos5a" />
             <div
               className="infotext"
@@ -84,7 +84,7 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/altering_the_self/beyond_our_senses">
+          <Link to="/altering_the_self/the_customized_individuality">
             <img src={isense} alt="5b" className="pos5b" />
             <div
               className="infotext"
@@ -98,7 +98,7 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/altering_the_self/what_i_really_want">
+          <Link to="/altering_the_self/i_sense_therefore_i_experience">
             <img src={what} alt="5c" className="pos5c" />
             <div
               className="infotext"

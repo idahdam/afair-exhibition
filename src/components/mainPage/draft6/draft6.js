@@ -52,7 +52,7 @@ const Draft6 = () => {
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/bodily_presence/our_body">
+          <Link to="/bodily_presence/the_augmented_body">
             <img src={imgAtas} alt="6a" className="pos6a" />
             <div
               className="infotext"
@@ -67,7 +67,7 @@ const Draft6 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/bodily_presence/in_action">
+          <Link to="/bodily_presence/provoking_the_body">
             <img src={imgBawah} alt="6b" className="pos6b" />
             <div
               className="infotext"

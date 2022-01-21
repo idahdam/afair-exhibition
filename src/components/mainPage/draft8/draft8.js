@@ -55,7 +55,7 @@ const Draft8 = () => {
             isOpen={isOpen}
             close={() => setOpen(false)}
           />
-          <Link to="/in_where_we_exist/ecosystem_made_by_our_own_hands">
+          <Link to="/environment_reconstruct/ecosystem_made_by_our_own_hands">
             <img src={img8a} alt="8a" className="pos8a" />
             <div
               className="infotext"
@@ -69,7 +69,7 @@ const Draft8 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist/mobilize_elsewhere">
+          <Link to="/environment_reconstruct/speed_and_transition">
             <img src={img8b} alt="8b" className="pos8b" />
             <div
               className="infotext"
@@ -83,13 +83,15 @@ const Draft8 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist/keeping_it_running">
+          <Link to="/environment_reconstruct/keeping_it_running_performative_systems">
             <img src={img8c} alt="8c" className="pos8c" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Keeping It Running</div>
+              <div className="infoTitle">
+                Keeping It RunningL Performative Systems
+              </div>
               <div className="infoContent">
                 Highlighting methods of resource efficiency in a changing
                 context, operating the built environment using creative and
@@ -97,7 +99,7 @@ const Draft8 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/in_where_we_exist/waste_no_more">
+          <Link to="/environment_reconstruct/waste_no_more">
             <img src={img8d} alt="8d" className="pos8d" />
             <div
               className="infotext"
