@@ -7,14 +7,14 @@ import "./welcome.css";
 const welcome = () => {
   return (
     <>
-      <div className="background2">
-        <div className="bgContainer2">
+      <div className="background23">
+        <div className="bgContainer24">
           <div className="bgContainerText2">
             <div>
               <img src={iconLogo} alt="icon Logo" />
             </div>
             <div className="middleText">
-              <p className="title">
+              <p className="title3">
                 <img src={iconDuduk} className="dudukImg" alt="icon Logo" />
                 <img src={iconPeluk} className="pelukImg" alt="icon Logo" />
                 <span style={{ fontSize: "30px" }}>AFAIR 2022</span>
