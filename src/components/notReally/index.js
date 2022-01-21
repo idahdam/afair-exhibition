@@ -32,13 +32,14 @@ const NotReally = () => {
   ];
 
   const { scroll } = useSpring({
-    scroll: (words.length - 1) * 125,
+    scroll: (words.length - 1) * 100,
     from: { scroll: 0 },
     reset: true,
     reverse: flip,
     delay: 1000,
     // config: config.molasses,
-    config: { duration: 20000 },
+    config: { duration: 30000 },
+    // config: { duration: 5000000 },
     // onRest: () => set(!flip),
     onRest: () => {
       history.push("/transition");
@@ -51,9 +52,10 @@ const NotReally = () => {
         style={{
           position: "absolute",
           width: "95%",
-          height: 968,
+          height: 600,
+          paddingTop: "0.375em",
           overflow: "auto",
-          fontSize: "6em",
+          fontSize: "4em",
           paddingLeft: "1em",
         }}
         //   className="animation"

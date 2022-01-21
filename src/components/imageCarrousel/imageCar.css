@@ -7,7 +7,7 @@
 }
 
 .topBarWrapper {
-  width: 1500px;
+  width: 1186px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,6 +70,7 @@
 .carrouselMid {
   float: left;
   width: 80%;
+  max-width: 1186px;
 }
 
 img {
@@ -146,7 +147,7 @@ img {
 }
 
 .footerCarWrapper {
-  width: 1500px;
+  width: 1146px;
   position: absolute;
   top: 50%;
   left: 50%;
