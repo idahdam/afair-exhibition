@@ -73,11 +73,7 @@ function App() {
             component={ImgBuild}
           />
           <Route exact path="/exit" component={Exit} />
-          <Route
-            exact
-            path="/to-myself-in-the-future"
-            component={ToMyselfInTheFuture}
-          />
+          <Route exact path="/a-final-note" component={ToMyselfInTheFuture} />
           <Route exact path="/goodbye" component={GoodBye} />
           <Route
             exact
