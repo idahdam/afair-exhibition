@@ -71,6 +71,7 @@ function ImgCar(props) {
     const fetchData = async () => {
       const response = await artService.getArtWithParams(params);
       setData(response.data.data);
+      console.log(response.data.data);
     };
 
     fetchData();
