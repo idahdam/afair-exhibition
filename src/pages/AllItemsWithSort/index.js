@@ -36,8 +36,6 @@ const AllItemsWithSort = () => {
   const history = useHistory();
   const { params } = useParams();
   const [open, setOpen] = React.useState(false);
-  const [sort, setSort] = useState("");
-  const [filters, setFilters] = useState("");
   const [modalData, setModalData] = useState({});
   const [loading, setLoading] = useState(true);
   let [color, setColor] = useState("black");
@@ -60,7 +58,7 @@ const AllItemsWithSort = () => {
       setData(response.data.data);
     };
 
-    if (sessionStorage.getItem("guest-list") === "true" && sort === "") {
+    if (sessionStorage.getItem("guest-list") === "true") {
       fetchData();
     } else {
       history.push("/register");
@@ -76,7 +74,10 @@ const AllItemsWithSort = () => {
     history.push("/index/filters/" + params);
     history.go(0);
   };
-  if (data.length === 0) return null;
+  if (data.length === 0)
+    return (
+      <MoonLoader color={color} loading={loading} css={override} size={50} />
+    );
   return (
     <div className="container">
       <div className="indexWrapper">

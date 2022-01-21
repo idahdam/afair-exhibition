@@ -1,8 +1,5 @@
 import React from "react";
 import "./popUp.css";
-import popUpImg1 from "../../assets/images/popUp/popUpImage1.svg";
-import popUpImg2 from "../../assets/images/popUp/popUpImage2.svg";
-import popUpImg3 from "../../assets/images/popUp/popUpImage3.svg";
 import ReactMarkdown from "react-markdown";
 
 const popUp = (props) => {
