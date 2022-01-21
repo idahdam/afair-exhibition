@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft5.css";
 import { Hover } from "../hoverfunc.js";
 import { useHistory } from "react-router-dom";
@@ -10,7 +10,9 @@ import inorderto from "../../../assets/images/mainPage/inOrderTo.png";
 import isense from "../../../assets/images/mainPage/isense.png";
 import what from "../../../assets/images/mainPage/what.png";
 import { Link } from "react-router-dom";
+import Modal from "../modal/modal";
 const Draft5 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -24,23 +26,36 @@ const Draft5 = () => {
         <div className="draftBackImage">
           <div className="topBarMain">
             <div className="topBarWrapperMain">
-              <div className="topBarLeftMain">
-                <div className="topBarLeftWrapperMain">
-                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
-                </div>
-                <div className="topBarLeftWrapperMain">
-                  <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
+              <Link to="">
+                <div className="topBarLeftMain">
+                  <div className="topBarLeftWrapperMain">
+                    <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                  </div>
+                  <div className="topBarLeftWrapperMain">
+                    <div className="topBarLeftWrapper2" Main>
+                      <div className="topBarLeftTextWrapperMain">
+                        AFAIR 2022
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="topBarRightMain">
-                <div className="topBarLeftWrapper2Main">
-                  <div className="topBarRightTextWrapperMain">index</div>
+              </Link>
+              <Link to="/index">
+                <div className="topBarRightMain">
+                  <div className="topBarLeftWrapper2Main">
+                    <div className="topBarRightTextWrapperMain">Index</div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
+          <Modal
+            title="Understanding Us"
+            desc="Unseen changes that is only felt by ourselves. They often
+          relate to each and every individual's emotions"
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/understanding_us/in_order_to">
             <img src={inorderto} alt="5d" className="pos5d" />
             <div
@@ -54,7 +69,7 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/beyond_our_senses">
+          <Link to="/understanding_us/i_sense_therefore_i_feel">
             <img src={beyond} alt="5a" className="pos5a" />
             <div
               className="infotext"
@@ -68,18 +83,17 @@ const Draft5 = () => {
               </div>
             </div>
           </Link>
-          <Link to="/understanding_us/i_sense_therefore_i_feel">
+          <Link to="/understanding_us/beyond_our_senses">
             <img src={isense} alt="5b" className="pos5b" />
             <div
               className="infotext"
               style={{ transform: "translate(-110%, 10%)" }}
             >
-              <div className="infoTitle">Ecosystem Made By Our Own Hands</div>
+              <div className="infoTitle">Beyond Our Senses</div>
               <div className="infoContent">
-                How human senses become the center of information processing of
-                the space around them and acknowledge the changes occurred
-                around them.To feel; Human senses absorb the stimulus
-                information of the space around them.
+                How human tries to understand their own emotions in the
+                space.Memory involvement; Psychological memory and mind
+                intervention by space
               </div>
             </div>
           </Link>

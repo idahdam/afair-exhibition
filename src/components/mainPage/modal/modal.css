@@ -1,0 +1,36 @@
+.backgroundBlur {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 1186px;
+  height: 668px;
+}
+
+.modalContent {
+  width: 40%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  transition: opacity 0.1s ease-in;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.modalContent p {
+  margin: 15px 0px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}

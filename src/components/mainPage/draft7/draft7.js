@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft7.css";
 import { Hover } from "../hoverfunc.js";
 import info from "../../../assets/images/mainPage/iconInfo.svg";
@@ -9,7 +9,9 @@ import img7c from "../../../assets/images/mainPage/draft7_c.png";
 import img7d from "../../../assets/images/mainPage/draft7_d.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
+import Modal from "../modal/modal";
 const Draft7 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -23,24 +25,35 @@ const Draft7 = () => {
         <div className="draft7BackImage">
           <div className="topBarMain">
             <div className="topBarWrapperMain">
-              <div className="topBarLeftMain">
-                <div className="topBarLeftWrapperMain">
-                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
-                </div>
-                <div className="topBarLeftWrapperMain">
-                  <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
+              <Link to="/into_the_wayout_future">
+                <div className="topBarLeftMain">
+                  <div className="topBarLeftWrapperMain">
+                    <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                  </div>
+                  <div className="topBarLeftWrapperMain">
+                    <div className="topBarLeftWrapper2" Main>
+                      <div className="topBarLeftTextWrapperMain">
+                        AFAIR 2022
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="topBarRightMain">
-                <div className="topBarLeftWrapper2Main">
-                  <div className="topBarRightTextWrapperMain">index</div>
+              </Link>
+              <Link to="/index">
+                <div className="topBarRightMain">
+                  <div className="topBarLeftWrapper2Main">
+                    <div className="topBarRightTextWrapperMain">Index</div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
-
+          <Modal
+            title="Everyone As Well"
+            desc="Changes happening not only within the individuality, but rather outside involving the collective."
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/everyone_as_well/others_around">
             <img src={img7b} alt="7b" className="pos7b" />
             <div

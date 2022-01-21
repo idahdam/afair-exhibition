@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./draft8.css";
 import { Hover } from "../hoverfunc.js";
 import pinIcon from "../../../assets/images/mainPage/pinIcon.svg";
@@ -10,7 +10,9 @@ import img8c from "../../../assets/images/mainPage/8C.png";
 import img8d from "../../../assets/images/mainPage/8D.png";
 import { Link, useHistory } from "react-router-dom";
 import topLogo from "../../../assets/images/iconLogo_black.svg";
+import Modal from "../modal/modal";
 const Draft8 = () => {
+  const [isOpen, setOpen] = useState(true);
   const history = useHistory();
   useEffect(() => {
     if (sessionStorage.getItem("guest-list") !== "true") {
@@ -24,23 +26,36 @@ const Draft8 = () => {
         <div className="draft8BackImage">
           <div className="topBarMain">
             <div className="topBarWrapperMain">
-              <div className="topBarLeftMain">
-                <div className="topBarLeftWrapperMain">
-                  <img src={topLogo} alt="arrow" className="iconArrowRight" />
-                </div>
-                <div className="topBarLeftWrapperMain">
-                  <div className="topBarLeftWrapper2" Main>
-                    <div className="topBarLeftTextWrapperMain">AFAIR 2022</div>
+              <Link to="/into_the_wayout_future">
+                <div className="topBarLeftMain">
+                  <div className="topBarLeftWrapperMain">
+                    <img src={topLogo} alt="arrow" className="iconArrowRight" />
+                  </div>
+                  <div className="topBarLeftWrapperMain">
+                    <div className="topBarLeftWrapper2" Main>
+                      <div className="topBarLeftTextWrapperMain">
+                        AFAIR 2022
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="topBarRightMain">
-                <div className="topBarLeftWrapper2Main">
-                  <div className="topBarRightTextWrapperMain">index</div>
+              </Link>
+              <Link to="/index">
+                <div className="topBarRightMain">
+                  <div className="topBarLeftWrapper2Main">
+                    <div className="topBarRightTextWrapperMain">Index</div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
+          <Modal
+            title="Into The Wayout Future"
+            desc="Unseen changes that is only felt by ourselves. They often
+          relate to each and every individual's emotions"
+            isOpen={isOpen}
+            close={() => setOpen(false)}
+          />
           <Link to="/in_where_we_exist/ecosystem_made_by_our_own_hands">
             <img src={img8a} alt="8a" className="pos8a" />
             <div

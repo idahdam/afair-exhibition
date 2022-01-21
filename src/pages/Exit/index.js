@@ -12,7 +12,6 @@ const Transisi = () => {
     interval = setInterval(() => {
       history.push("/to-myself-in-the-future");
     }, 5000);
-    // }
     return () => (interval ? clearInterval(interval) : null);
   }, []);
   return (
@@ -20,12 +19,12 @@ const Transisi = () => {
       <div className="background2">
         <div className="bgContainer2">
           <div className="bgContainerText2" style={{ maxWidth: "50%" }}>
-            <p className="title">
+            <p>
               <span
                 style={{
                   fontSize: "24px",
                   fontWeight: "300",
-                  lineHeight: "29px",
+                  lineHeight: "30px",
                 }}
               >
                 As those changes and the solutions are merely predictions, we

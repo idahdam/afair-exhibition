@@ -4,20 +4,6 @@
   text-align: "left";
 }
 
-.Scrollbg{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.scrollWrapper{
-  position: absolute;
-  width: 100%;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .animation {
   position: "relative";
   width: "100%";

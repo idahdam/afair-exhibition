@@ -69,6 +69,7 @@
 .infotext {
   position: absolute;
   opacity: 0;
+  display: none;
   width: 350px;
   height: 80px;
   padding: 10px;
@@ -104,10 +105,14 @@
 
 .pos6a:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .pos6b:hover + .infotext {
   opacity: 1;
+  display: block;
+  transform: translate(-50%, -150%);
 }
 
 .footer {
