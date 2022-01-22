@@ -13,7 +13,12 @@ import ImgBuild from "./components/imageCarrousel/imageCar";
 import PopUpBuild from "./components/popUP/popUp";
 import Video from "./components/video";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Question from "./components/question";
 import AllItems from "./pages/AllItems";
 import Exit from "./pages/Exit";
@@ -22,6 +27,7 @@ import GoodBye from "./pages/GoodBye";
 import AllItemsWithFilters from "./pages/AllItemsWithFilters";
 import AllItemsWithSort from "./pages/AllItemsWithSort";
 import NotReally from "./components/notReally";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <>
@@ -33,7 +39,7 @@ function App() {
           {/* <Route exact path="/popBuild" component={PopUpBuild} /> */}
           {/* <Route exact path="/build" component={Landing} /> */}
           {/* <Route exact path="/imgBuild" component={ImgBuild} /> */}
-          <Route exact path="/build" component={Landing} />
+          {/* <Route exact path="/build" component={Landing} /> */}
           <Route exact path="/register" component={Register} />
           <Route exact path="/video" component={Video} />
           <Route exact path="/question" component={Question} />
@@ -91,6 +97,7 @@ function App() {
               return null;
             }}
           />
+          <Route component={NotFound} />
         </Switch>
       </Router>
     </>
