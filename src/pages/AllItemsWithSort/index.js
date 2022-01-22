@@ -81,10 +81,12 @@ const AllItemsWithSort = () => {
   return (
     <div className="container">
       <div className="indexWrapper">
-      <div className="indexBarContainerQuit">
+        <div className="indexBarContainerQuit">
           <div className="page-title-divQuit">
             <Link to="/into_the_wayout_future">
-              <span className="back-title"style={{fontSize:"17px"}}>Back to Main Menu</span>
+              <span className="back-title" style={{ fontSize: "17px" }}>
+                Back to Main Menu
+              </span>
             </Link>
           </div>
         </div>
@@ -141,7 +143,7 @@ const AllItemsWithSort = () => {
                   <div className="child">
                     <img
                       src={item.attributes.art.data.attributes.url}
-                      alt="sss"
+                      alt="image for art"
                       className="item_image"
                       onClick={() => handleOpen(item)}
                     />
