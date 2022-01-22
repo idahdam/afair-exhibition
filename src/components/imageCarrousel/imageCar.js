@@ -85,7 +85,7 @@ function ImgCar(props) {
       <div className="imgCarContainer">
         <img
           src={item.attributes.art.data.attributes.url}
-          alt="1"
+          alt="thumbnail for each art"
           className="imageContent"
         />
         <div className="imgCarText">
