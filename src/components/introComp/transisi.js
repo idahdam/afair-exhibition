@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./welcome.css";
 import iconArrow from "../../assets/images/iconArrow.svg";
-import { NavLink as Link} from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
 const Transisi = () => {
-
+  const history = useHistory();
+  useEffect(() => {
+    if (sessionStorage.getItem("guest-list") !== "true") {
+      history.push("/register");
+    }
+  }, []);
   return (
     <>
       <div
@@ -60,19 +65,13 @@ const Transisi = () => {
                 >
                   AFAIR UI 2022 Exhibition Curator
                 </span>
-                
-                  <span className="iconRight4">
-                    <Link to="/into_the_wayout_future">
-                  <img
-                    src={iconArrow}
-                    className="arrow"
-                    alt="icon Logo"
-                  />
+
+                <span className="iconRight4">
+                  <Link to="/into_the_wayout_future">
+                    <img src={iconArrow} className="arrow" alt="icon Logo" />
                   </Link>
-                  </span>
+                </span>
               </p>
-              
-            
             </div>
           </div>
         </div>
