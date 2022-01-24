@@ -20,10 +20,10 @@ const Transisi = () => {
           <div className="bgContainerText2" style={{ maxWidth: "80%" }}>
             <p className="titleTrans">
               "Everything changes. Life changes. Things change. Architecture
-              changes.Interior changes.
+              changes. Interior changes.
             </p>
             <p className="titleTrans">
-              I Architecture as a knowledge discipline and as a practice is
+              Architecture as a knowledge discipline and as a practice is
               constantly challenged to maintain its relevance to the dynamic of
               life. Ever since the pandemic in 2020, our life will never be the
               same. At Universitas Indonesia, we believe that the changes should
