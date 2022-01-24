@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./welcome.css";
 import iconArrow from "../../assets/images/iconArrow.svg";
-import { NavLink as Link } from "react-router-dom";
+import { NavLink as Link, useHistory } from "react-router-dom";
 
 const Transisi = () => {
   const history = useHistory();
