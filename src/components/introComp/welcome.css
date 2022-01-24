@@ -152,6 +152,28 @@
   float: left;
   margin-left: 5%;
 }
+
+.transisFull{
+  width: 100%;
+}
+
+.transisiLeft{
+  width: 80%;
+  display: flex;
+  float: left;
+}
+
+
+.transisiRight{
+  width: 20%;
+  display: flex;
+  float: right;
+}
+.iconRight4 {
+  cursor: pointer;
+  float: right;
+  margin-left: 5%;
+}
 .textBoxdeco2 {
   display: block;
   font-size: 20px;

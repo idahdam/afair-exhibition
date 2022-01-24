@@ -169,50 +169,51 @@ const goodBye2 = () => {
                 </div>
               </div>
             </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Content Archive</div>
-                <div className="contentMember">Alfira Kurniawati</div>
-                <div className="contentMember">Alya Amany</div>
-                <div className="contentMember">Shafira Azzahra</div>
-                <br />
-                <div className="contentMember">Fadhila Khansa</div>
-                <div className="contentMember">Alisha Nathania R.</div>
-                <div className="contentMember">Khusnul Fuadah</div>
-                <div className="contentMember">Safira Audiva A.</div>
-                <div className="contentMember">Nadira Ramadina S.</div>
-                <div className="contentMember">Kirana Muthmainah</div>
-                <div className="contentMember">Alisha Ratu R.S.</div>
-                <div className="contentMember">Hanifia Muthia S.</div>
-                <div className="contentMember">Clara Jessica S.</div>
-                <div className="contentMember">Syifa Raihani S.P.</div>
-                <div className="contentMember">Ladifta Ariandra C.</div>
-                <div className="contentMember">Zahra Ariandra M.</div>
-                <div className="contentMember">Fidela Lathifah N.</div>
-                <div className="contentMember">Sekar Manda P.</div>
+            <div className="SectionRighRow">
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Content Archive</div>
+                  <div className="contentMember">Alfira Kurniawati</div>
+                  <div className="contentMember">Alya Amany</div>
+                  <div className="contentMember">Shafira Azzahra</div>
+                  <br />
+                  <div className="contentMember">Fadhila Khansa</div>
+                  <div className="contentMember">Alisha Nathania R.</div>
+                  <div className="contentMember">Khusnul Fuadah</div>
+                  <div className="contentMember">Safira Audiva A.</div>
+                  <div className="contentMember">Nadira Ramadina S.</div>
+                  <div className="contentMember">Kirana Muthmainah</div>
+                  <div className="contentMember">Alisha Ratu R.S.</div>
+                  <div className="contentMember">Hanifia Muthia S.</div>
+                  <div className="contentMember">Clara Jessica S.</div>
+                  <div className="contentMember">Syifa Raihani S.P.</div>
+                  <div className="contentMember">Ladifta Ariandra C.</div>
+                  <div className="contentMember">Zahra Ariandra M.</div>
+                  <div className="contentMember">Fidela Lathifah N.</div>
+                  <div className="contentMember">Sekar Manda P.</div>
+                </div>
               </div>
-            </div>
-            <div className="SectionRightColumnLeft">
-              <div className="contentContainer">
-                <div className="contentTitle">Competition</div>
-                <div className="contentMember">Ariq Dhia A.</div>
-                <div className="contentMember">Gina Khairunnisa</div>
-                <div className="contentMember">Gusti Ayu P.</div>
-                <br />
-                <div className="contentMember">Narisha Nur S.</div>
-                <div className="contentMember">Zahara Aramus P.</div>
-                <div className="contentMember">Shaskia Ramadhani A.</div>
-                <div className="contentMember">Ingge Viesty Cessya R.</div>
-                <div className="contentMember">Adelle Aulia Darma</div>
-                <div className="contentMember">Putri Syahirah</div>
-                <div className="contentMember">Thea Joanna Christine</div>
-                <div className="contentMember">Aulia Lutfhi F.</div>
-                <div className="contentMember">Selma Shafanisa D.</div>
+              <div className="SectionRightColumnLeft">
+                <div className="contentContainer">
+                  <div className="contentTitle">Competition</div>
+                  <div className="contentMember">Ariq Dhia A.</div>
+                  <div className="contentMember">Gina Khairunnisa</div>
+                  <div className="contentMember">Gusti Ayu P.</div>
+                  <br />
+                  <div className="contentMember">Narisha Nur S.</div>
+                  <div className="contentMember">Zahara Aramus P.</div>
+                  <div className="contentMember">Shaskia Ramadhani A.</div>
+                  <div className="contentMember">Ingge Viesty Cessya R.</div>
+                  <div className="contentMember">Adelle Aulia Darma</div>
+                  <div className="contentMember">Putri Syahirah</div>
+                  <div className="contentMember">Thea Joanna Christine</div>
+                  <div className="contentMember">Aulia Lutfhi F.</div>
+                  <div className="contentMember">Selma Shafanisa D.</div>
+                </div>
               </div>
             </div>
             <div className="SectionRighRow">
               <div className="SectionRightColumnLeft">
-                <br />
                 <div className="contentContainer">
                   <div className="contentTitle">Operational Team</div>
                   <div className="contentMember">Annisa Ratna Asri</div>
