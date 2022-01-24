@@ -11,24 +11,24 @@ const Register = () => {
   const [testEmail, setTestEmail] = useState(false);
 
   const SubmitAndRedirect = async () => {
-    await formService
-      .postForm({
-        name: nama,
-        email: email,
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          sessionStorage.setItem("email", res.data.data.attributes.email);
-          sessionStorage.setItem("name", res.data.data.attributes.name);
-          sessionStorage.setItem("guest-list", true);
-          history.push("/video");
-        } else {
-          alert("Failed.");
-        }
-      });
+    // await formService
+    //   .postForm({
+    //     name: nama,
+    //     email: email,
+    //   })
+    //   .then((res) => {
+    //     if (res.status === 200) {
+    //       sessionStorage.setItem("email", res.data.data.attributes.email);
+    //       sessionStorage.setItem("name", res.data.data.attributes.name);
+    //       sessionStorage.setItem("guest-list", true);
+    //       history.push("/video");
+    //     } else {
+    //       alert("Failed.");
+    //     }
+    //   });
 
-    // sessionStorage.setItem("guest-list", true);
-    // history.push("/video");
+    sessionStorage.setItem("guest-list", true);
+    history.push("/video");
   };
 
   const handleEmail = (input) => {
